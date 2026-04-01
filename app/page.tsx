@@ -40,6 +40,7 @@ const newDawnStories: Story[] = [
 
 const meetingStories: Story[] = [
   { slug: "meeting-virtual-humans", number: "\u2022", title: "The Room Where It Started", subtitle: "Virtual Humans in Virtual Labs", year: "Apr 1, 2026", excerpt: "Four people who should never have been in the same room. The network IS the twin.", category: "meeting" },
+  { slug: "meeting-the-road-home", number: "\u2022", title: "The Road Home", subtitle: "When the Car Became Part of You", year: "Apr 2, 2026", excerpt: "The car didn\u2019t drive him. It carried him. There\u2019s a difference.", category: "meeting" },
 ];
 
 const allStories = [...sentinelOrigin, ...newDawnStories, ...meetingStories];

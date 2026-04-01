@@ -23,6 +23,7 @@ const allSlugs = [
   "the-forgetting-curve",
   // Meeting
   "meeting-virtual-humans",
+  "meeting-the-road-home",
 ];
 
 const titles: Record<string, string> = {
@@ -42,6 +43,7 @@ const titles: Record<string, string> = {
   "the-last-silo": "The Last Silo",
   "the-forgetting-curve": "The Forgetting Curve",
   "meeting-virtual-humans": "The Room Where It Started",
+  "meeting-the-road-home": "The Road Home",
 };
 
 export default function StoryNav() {
