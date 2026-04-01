@@ -1,4 +1,5 @@
 "use client";
+import StoryNav from "../components/StoryNav";
 import Link from "next/link";
 
 import { useEffect, useRef, useState } from "react";
@@ -253,6 +254,7 @@ export default function TheSecondSelf() {
   return (
     <main className="min-h-screen">
       <ProgressBar />
+      <StoryNav />
 
       {/* ════════════════════════════════════════════════
           Title Screen

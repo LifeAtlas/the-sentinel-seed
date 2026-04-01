@@ -1,4 +1,5 @@
 "use client";
+import StoryNav from "../components/StoryNav";
 import Link from "next/link";
 
 import { useEffect, useRef, useState } from "react";
@@ -314,6 +315,7 @@ export default function TheInfiniteCity() {
   return (
     <>
       <ProgressBar />
+      <StoryNav />
 
       <main className="min-h-screen">
         {/* ═══ Title Screen ═══ */}
