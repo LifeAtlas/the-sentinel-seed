@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 /* ═══════════════════════════════════════════════════════════════
-   Story data — Sentinel Arc + Origin Stories
+   Story data — Origin Stories + New Dawn Stories
    ═══════════════════════════════════════════════════════════════ */
 
 interface Story {
@@ -14,7 +14,7 @@ interface Story {
   subtitle: string;
   year: string;
   excerpt: string;
-  category: "arc" | "origin";
+  category: "origin" | "newdawn";
 }
 
 const sentinelArc: Story[] = [
@@ -25,7 +25,7 @@ const sentinelArc: Story[] = [
     subtitle: "Flesh, Failure, and Forgotten Time",
     year: "Near Future",
     excerpt: "The astronaut was dead before he hit the floor. Not literally. But for 11 minutes, his organs had already begun to fail.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "silent-orbits",
@@ -34,7 +34,7 @@ const sentinelArc: Story[] = [
     subtitle: "When the Twin Decided",
     year: "Europa Orbit",
     excerpt: "Patient 08832-A. Europa orbit. Registered civilian. The twin initiated euthanasia. She blinked. \u2018You mean it suggested it?\u2019 \u2018No. It performed it.\u2019",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-second-self",
@@ -43,7 +43,7 @@ const sentinelArc: Story[] = [
     subtitle: "The Doctrine of the Digital Twin",
     year: "Europa Base",
     excerpt: "She was trained to recognize war. But when it came, it wasn\u2019t a gunshot. It started with a yawn.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-beam-of-memory",
@@ -52,7 +52,7 @@ const sentinelArc: Story[] = [
     subtitle: "Post-Data Civilization",
     year: "2425",
     excerpt: "You sat on a beam of light with Einstein \u2014 a memory orb trained on your conversations, your misunderstandings, your moments of awe.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-last-therapy-session",
@@ -61,7 +61,7 @@ const sentinelArc: Story[] = [
     subtitle: "Post-Fragmentation Healing",
     year: "The Weaverspace",
     excerpt: "No CBT. No EMDR. No psychodynamic regression. Not erased. Transcended. \u2018Which part of you would like to begin?\u2019",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-timeline-garden",
@@ -70,7 +70,7 @@ const sentinelArc: Story[] = [
     subtitle: "Attention as Dimension",
     year: "The Continuum",
     excerpt: "School called it ADHD. She called it \u2018Too Many Windows Open.\u2019 She wasn\u2019t broken. She was living on a different axis of time.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-operative-now",
@@ -79,7 +79,7 @@ const sentinelArc: Story[] = [
     subtitle: "The Age of Enlightened Continuity",
     year: "Post-Hospital Era",
     excerpt: "Healthcare had ended. Lifecare had begun. The hospital didn\u2019t discharge you. It stayed in orbit \u2014 a passive yet present guardian.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-resilience-graph",
@@ -88,7 +88,7 @@ const sentinelArc: Story[] = [
     subtitle: "Sweden\u2019s Synthetic Edge",
     year: "Near Future",
     excerpt: "It began in Lule\u00e5. Sweden\u2019s National Digital Twin sensed the shift. Ragnar\u00f6k Node 4 activated. Not with panic. But with purpose.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-infinite-city",
@@ -97,7 +97,7 @@ const sentinelArc: Story[] = [
     subtitle: "Urban Intelligence and Living Machines",
     year: "Sweden 2087",
     excerpt: "They used to pour concrete and call it planning. Cities were no longer designed by planners. They were modulated by impact.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "the-countdown-gene",
@@ -106,7 +106,7 @@ const sentinelArc: Story[] = [
     subtitle: "Post-Human Self-Authorship",
     year: "Post-Human Era",
     excerpt: "For 72 hours, one cell outperformed four billion years of genetic negotiation. By 9.5%. This was not resilience. This was preemptive biology.",
-    category: "arc",
+    category: "origin",
   },
   {
     slug: "a-hard-fork-in-reality",
@@ -115,11 +115,11 @@ const sentinelArc: Story[] = [
     subtitle: "Two Timelines, One Species",
     year: "2036",
     excerpt: "Somewhere between Lavender and Gospel, we lost the plot. But machines have no problem digging.",
-    category: "arc",
+    category: "origin",
   },
 ];
 
-const originStories: Story[] = [
+const newDawnStories: Story[] = [
   {
     slug: "the-sentinel-seed",
     number: "\u2022",
@@ -127,7 +127,7 @@ const originStories: Story[] = [
     subtitle: "The First User and the Final Platform",
     year: "2026 \u2013 2097",
     excerpt: "The basil was dying again. Nicolas Waern stood in his apartment in Gothenburg, 2:47 AM, the blue glow of four monitors carving his silhouette against the window.",
-    category: "origin",
+    category: "newdawn",
   },
   {
     slug: "the-architect-of-hooves",
@@ -136,7 +136,7 @@ const originStories: Story[] = [
     subtitle: "The First Horse That Knew Itself",
     year: "2027 \u2013 2061",
     excerpt: "The mare moved wrong. Not wrong in a way anyone could see. Wrong in a way that only showed up in the numbers.",
-    category: "origin",
+    category: "newdawn",
   },
   {
     slug: "the-last-silo",
@@ -145,7 +145,7 @@ const originStories: Story[] = [
     subtitle: "The Day the Walls Came Down",
     year: "2028 \u2013 2084",
     excerpt: "Ingrid Eriksson was 83 years old and she had seventeen doctors. Not one of them knew about the others.",
-    category: "origin",
+    category: "newdawn",
   },
 ];
 
@@ -170,7 +170,7 @@ function StoryCard({ story }: { story: Story }) {
       >
         {/* Header */}
         <div className="flex items-center justify-between mb-3">
-          {story.category === "arc" && (
+          {story.category === "origin" && (
             <span className="text-[10px] tracking-[0.4em] uppercase"
               style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-gold-dim)" }}>
               Book {story.number}
@@ -237,13 +237,13 @@ export default function Home() {
         </p>
       </header>
 
-      {/* ═══ Sentinel Arc ═══ */}
+      {/* ═══ Sentinel Origin Stories ═══ */}
       <section className="mb-12">
         <div className="flex items-center gap-3 mb-5">
           <div className="h-px flex-1" style={{ background: "linear-gradient(90deg, var(--color-gold-dim), transparent)" }} />
           <h2 className="text-xs tracking-[0.4em] uppercase whitespace-nowrap"
             style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-gold-dim)" }}>
-            Sentinel Arc
+            Sentinel Origin Stories
           </h2>
           <div className="h-px flex-1" style={{ background: "linear-gradient(90deg, transparent, var(--color-gold-dim))" }} />
         </div>
@@ -254,18 +254,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ Origin Stories ═══ */}
+      {/* ═══ Sentinel New Dawn Stories ═══ */}
       <section className="mb-12">
         <div className="flex items-center gap-3 mb-5">
           <div className="h-px flex-1" style={{ background: "linear-gradient(90deg, var(--color-gold-dim), transparent)" }} />
           <h2 className="text-xs tracking-[0.4em] uppercase whitespace-nowrap"
             style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-gold-dim)" }}>
-            Origin Stories
+            Sentinel New Dawn Stories
           </h2>
           <div className="h-px flex-1" style={{ background: "linear-gradient(90deg, transparent, var(--color-gold-dim))" }} />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {originStories.map((story) => (
+          {newDawnStories.map((story) => (
             <StoryCard key={story.slug} story={story} />
           ))}
         </div>
