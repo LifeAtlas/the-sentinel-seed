@@ -35,6 +35,7 @@ const newDawnStories: Story[] = [
   { slug: "the-sentinel-seed", number: "\u2022", title: "The Sentinel Seed", subtitle: "The First User and the Final Platform", year: "2026\u20132097", excerpt: "The basil was dying again. 2:47 AM in Gothenburg.", category: "newdawn" },
   { slug: "the-architect-of-hooves", number: "\u2022", title: "The Architect of Hooves", subtitle: "The First Horse That Knew Itself", year: "2027\u20132061", excerpt: "The mare moved wrong. Only the numbers saw it.", category: "newdawn" },
   { slug: "the-last-silo", number: "\u2022", title: "The Last Silo", subtitle: "The Day the Walls Came Down", year: "2028\u20132084", excerpt: "She had seventeen doctors. None of them knew about the others.", category: "newdawn" },
+  { slug: "the-forgetting-curve", number: "\u2022", title: "The Forgetting Curve", subtitle: "The Disease That Forgot to Win", year: "2028\u20132048", excerpt: "Her p-tau217 had been rising for eighteen months. Not dramatically. The way a river rises before anyone notices.", category: "newdawn" },
 ];
 
 const meetingStories: Story[] = [
@@ -218,13 +219,10 @@ export default function Home() {
           style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-text-secondary)", opacity: 0.35 }}>
           {allStories.length} stories \u2014 Gothenburg, Sweden \u2014 2026
         </p>
+        {/* Hidden investor portal — shift+click bottom-right corner */}
         <a href="https://lifeatlas.github.io/investor-portal/"
-          className="inline-block px-5 py-1.5 rounded border text-[10px] transition-all duration-300"
-          style={{ fontFamily: "'Inter', sans-serif", borderColor: "var(--color-border)", color: "var(--color-gold-dim)", letterSpacing: "0.1em" }}
-          onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.3)"; e.currentTarget.style.color = "var(--color-gold)"; }}
-          onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--color-border)"; e.currentTarget.style.color = "var(--color-gold-dim)"; }}>
-          INVESTOR PORTAL
-        </a>
+          className="fixed bottom-2 right-2 w-4 h-4 opacity-0 hover:opacity-[0.08] transition-opacity cursor-default"
+          title="" />
       </footer>
     </main>
   );
