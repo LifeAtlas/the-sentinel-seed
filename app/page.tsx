@@ -36,6 +36,8 @@ const newDawnStories: Story[] = [
   { slug: "the-architect-of-hooves", number: "\u2022", title: "The Architect of Hooves", subtitle: "The First Horse That Knew Itself", year: "2027\u20132061", excerpt: "The mare moved wrong. Only the numbers saw it.", category: "newdawn" },
   { slug: "the-last-silo", number: "\u2022", title: "The Last Silo", subtitle: "The Day the Walls Came Down", year: "2028\u20132084", excerpt: "She had seventeen doctors. None of them knew about the others.", category: "newdawn" },
   { slug: "the-forgetting-curve", number: "\u2022", title: "The Forgetting Curve", subtitle: "The Disease That Forgot to Win", year: "2028\u20132048", excerpt: "Her p-tau217 had been rising for eighteen months. Not dramatically. The way a river rises before anyone notices.", category: "newdawn" },
+  { slug: "the-room-full-of-everyone", number: "\u2022", title: "The Room Full of Everyone", subtitle: "A Memory from the Future", year: "Sep 4, 2036", excerpt: "On the evening of his 55th birthday, Nicolas sits in a room with thirty-one people, fourteen avatars, three robots, and a voice he\u2019s known longer than some of his friends.", category: "newdawn" },
+  { slug: "the-sovereign-body", number: "\u2022", title: "The Sovereign Body", subtitle: "A Manifesto", year: "March 2026", excerpt: "I got my first epigenetic scar before I could speak. The body keeps score long before the mind learns to count.", category: "newdawn" },
 ];
 
 const meetingStories: Story[] = [
