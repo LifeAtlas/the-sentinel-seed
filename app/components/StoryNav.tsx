@@ -28,6 +28,9 @@ const allSlugs = [
   // Personal
   "the-room-full-of-everyone",
   "the-sovereign-body",
+  // White Papers
+  "whitepaper-nri-tokyo",
+  "whitepaper-smile-digital-twins",
 ];
 
 const titles: Record<string, string> = {
@@ -51,6 +54,8 @@ const titles: Record<string, string> = {
   "meeting-the-road-home": "The Road Home",
   "the-room-full-of-everyone": "The Room Full of Everyone",
   "the-sovereign-body": "The Sovereign Body",
+  "whitepaper-nri-tokyo": "\u30c7\u30b8\u30bf\u30eb\u306e\u93e1\u306b\u6620\u308b\u672a\u6765",
+  "whitepaper-smile-digital-twins": "Digital Twins and AI",
 };
 
 export default function StoryNav() {

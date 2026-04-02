@@ -14,7 +14,7 @@ interface Story {
   subtitle: string;
   year: string;
   excerpt: string;
-  category: "origin" | "newdawn" | "meeting";
+  category: "origin" | "newdawn" | "meeting" | "whitepaper";
 }
 
 const sentinelOrigin: Story[] = [
@@ -46,7 +46,12 @@ const meetingStories: Story[] = [
   { slug: "meeting-the-road-home", number: "\u2022", title: "The Road Home", subtitle: "When the Car Became Part of You", year: "Apr 2, 2026", excerpt: "The car didn\u2019t drive him. It carried him. There\u2019s a difference.", category: "meeting" },
 ];
 
-const allStories = [...sentinelOrigin, ...newDawnStories, ...meetingStories];
+const whitepaperStories: Story[] = [
+  { slug: "whitepaper-nri-tokyo", number: "\u2022", title: "\u30c7\u30b8\u30bf\u30eb\u306e\u93e1\u306b\u6620\u308b\u672a\u6765", subtitle: "A Journey from Tokyo to Gothenburg", year: "Sep 18, 2025", excerpt: "\u4e5d\u6708\u306e\u6771\u4eac\u306f\u3001\u307e\u3060\u590f\u306e\u6b8b\u308a\u9999\u3092\u7e4f\u3063\u3066\u3044\u305f\u3002\u5927\u624b\u753a\u306e\u91ce\u6751\u7dcf\u5408\u7814\u7a76\u6240\u672c\u793e\u30d3\u30eb\u3067\u3001\u5317\u6b27\u306e\u7537\u304c\u73fe\u5b9f\u306e\u672c\u8cea\u306b\u3064\u3044\u3066\u8a9e\u308a\u59cb\u3081\u305f\u3002", category: "whitepaper" },
+  { slug: "whitepaper-smile-digital-twins", number: "\u2022", title: "Digital Twins and AI", subtitle: "A Methodological Framework for Japan\u2019s Next Industrial Transformation", year: "Sep 18, 2025", excerpt: "Do not start with data. Start with impact. Do everything virtually first.", category: "whitepaper" },
+];
+
+const allStories = [...sentinelOrigin, ...newDawnStories, ...meetingStories, ...whitepaperStories];
 
 /* ═══════════════════════════════════════════════════════════════
    Components
@@ -210,6 +215,16 @@ export default function Home() {
             <SectionHeader title="Meeting Stories" />
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {meetingStories.map((story) => (
+                <StoryCard key={story.slug} story={story} />
+              ))}
+            </div>
+          </section>
+
+          {/* ═══ White Papers ═══ */}
+          <section className="mb-8">
+            <SectionHeader title="White Papers" />
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+              {whitepaperStories.map((story) => (
                 <StoryCard key={story.slug} story={story} />
               ))}
             </div>
