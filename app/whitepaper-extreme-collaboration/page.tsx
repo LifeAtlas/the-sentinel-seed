@@ -1161,6 +1161,22 @@ export default function WhitepaperExtremeCollaboration() {
         {/* ═══ Footer Attribution ═══ */}
         <FootnoteBlock />
 
+        {/* ═══ Contact ═══ */}
+        <div className="max-w-xl mx-auto px-6 py-10 text-center">
+          <div className="h-px mb-8" style={{ background: "linear-gradient(90deg, transparent, var(--color-gold-dim), transparent)" }} />
+          <p className="text-[10px] tracking-[0.4em] uppercase mb-3" style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-gold-dim)" }}>
+            Contact
+          </p>
+          <a href="mailto:ceo@winniio.io" className="text-sm transition-colors duration-300" style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-text-secondary)" }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--color-gold)"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "var(--color-text-secondary)"; }}>
+            ceo@winniio.io
+          </a>
+          <p className="text-[10px] mt-2" style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-text-secondary)", opacity: 0.5 }}>
+            Nicolas Waern &middot; WINNIIO AB &middot; Gothenburg, Sweden
+          </p>
+        </div>
+
         {/* ═══ Back link ═══ */}
         <BackLink />
       </main>
