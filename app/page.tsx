@@ -44,11 +44,13 @@ const newDawnStories: Story[] = [
 const meetingStories: Story[] = [
   { slug: "meeting-virtual-humans", number: "\u2022", title: "The Room Where It Started", subtitle: "Virtual Humans in Virtual Labs", year: "Apr 1, 2026", excerpt: "Four people who should never have been in the same room. The network IS the twin.", category: "meeting" },
   { slug: "meeting-the-road-home", number: "\u2022", title: "The Road Home", subtitle: "When the Car Became Part of You", year: "Apr 2, 2026", excerpt: "The car didn\u2019t drive him. It carried him. There\u2019s a difference.", category: "meeting" },
+  { slug: "meeting-the-map-that-listened", number: "\u2022", title: "The Map That Listened", subtitle: "When Cities Stopped Looking at Dashboards and Started Looking at Each Other", year: "Apr 2, 2026", excerpt: "Two students asked about AI in small cities. He showed them the planet instead.", category: "meeting" },
 ];
 
 const whitepaperStories: Story[] = [
   { slug: "whitepaper-nri-tokyo", number: "\u2022", title: "\u30c7\u30b8\u30bf\u30eb\u306e\u93e1\u306b\u6620\u308b\u672a\u6765", subtitle: "A Journey from Tokyo to Gothenburg", year: "Sep 18, 2025", excerpt: "\u4e5d\u6708\u306e\u6771\u4eac\u306f\u3001\u307e\u3060\u590f\u306e\u6b8b\u308a\u9999\u3092\u7e4f\u3063\u3066\u3044\u305f\u3002\u5927\u624b\u753a\u306e\u91ce\u6751\u7dcf\u5408\u7814\u7a76\u6240\u672c\u793e\u30d3\u30eb\u3067\u3001\u5317\u6b27\u306e\u7537\u304c\u73fe\u5b9f\u306e\u672c\u8cea\u306b\u3064\u3044\u3066\u8a9e\u308a\u59cb\u3081\u305f\u3002", category: "whitepaper" },
   { slug: "whitepaper-smile-digital-twins", number: "\u2022", title: "Digital Twins and AI", subtitle: "A Methodological Framework for Japan\u2019s Next Industrial Transformation", year: "Sep 18, 2025", excerpt: "Do not start with data. Start with impact. Do everything virtually first.", category: "whitepaper" },
+  { slug: "whitepaper-extreme-collaboration", number: "\u2022", title: "Extreme Collaboration", subtitle: "The Road Towards Autonomous and Cognitive City Operations", year: "Apr 2026", excerpt: "The road to autonomous cities does not begin with AI, data, or sensors. It begins with people in the same room, looking at the same reality.", category: "whitepaper" },
 ];
 
 const allStories = [...sentinelOrigin, ...newDawnStories, ...meetingStories, ...whitepaperStories];
@@ -122,8 +124,53 @@ function SectionHeader({ title }: { title: string }) {
    Page
    ═══════════════════════════════════════════════════════════════ */
 
+type Tab = "origin" | "newdawn" | "meeting" | "whitepaper" | "all";
+
+const tabs: { key: Tab; label: string; count: number }[] = [
+  { key: "all", label: "All", count: allStories.length },
+  { key: "origin", label: "Origin", count: sentinelOrigin.length },
+  { key: "newdawn", label: "New Dawn", count: newDawnStories.length },
+  { key: "meeting", label: "Meetings", count: meetingStories.length },
+  { key: "whitepaper", label: "White Papers", count: whitepaperStories.length },
+];
+
+const storiesByTab: Record<Tab, Story[]> = {
+  all: allStories,
+  origin: sentinelOrigin,
+  newdawn: newDawnStories,
+  meeting: meetingStories,
+  whitepaper: whitepaperStories,
+};
+
+function TabBar({ active, onChange }: { active: Tab; onChange: (t: Tab) => void }) {
+  return (
+    <div className="flex flex-wrap justify-center gap-1.5 md:gap-2 mb-6">
+      {tabs.map((tab) => {
+        const isActive = active === tab.key;
+        return (
+          <button
+            key={tab.key}
+            onClick={() => onChange(tab.key)}
+            className="px-3 md:px-4 py-1.5 rounded-full border text-[10px] md:text-[11px] tracking-[0.15em] uppercase transition-all duration-300"
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              borderColor: isActive ? "var(--color-gold)" : "var(--color-border)",
+              background: isActive ? "rgba(201,168,76,0.1)" : "transparent",
+              color: isActive ? "var(--color-gold)" : "var(--color-text-secondary)",
+            }}
+          >
+            {tab.label}
+            <span className="ml-1.5 opacity-50">{tab.count}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function Home() {
   const [search, setSearch] = useState("");
+  const [activeTab, setActiveTab] = useState<Tab>("all");
 
   const filtered = useMemo(() => {
     if (!search.trim()) return null;
@@ -136,6 +183,8 @@ export default function Home() {
         s.year.toLowerCase().includes(q)
     );
   }, [search]);
+
+  const displayStories = filtered !== null ? filtered : storiesByTab[activeTab];
 
   return (
     <main className="min-h-screen px-4 md:px-6 py-6 md:py-10 max-w-6xl mx-auto">
@@ -155,7 +204,7 @@ export default function Home() {
         </p>
 
         {/* Search */}
-        <div className="max-w-sm mx-auto">
+        <div className="max-w-sm mx-auto mb-5">
           <input
             type="text"
             placeholder="Search stories..."
@@ -170,73 +219,37 @@ export default function Home() {
             }}
           />
         </div>
+
+        {/* Tabs */}
+        {filtered === null && <TabBar active={activeTab} onChange={setActiveTab} />}
       </header>
 
-      {/* ═══ Search Results ═══ */}
-      {filtered !== null ? (
-        <section className="mb-10">
+      {/* ═══ Content ═══ */}
+      {filtered !== null && (
+        <div className="mb-4">
           <SectionHeader title={`${filtered.length} result${filtered.length !== 1 ? "s" : ""}`} />
-          {filtered.length > 0 ? (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {filtered.map((story) => (
-                <StoryCard key={story.slug} story={story} />
-              ))}
-            </div>
-          ) : (
-            <p className="text-center text-sm" style={{ color: "var(--color-text-secondary)" }}>
-              No stories match &ldquo;{search}&rdquo;
-            </p>
-          )}
-        </section>
+        </div>
+      )}
+
+      {displayStories.length > 0 ? (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {displayStories.map((story) => (
+            <StoryCard key={story.slug} story={story} />
+          ))}
+        </div>
       ) : (
-        <>
-          {/* ═══ Sentinel Origin Stories ═══ */}
-          <section className="mb-8">
-            <SectionHeader title="Sentinel Origin Stories" />
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {sentinelOrigin.map((story) => (
-                <StoryCard key={story.slug} story={story} />
-              ))}
-            </div>
-          </section>
-
-          {/* ═══ Sentinel New Dawn Stories ═══ */}
-          <section className="mb-8">
-            <SectionHeader title="Sentinel New Dawn Stories" />
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {newDawnStories.map((story) => (
-                <StoryCard key={story.slug} story={story} />
-              ))}
-            </div>
-          </section>
-
-          {/* ═══ Meeting Stories ═══ */}
-          <section className="mb-8">
-            <SectionHeader title="Meeting Stories" />
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {meetingStories.map((story) => (
-                <StoryCard key={story.slug} story={story} />
-              ))}
-            </div>
-          </section>
-
-          {/* ═══ White Papers ═══ */}
-          <section className="mb-8">
-            <SectionHeader title="White Papers" />
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {whitepaperStories.map((story) => (
-                <StoryCard key={story.slug} story={story} />
-              ))}
-            </div>
-          </section>
-        </>
+        <p className="text-center text-sm py-12" style={{ color: "var(--color-text-secondary)" }}>
+          {filtered !== null
+            ? <>No stories match &ldquo;{search}&rdquo;</>
+            : "No stories in this category yet."}
+        </p>
       )}
 
       {/* ═══ Footer ═══ */}
-      <footer className="text-center pt-6 pb-3">
+      <footer className="text-center pt-10 pb-3">
         <p className="text-[10px] mb-3"
           style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-text-secondary)", opacity: 0.35 }}>
-          {allStories.length} stories \u2014 Gothenburg, Sweden \u2014 2026
+          {allStories.length} stories {"\u2014"} Gothenburg, Sweden {"\u2014"} 2026
         </p>
         {/* Hidden investor portal — shift+click bottom-right corner */}
         <a href="https://lifeatlas.github.io/investor-portal/"
