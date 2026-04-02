@@ -285,7 +285,7 @@ function BulletList({ items, delay = 0 }: BulletListProps) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   MaturityRow — NUDE index visual row
+   MaturityRow — NUDED index visual row
    ═══════════════════════════════════════════════════════════════ */
 
 interface MaturityRowProps {
@@ -735,7 +735,7 @@ export default function WhitepaperExtremeCollaboration() {
           </Paragraph>
 
           <Paragraph>
-            Drawing from case engagements including Olympic city planning for Brisbane 2032 and LA 2028, smart city transformations across Europe and Asia, and Ukraine reconstruction feasibility studies, we propose a progression model from fragmented silos to autonomous cognitive city operations. The framework introduces the NUDE Digital Maturity Index, the SMILE implementation methodology, and a participatory decision-support architecture that repositions tourism and citizen engagement as the drivers — not the consumers — of urban intelligence.
+            Drawing from case engagements including Olympic city planning for Brisbane 2032 and LA 2028, smart city transformations across Europe and Asia, and Ukraine reconstruction feasibility studies, we propose a progression model from fragmented silos to autonomous cognitive city operations. The framework introduces the NUDED Digital Maturity Index, the SMILE implementation methodology, the PESTELED contextual lens, and a participatory decision-support architecture that repositions the city itself as the boundary-spanning object and tourism as the driver — not the consumer — of urban intelligence. Critically, this paper argues that cities must not become technology experts. They must become environments where experts can help them — fast, spatially, and on the city&apos;s own terms.
           </Paragraph>
 
           <Paragraph keyLine>
@@ -843,18 +843,55 @@ export default function WhitepaperExtremeCollaboration() {
             When a tourism director says &ldquo;show me Brisbane with fifty thousand additional visitors during the Olympics,&rdquo; the simulation does not return a spreadsheet. It shows water stress propagating outward from the stadium district. It shows traffic collapse on the secondary arterials that were not modeled in the original infrastructure plan. It shows waste overflow at the three transfer stations that were built for a city of three million, not a city that briefly hosts five. These are not predictions. They are consequences, made visible before the decisions that generate them are finalized.
           </Paragraph>
 
-          {/* ── Section 5: NUDE ── */}
-          <ChapterDivider chapter="Section V" title="The NUDE Digital Maturity Index" />
+          {/* ── Section 4b: Cities as Networks ── */}
+          <ChapterDivider chapter="Section IV-B" title="Cities That Learn, Cities That Teach" />
+
+          <Paragraph>
+            Consider Dubrovnik. A coastal city of forty-three thousand permanent residents that absorbs over a million visitors per year. Its tourism department has knowledge about peak flow management, seasonal staffing, and infrastructure stress that Gothenburg — a city ten times larger but only now experiencing rapid tourism growth — desperately needs. Conversely, Gothenburg has invested heavily in transport-integrated digital twins and energy-efficient district management that Dubrovnik has not yet attempted.
+          </Paragraph>
+
+          <Paragraph>
+            In the conventional model, these cities would never talk to each other. They exist in different countries, different administrative traditions, different languages. Whatever knowledge transfer occurs happens through conferences, published case studies, and consultancy firms that have worked in both contexts.
+          </Paragraph>
+
+          <Paragraph>
+            In the shared reality model, Dubrovnik and Gothenburg exist on the same planet — literally. Their digital twins occupy the same coordinate system. A city official in Gothenburg can zoom into Dubrovnik&apos;s harbor district, see how tourist flows were managed during a peak event, observe the infrastructure response, and ask: what would this look like if we applied it to our waterfront? The twin does not merely display. It simulates. It translates. It teaches.
+          </Paragraph>
+
+          <Paragraph keyLine>
+            A city that learns is interesting. A city that teaches is transformative. A network of cities that do both is unstoppable.
+          </Paragraph>
+
+          <Paragraph>
+            Add Tampere, Helsinki, Brisbane, a cluster of Indian villages surveyed by drone. Each city contributes a different capability to the network. Tampere teaches winter infrastructure management. Brisbane teaches mega-event absorption. The Indian village cluster teaches peer-to-peer scaling with minimal resources. None of these cities needs to become expert in the others&apos; domains. They share spatial knowledge — anchored in reality, visible on the map, translatable across contexts.
+          </Paragraph>
+
+          <Paragraph>
+            This is the vision that changes everything: cities sharing AI agents, sharing simulation results, sharing resource allocation strategies — not through bureaucratic agreements that take years to negotiate, but through their digital twins, which can interoperate at the speed of computation. Gothenburg&apos;s water management agent notices a pattern that matches what Dubrovnik&apos;s tourism agent learned last summer. The insight propagates. The cities get smarter together. The network becomes the intelligence.
+          </Paragraph>
+
+          <SectionLabel>The PESTELED Lens for Urban Context</SectionLabel>
+
+          <Paragraph>
+            Every city exists within a web of external forces that shape what is possible, what is permissible, and what is urgent. The PESTELED framework — Political, Economic, Social, Technological, Environmental, Legal, Ethical, and Demographic — provides the structured external scan that any city transformation must account for. No digital twin operates in a vacuum. A city&apos;s AI agents must understand not just internal infrastructure but the regulatory environment (the EU AI Act constrains what autonomous agents can decide), the economic context (tourism revenue dependency creates political pressure that distorts priority-setting), the demographic trajectory (an aging population changes what &ldquo;livability&rdquo; means), and the ethical boundaries (surveillance capabilities that are technically possible but socially corrosive).
+          </Paragraph>
+
+          <Paragraph>
+            PESTELED is not a one-time assessment. It is a continuous environmental scan that feeds into the digital twin&apos;s decision context. When a city&apos;s agent recommends a tourism optimization, it does so with awareness that the local political climate has shifted toward resident protection, that new EU data regulations constrain cross-border data sharing, that the demographic profile of visitors has changed, and that the ethical implications of predictive crowd management have been publicly debated. Context-aware autonomy — not context-blind automation — is the design goal.
+          </Paragraph>
+
+          {/* ── Section 5: NUDED ── */}
+          <ChapterDivider chapter="Section V" title="The NUDED Digital Maturity Index" />
 
           <Paragraph>
             Most digital maturity frameworks measure technology adoption. How many sensors does the city have? What percentage of services are digitized? Is the city using AI? These are questions about inputs. They do not measure outputs. They do not measure whether the technology is changing how decisions are made, how quickly, or with what quality.
           </Paragraph>
 
           <Paragraph>
-            The NUDE index takes a different approach. It scores how organizations — at the role level, the department level, and the city level — relate to technology in terms of decision velocity and organizational trust.
+            The NUDED index takes a different approach. It scores how organizations — at the role level, the department level, and the city level — relate to technology in terms of decision velocity and organizational trust. The acronym is deliberate: None, Utility, Dependent, Enabler, DNA — and then the critical extension — Distributed. Six levels, not five.
           </Paragraph>
 
-          <SectionLabel>The NUDE Scale</SectionLabel>
+          <SectionLabel>The NUDED Scale</SectionLabel>
 
           <div
             className="mb-10 rounded"
@@ -890,9 +927,15 @@ export default function WhitepaperExtremeCollaboration() {
             />
             <MaturityRow
               index={4}
-              letter="DNA"
+              letter="D"
               label="In the DNA"
               description="Technology is inseparable from organizational identity. It shapes culture, hiring, knowledge transfer, and strategic planning. Decisions cannot be meaningfully described without reference to the platform."
+            />
+            <MaturityRow
+              index={5}
+              letter="D"
+              label="Distributed"
+              description="Intelligence is no longer centralized. The organization's knowledge, decision-making capacity, and learning loops have been distributed across AI agents, city twins, and inter-city networks. The organization teaches and learns simultaneously. Decisions propagate to peer cities. Knowledge is exported as naturally as it is consumed."
             />
           </div>
 
@@ -901,7 +944,11 @@ export default function WhitepaperExtremeCollaboration() {
           </Paragraph>
 
           <Paragraph>
-            The most counterintuitive finding from field applications of the NUDE index is this: cities scoring DNA in technology adoption but None in inter-departmental collaboration consistently perform worse on impact outcomes than cities scoring Utility in technology but Enabler in collaboration. The quality of cross-silo relationships is a stronger predictor of smart city success than the sophistication of the technology deployed.
+            The most counterintuitive finding from field applications of the NUDED index is this: cities scoring DNA in technology adoption but None in inter-departmental collaboration consistently perform worse on impact outcomes than cities scoring Utility in technology but Enabler in collaboration. The quality of cross-silo relationships is a stronger predictor of smart city success than the sophistication of the technology deployed.
+          </Paragraph>
+
+          <Paragraph>
+            The Distributed level — the final D — is the horizon. It describes a city whose intelligence is not contained within its own boundaries. A city that has reached Distributed does not merely use technology well internally. It exports its learning to peer cities. It imports best practices from other contexts. Its AI agents negotiate with other cities&apos; agents. Its digital twin is not an island — it is a node in a network of city twins that learn from each other, teach each other, and share resources across geographic and political boundaries.
           </Paragraph>
 
           <Paragraph keyLine>
@@ -935,19 +982,37 @@ export default function WhitepaperExtremeCollaboration() {
 
           <SectionLabel>The SPIN Diagnostic Applied to City Operations</SectionLabel>
 
+          <Paragraph>
+            Every external engagement — whether from a cloud partner, an AI consultancy, or a smart city integrator — begins by needing to understand the same four things. The SPIN diagnostic (Situation, Problem, Implication, Need) provides the structure. But the critical insight is where the SPIN knowledge lives. It does not live in the external partner. It lives in the city&apos;s own people.
+          </Paragraph>
+
           <BulletList items={[
-            "Situation — what is the current state of this system, in this place, at this time?",
-            "Problem — what is not working, and for whom? Where does it appear on the map?",
-            "Implication — what does this problem cause downstream? Which other departments feel it?",
-            "Need — what would a resolution look like? What does success mean here, spatially and temporally?",
+            "Situation — what is the current state of this system, in this place, at this time? The tourism director knows this. The water engineer knows this. The GIS specialist has mapped it.",
+            "Problem — what is not working, and for whom? Where does it appear on the map? These are not abstract problems. They are spatial, temporal, and political — and the people who experience them can point to them on the map.",
+            "Implication — what does this problem cause downstream? Which other departments feel it? This is the question that silos cannot answer alone. It requires the room. It requires the map. It requires the water engineer to hear the tourism director describe the downstream effects of construction on visitor flow.",
+            "Need — what would a resolution look like? What does success mean here, spatially and temporally? When all stakeholders define the need together, the resulting brief to any external partner is orders of magnitude more useful than what any consultant could produce from interviews alone.",
           ]} />
 
           <Paragraph>
-            The most important discovery from applying this methodology across multiple cities is that the city itself is the primary collaboration partner. Not external vendors. Not national government agencies. Not research institutions. The knowledge required to design the next stage of the city&apos;s intelligence resides, overwhelmingly, within the city&apos;s own staff — in departments that have never been asked to sit in the same room at the same time.
+            When the city&apos;s own stakeholders have collectively articulated their SPIN — on the map, together, in shared reality — external partners can be brought in with surgical precision. The cloud provider, the AI partner, the smart city consultant: they do not need to spend six months assessing the situation. The city has already done it. The city hands them a spatial brief. The experts arrive knowing exactly what the problems are, where they are, who is affected, and what success looks like. This compresses external engagements from years to weeks.
+          </Paragraph>
+
+          <SectionLabel>The City as Boundary-Spanning Object</SectionLabel>
+
+          <Paragraph>
+            The most important discovery from applying this methodology is that the city itself — rendered as a shared digital twin — becomes the boundary-spanning object. Not a department. Not a steering committee. Not a consultant&apos;s framework. The city. The map. The reality that everyone shares but no one has been looking at together.
+          </Paragraph>
+
+          <Paragraph>
+            In organizational theory, a boundary-spanning object is any artifact that allows different communities of practice to coordinate without requiring each community to fully understand the other&apos;s domain. The digital twin of the city serves this function exactly. A water engineer does not need to understand tourism economics. A tourism director does not need to understand pipe capacity. But both can point at the same district on the same map and say: here is where your world and my world collide. Here is where we need to decide together.
+          </Paragraph>
+
+          <Paragraph>
+            This is why the framing matters. The city is not a client that hires experts. The city is the collaboration partner — the primary one. The knowledge required to design the next stage of the city&apos;s intelligence resides, overwhelmingly, within the city&apos;s own staff — in departments that have never been asked to sit in the same room at the same time. External experts are accelerators, not architects. The architecture is the city itself.
           </Paragraph>
 
           <Paragraph keyLine>
-            How do we make it easy for AI experts to help us? The better question is: how do we become the experts?
+            The question is not: how do we become AI experts? The question is: how do we make it easy for AI experts to help us?
           </Paragraph>
 
           <Paragraph>
@@ -970,7 +1035,7 @@ export default function WhitepaperExtremeCollaboration() {
               index={0}
               timeframe="Week 1 – 2"
               step="Discovery and Stakeholder Mapping"
-              description="People discover each other. The NUDE index is administered across departments. Stakeholder maps reveal who holds critical knowledge, who talks to whom, and — crucially — who does not. The absence of relationships is as diagnostic as their presence. The shared map is introduced. First reactions to seeing one's own domain represented spatially alongside others are frequently the most productive moments of the entire engagement."
+              description="People discover each other. The NUDED index is administered across departments. Stakeholder maps reveal who holds critical knowledge, who talks to whom, and — crucially — who does not. The absence of relationships is as diagnostic as their presence. The shared map is introduced. First reactions to seeing one's own domain represented spatially alongside others are frequently the most productive moments of the entire engagement."
             />
             <ProgressionStep
               index={1}
@@ -1099,7 +1164,7 @@ export default function WhitepaperExtremeCollaboration() {
           <SectionLabel>Mixed Methods Protocol</SectionLabel>
 
           <BulletList items={[
-            "NUDE index administration at T0, T6, and T12 months across all participating departments — generating longitudinal quantitative data on maturity progression and decision velocity change.",
+            "NUDED index administration at T0, T6, and T12 months across all participating departments — generating longitudinal quantitative data on maturity progression and decision velocity change.",
             "Map-anchored interviews as the primary qualitative instrument — capturing spatial, contextual knowledge that standard interview protocols cannot surface.",
             "Decision velocity measurement — tracking the time from problem identification to cross-departmental decision, before and after Extreme Collaboration intervention.",
             "Outcome attribution — connecting collaboration-phase decisions to measurable urban outcomes (water stress indices, transport efficiency, tourist distribution, citizen satisfaction) at 12 and 24 month intervals.",
@@ -1133,7 +1198,7 @@ export default function WhitepaperExtremeCollaboration() {
           </Paragraph>
 
           <Paragraph>
-            The NUDE index gives cities a language for where they are. The SMILE methodology gives them a path for where they need to go. The shared reality substrate — the digital twin as coordination medium rather than deliverable — gives them the table to sit around while they make the journey.
+            The NUDED index gives cities a language for where they are — and, at its final level, a vision of where they can go: Distributed, sharing intelligence across city boundaries, learning from peers, teaching what they know. The SMILE methodology gives them the path. The PESTELED lens ensures they walk it with eyes open to the political, economic, ethical, and demographic forces shaping their context. And the shared reality substrate — the digital twin as boundary-spanning coordination medium — gives them the table to sit around while they make the journey.
           </Paragraph>
 
           <Paragraph>
