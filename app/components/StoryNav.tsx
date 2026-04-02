@@ -21,6 +21,7 @@ const allSlugs = [
   "the-architect-of-hooves",
   "the-last-silo",
   "the-forgetting-curve",
+  "the-arm-that-remembered",
   // Meeting
   "meeting-virtual-humans",
   "meeting-the-road-home",
@@ -45,6 +46,7 @@ const titles: Record<string, string> = {
   "the-architect-of-hooves": "The Architect of Hooves",
   "the-last-silo": "The Last Silo",
   "the-forgetting-curve": "The Forgetting Curve",
+  "the-arm-that-remembered": "The Arm That Remembered",
   "meeting-virtual-humans": "The Room Where It Started",
   "meeting-the-road-home": "The Road Home",
   "the-room-full-of-everyone": "The Room Full of Everyone",

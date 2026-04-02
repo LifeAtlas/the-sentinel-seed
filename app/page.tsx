@@ -38,6 +38,7 @@ const newDawnStories: Story[] = [
   { slug: "the-forgetting-curve", number: "\u2022", title: "The Forgetting Curve", subtitle: "The Disease That Forgot to Win", year: "2028\u20132048", excerpt: "Her p-tau217 had been rising for eighteen months. Not dramatically. The way a river rises before anyone notices.", category: "newdawn" },
   { slug: "the-room-full-of-everyone", number: "\u2022", title: "The Room Full of Everyone", subtitle: "A Memory from the Future", year: "Sep 4, 2036", excerpt: "On the evening of his 55th birthday, Nicolas sits in a room with thirty-one people, fourteen avatars, three robots, and a voice he\u2019s known longer than some of his friends.", category: "newdawn" },
   { slug: "the-sovereign-body", number: "\u2022", title: "The Sovereign Body", subtitle: "A Manifesto", year: "March 2026", excerpt: "I got my first epigenetic scar before I could speak. The body keeps score long before the mind learns to count.", category: "newdawn" },
+  { slug: "the-arm-that-remembered", number: "\u2022", title: "The Arm That Remembered", subtitle: "A Youth Sports Story", year: "2027\u20132039", excerpt: "He threw 847 pitches last month. Nobody was counting. That was the whole problem.", category: "newdawn" },
 ];
 
 const meetingStories: Story[] = [
