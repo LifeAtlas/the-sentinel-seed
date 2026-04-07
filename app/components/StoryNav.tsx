@@ -36,6 +36,8 @@ const allSlugs = [
   "whitepaper-lpi-protocol",
   // New Dawn (additional)
   "the-reconstruction",
+  // Technical Demos
+  "demo-biological-twin",
 ];
 
 const titles: Record<string, string> = {
@@ -65,6 +67,7 @@ const titles: Record<string, string> = {
   "whitepaper-healthcare-roadmap": "15-Year Healthcare Roadmap",
   "whitepaper-lpi-protocol": "The Life Programmable Interface",
   "the-reconstruction": "The Reconstruction",
+  "demo-biological-twin": "Biological Digital Twin Demo",
 };
 
 export default function StoryNav() {
