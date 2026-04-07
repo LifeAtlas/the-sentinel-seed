@@ -31,6 +31,11 @@ const allSlugs = [
   // White Papers
   "whitepaper-nri-tokyo",
   "whitepaper-smile-digital-twins",
+  "whitepaper-reconstruction-gap",
+  "whitepaper-healthcare-roadmap",
+  "whitepaper-lpi-protocol",
+  // New Dawn (additional)
+  "the-reconstruction",
 ];
 
 const titles: Record<string, string> = {
@@ -56,6 +61,10 @@ const titles: Record<string, string> = {
   "the-sovereign-body": "The Sovereign Body",
   "whitepaper-nri-tokyo": "\u30c7\u30b8\u30bf\u30eb\u306e\u93e1\u306b\u6620\u308b\u672a\u6765",
   "whitepaper-smile-digital-twins": "Digital Twins and AI",
+  "whitepaper-reconstruction-gap": "The Reconstruction Gap",
+  "whitepaper-healthcare-roadmap": "15-Year Healthcare Roadmap",
+  "whitepaper-lpi-protocol": "The Life Programmable Interface",
+  "the-reconstruction": "The Reconstruction",
 };
 
 export default function StoryNav() {

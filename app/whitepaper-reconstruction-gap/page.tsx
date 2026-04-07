@@ -554,13 +554,14 @@ export default function WhitepaperReconstructionGap() {
 
         <div className="my-20">
           <Paragraph>
-            The scale of infrastructure destruction in modern conflicts has outpaced our capacity to rebuild.
-            Ukraine alone faces an estimated $800 billion in recovery needs. Yet the bottleneck is not capital
-            &mdash; international donors have committed hundreds of billions. The bottleneck is the 6&ndash;24 month gap
-            between documented damage and funding-ready project proposals. This paper examines why conventional
-            approaches to post-conflict infrastructure assessment fail at scale, and how digital twin technology
-            &mdash; specifically edge-native, standardized rapid assessment architectures &mdash; can compress that
-            timeline from months to days.
+            International donors have committed hundreds of billions of euros to rebuild Ukraine. The money sits
+            in accounts while communities carry water from improvised sources and heat their apartments with portable
+            gas heaters that kill them. The bottleneck is not capital. It is the 6&ndash;24 month gap between documented
+            damage and funding-ready project proposals &mdash; a paperwork chasm created by twentieth-century assessment
+            methods applied to twenty-first-century destruction. This paper examines why that gap exists, why it persists
+            despite available technology, and how edge-native digital twin architectures can compress it from months to
+            days. The implications extend beyond Ukraine: the same documentation bottleneck recurs in every post-conflict
+            reconstruction effort of the past three decades.
           </Paragraph>
         </div>
 
@@ -571,6 +572,12 @@ export default function WhitepaperReconstructionGap() {
         />
 
         <SectionLabel>1.1 The Scale</SectionLabel>
+        <Paragraph>
+          A water treatment plant is destroyed by a missile. An engineer documents the destruction. The documentation
+          enters an institutional pipeline. Fourteen months later, the paperwork reaches a donor&apos;s desk. The donor
+          approves funding. A feasibility study is commissioned. The community that plant served has been without clean
+          water for two years. This is not a hypothetical. This is the median case.
+        </Paragraph>
         <Paragraph>
           The full-scale war in Ukraine has produced infrastructure damage on a scale not seen in Europe since 1945.
           As of late 2025, the World Bank&apos;s Rapid Damage and Needs Assessment estimates total damages at
@@ -587,9 +594,12 @@ export default function WhitepaperReconstructionGap() {
         </Paragraph>
         <Paragraph>
           These are not abstract statistics. Behind every damaged water pumping station is a community of
-          1,000&ndash;3,000 people carrying water from improvised sources. Behind every destroyed district heating
-          plant is a winter where elderly residents heat their apartments with portable gas heaters &mdash; a practice
-          that has caused dozens of fires and fatalities across Ukrainian cities since 2022.
+          1,000&ndash;3,000 people carrying water in plastic containers from improvised sources &mdash; often a single
+          standpipe serving an entire neighborhood, in sub-zero temperatures, with elderly residents who cannot make
+          the walk. Behind every destroyed district heating plant is a winter where those same residents heat their
+          apartments with portable gas heaters &mdash; a practice that has caused dozens of fires and an uncounted
+          number of carbon monoxide deaths across Ukrainian cities since 2022. The dead are not counted precisely
+          because the systems that would count them are also destroyed.
         </Paragraph>
 
         <SectionLabel>1.2 The Funding Paradox</SectionLabel>
@@ -658,19 +668,31 @@ export default function WhitepaperReconstructionGap() {
         <SectionLabel>2.3 The Standardization Deficit</SectionLabel>
         <Paragraph>
           Each municipality, each engineer, and each assessment follows its own conventions. Damage is described
-          in narrative prose rather than structured data. The result is that even when documentation is produced,
-          it frequently fails donor review on technical grounds &mdash; not because the underlying assessment is wrong,
-          but because the format, structure, and supporting evidence do not meet the specific standards of the
-          target funding institution.
+          in narrative prose rather than structured data. Photographs are taken from arbitrary angles without
+          standardized reference frames. Cost estimates use different baselines, different assumptions about material
+          availability, and different interpretations of donor requirements.
+        </Paragraph>
+        <Paragraph>
+          The result is perverse: documentation that accurately describes a destroyed water main is returned by a donor
+          institution not because the assessment is wrong, but because the photographs were taken at non-standard angles,
+          the cost estimate uses a baseline the donor does not recognize, or the damage classification follows Ukrainian
+          national categories rather than the donor&apos;s internal taxonomy. The documentation is returned. The engineer
+          revises it. The revision introduces a new formatting error. It is returned again. Meanwhile, the community
+          served by that water main enters its third winter without running water. The paperwork cycle that was meant
+          to help them has become, in practice, an obstacle indistinguishable from the original destruction &mdash;
+          slower, quieter, and considerably more difficult to photograph for the evening news.
         </Paragraph>
 
         <SectionLabel>2.4 The Institutional Capacity Gap</SectionLabel>
         <Paragraph>
-          Local municipal administrations were designed to manage routine municipal operations, not mass reconstruction.
-          Ukraine&apos;s national DREAM ecosystem explicitly acknowledges this gap. DREAM&apos;s own documentation identifies
-          the need for &ldquo;ongoing capacity building of regional and local governments, specifically for project design
-          and management.&rdquo; The national platform that manages the recovery pipeline recognizes that communities need
-          help filling it.
+          Local municipal administrations &mdash; the entities responsible for submitting recovery projects to national
+          and international funding pipelines &mdash; were designed to manage routine municipal operations, not mass
+          reconstruction. Ukraine&apos;s national DREAM ecosystem explicitly acknowledges this gap. DREAM&apos;s own
+          documentation identifies the need for &ldquo;ongoing capacity building of regional and local governments,
+          specifically for project design and management.&rdquo; This is a remarkable admission: the national platform
+          that manages the recovery pipeline recognizes that the communities it serves cannot, on their own, produce
+          the inputs it requires. The system works. The on-ramp to the system does not exist. This is the equivalent
+          of building a highway and forgetting the entrance ramps &mdash; then expressing surprise that traffic does not flow.
         </Paragraph>
 
         {/* ── Section 3 ── */}
@@ -759,10 +781,20 @@ export default function WhitepaperReconstructionGap() {
 
         <Paragraph>
           Engineering firms possess deep domain expertise in structural assessment, detailed design, cost engineering,
-          and construction supervision. A digital twin platform for rapid assessment does not replicate this expertise.
-          What it does is automate the earliest, highest-volume, lowest-margin segment of the recovery pipeline:
-          the transformation of raw damage evidence into structured, standardized pre-feasibility documentation.
-          Saving the firm 60&ndash;70% of its initial-stage effort makes the firm more productive, not less relevant.
+          and construction supervision. A digital twin platform for rapid assessment does not replicate this expertise
+          and should not attempt to. What it does is automate the earliest, highest-volume, lowest-margin segment of
+          the recovery pipeline: the transformation of raw damage evidence into structured, standardized pre-feasibility
+          documentation.
+        </Paragraph>
+        <Paragraph>
+          This is the segment that engineering firms are unable or unwilling to handle at scale &mdash; and it is worth
+          stating plainly why. A senior structural engineer billing EUR 150&ndash;250 per hour, sent to a conflict zone
+          with personal security costs, to photograph a damaged water pumping station, return to an office, and spend
+          weeks formatting preliminary documentation for a donor who will likely return it for revision &mdash; this is
+          not a business model. It is a humanitarian obligation that the market has priced out of viability. The firms
+          know this. A standardized digital capture and triage process that delivers a structured documentation package
+          &mdash; saving the firm 60&ndash;70% of its initial-stage effort &mdash; does not threaten the firm. It rescues it
+          from the least profitable, most dangerous segment of its own value chain.
         </Paragraph>
 
         <SectionLabel>Integration with DREAM</SectionLabel>
@@ -848,13 +880,20 @@ export default function WhitepaperReconstructionGap() {
           low-value work that currently consumes the majority of their time.
         </Paragraph>
 
+        <Paragraph>
+          The human cost of the reconstruction gap is measured in winters without heating, years without clean water,
+          and communities that empty out because basic services never returned. Every month of acceleration &mdash; every
+          documentation package that reaches a donor&apos;s desk six months earlier than it otherwise would have &mdash;
+          translates directly into restored services and communities that can begin to rebuild.
+        </Paragraph>
+
         <Paragraph keyLine>
-          The technology exists. The architecture is proven. The standards are established. The financing is available. What remains is the will to deploy.
+          The technology exists. The architecture is proven. The standards are established. The financing is available. What remains is the institutional will to deploy it.
         </Paragraph>
 
         <Paragraph>
-          The question is not whether post-conflict reconstruction will be digitized. The question is whether we will
-          do it fast enough to matter for the communities that are waiting.
+          The question is not whether post-conflict reconstruction will be digitized. The question is how many more
+          winters communities will spend without heating while we decide.
         </Paragraph>
 
         {/* ── Back link ── */}
