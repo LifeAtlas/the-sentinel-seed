@@ -41,6 +41,7 @@ const newDawnStories: Story[] = [
   { slug: "the-arm-that-remembered", number: "\u2022", title: "The Arm That Remembered", subtitle: "A Youth Sports Story", year: "2027\u20132039", excerpt: "He threw 847 pitches last month. Nobody was counting. That was the whole problem.", category: "newdawn" },
   { slug: "the-steel-forest", number: "VIII", title: "The Steel Forest", subtitle: "From Factory Floors to Forest Floors \u2014 Sweden\u2019s Edge-Native Revolution", year: "2027\u20132035", excerpt: "It began with three metal factories in northern Sweden and an AI that learned to predict energy prices. It ended with every forest, farm, and factory in the country running on the same self-learning architecture.", category: "newdawn" },
   { slug: "the-reconstruction", number: "\u2022", title: "The Reconstruction", subtitle: "Four Lives, Five Time Periods, One City Rebuilding", year: "2015\u20132035", excerpt: "Kharkiv, 2015\u20132035. A water engineer, a professor, a displaced architect, and a Swedish technologist. Their paths converge in the rubble and the renewal.", category: "newdawn" },
+  { slug: "the-limitless-pill", number: "\u2022", title: "The Limitless Pill", subtitle: "Not Trained on the Population. Trained on You.", year: "2024\u20132029", excerpt: "The system that built the drugs could not see the man taking them. One near-death diagnosis. One call. One inversion that changed everything.", category: "newdawn" },
 ];
 
 const meetingStories: Story[] = [
