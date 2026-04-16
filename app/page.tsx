@@ -14,7 +14,8 @@ interface Story {
   subtitle: string;
   year: string;
   excerpt: string;
-  category: "origin" | "newdawn" | "meeting" | "whitepaper";
+  category: "origin" | "newdawn" | "meeting" | "whitepaper" | "research";
+  doi?: string;
 }
 
 const sentinelOrigin: Story[] = [
@@ -63,15 +64,32 @@ const whitepaperStories: Story[] = [
   { slug: "demo-biological-twin", number: "\u2022", title: "Biological Digital Twin", subtitle: "Three Acts: Disease. Patient. Integration.", year: "Apr 7, 2026", excerpt: "A working pipeline from Alzheimer\u2019s target landscape (Open Targets) to pharmacogenomic patient profiling to COBRApy metabolic flux simulation \u2014 with the explicit bridge to M4\u2019s ODE system and the V&V 40 credibility argument. For Marc Horner, Ansys/Synopsys.", category: "whitepaper" },
 ];
 
-const allStories = [...sentinelOrigin, ...newDawnStories, ...meetingStories, ...whitepaperStories];
+const researchStories: Story[] = [
+  { slug: "research-reality-construct", number: "•", title: "The Reality Construct", subtitle: "Digital Twins as Boundary-Spanning Artefacts", year: "Apr 2026", excerpt: "Reality is not a given. It is constructed, negotiated, and increasingly computed.", category: "research", doi: "10.5281/zenodo.19587944" },
+  { slug: "research-sovereign-body", number: "•", title: "The Sovereign Body", subtitle: "Personal Digital Twins Across WHO QoL Dimensions", year: "Apr 2026", excerpt: "Your body is the most complex system you will ever own. And you have no API for it.", category: "research", doi: "10.5281/zenodo.19586851" },
+  { slug: "research-indexing-reality", number: "•", title: "Indexing Reality", subtitle: "Boundary-Spanning Objects and Spatial Intelligence", year: "Apr 2026", excerpt: "What if every object in a room could tell you its story?", category: "research", doi: "10.5281/zenodo.19586867" },
+  { slug: "research-edge-ai-genomics", number: "•", title: "Edge-Native Intelligence", subtitle: "Sovereign Life Science Data Architecture", year: "Apr 2026", excerpt: "Your genomic data should never leave your device. Here's the architecture.", category: "research", doi: "10.5281/zenodo.19601813" },
+  { slug: "research-sports-dt", number: "•", title: "The Transfer Due Diligence Twin", subtitle: "Biological Digital Twins in Sports Medicine", year: "Apr 2026", excerpt: "A €100M footballer's body has no documentation standard.", category: "research", doi: "10.5281/zenodo.19601815" },
+  { slug: "research-post-conflict", number: "•", title: "From Conflict Zone to Innovation Hub", subtitle: "Post-War Nations as Emergent Ecosystems", year: "Apr 2026", excerpt: "The countries rebuilding from scratch have an advantage: no legacy.", category: "research", doi: "10.5281/zenodo.19601817" },
+  { slug: "research-ship-it-broken", number: "•", title: "Ship It Broken, Label It Honest", subtitle: "Deployment Patterns for AI Agents", year: "Apr 2026", excerpt: "Perfect is the enemy of shipped. But dishonest is the enemy of trust.", category: "research", doi: "10.5281/zenodo.19601819" },
+  { slug: "research-api-first-screening", number: "•", title: "114 Applicants, Zero CVs Read", subtitle: "API-First Contributor Screening", year: "Apr 2026", excerpt: "We replaced interviews with pull requests. The leaderboard IS the interview.", category: "research", doi: "10.5281/zenodo.19601821" },
+  { slug: "research-equine-data-os", number: "•", title: "From Spreadsheets to Spatial Fabric", subtitle: "Why the Equine Industry Needs a Data OS", year: "Apr 2026", excerpt: "A horse breeder in South Africa taught us that animal health data is where human healthcare was in 2010.", category: "research", doi: "10.5281/zenodo.19602349" },
+  { slug: "research-leaderboard-screening", number: "•", title: "114 to 9", subtitle: "What a Live Leaderboard Teaches About Screening", year: "Apr 2026", excerpt: "114 applicants. 9 contributed. 92% drop-off is not failure — it's signal.", category: "research", doi: "10.5281/zenodo.19602339" },
+  { slug: "research-epigenomics-edge", number: "•", title: "Epigenomics Meets Edge", subtitle: "Freemium QC for Chromatin Research", year: "Apr 2026", excerpt: "You can't build AI on broken plumbing. Infrastructure before intelligence.", category: "research", doi: "10.5281/zenodo.19602343" },
+  { slug: "research-from-one-room", number: "•", title: "From One Room to Fifty", subtitle: "Orchestrating Explainable AI in the Built Environment", year: "Oct 2025", excerpt: "Buildings are ecosystems. We've been treating them as boxes.", category: "research", doi: "10.5281/zenodo.17462962" },
+  { slug: "research-beyond-shadows", number: "•", title: "Beyond the Shadows", subtitle: "Contextual Awakening and Federated Learning", year: "Oct 2025", excerpt: "The shadow is not the thing. The map is not the territory. The twin is not the body.", category: "research", doi: "10.5281/zenodo.17464804" },
+];
+
+const allStories = [...sentinelOrigin, ...newDawnStories, ...meetingStories, ...whitepaperStories, ...researchStories];
 
 /* ═══════════════════════════════════════════════════════════════
    Components
    ═══════════════════════════════════════════════════════════════ */
 
 function StoryCard({ story }: { story: Story }) {
+  const href = story.category === "research" ? `/research/${story.slug}` : `/${story.slug}`;
   return (
-    <Link href={`/${story.slug}`} className="block group">
+    <Link href={href} className="block group">
       <div
         className="border rounded-md p-3 md:p-4 transition-all duration-300 h-full flex flex-col cursor-pointer"
         style={{ borderColor: "var(--color-border)", background: "var(--color-surface)" }}
@@ -108,10 +126,25 @@ function StoryCard({ story }: { story: Story }) {
           style={{ color: "var(--color-text-secondary)", opacity: 0.6 }}>
           {story.excerpt}
         </p>
-        <span className="text-[9px] tracking-[0.12em] uppercase transition-colors duration-300 group-hover:text-[var(--color-gold)]"
-          style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-gold-dim)" }}>
-          Read \u2192
-        </span>
+        <div className="flex items-center justify-between gap-2 mt-auto">
+          <span className="text-[9px] tracking-[0.12em] uppercase transition-colors duration-300 group-hover:text-[var(--color-gold)]"
+            style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-gold-dim)" }}>
+            Read \u2192
+          </span>
+          {story.doi && (
+            <span
+              className="text-[8px] tracking-[0.08em] uppercase px-1.5 py-0.5 rounded"
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                color: "var(--color-gold-dim)",
+                border: "1px solid rgba(160,138,62,0.3)",
+                background: "rgba(160,138,62,0.06)",
+              }}
+            >
+              DOI
+            </span>
+          )}
+        </div>
       </div>
     </Link>
   );
@@ -134,7 +167,7 @@ function SectionHeader({ title }: { title: string }) {
    Page
    ═══════════════════════════════════════════════════════════════ */
 
-type Tab = "origin" | "newdawn" | "meeting" | "whitepaper" | "all";
+type Tab = "origin" | "newdawn" | "meeting" | "whitepaper" | "research" | "all";
 
 const tabs: { key: Tab; label: string; count: number }[] = [
   { key: "all", label: "All", count: allStories.length },
@@ -142,6 +175,7 @@ const tabs: { key: Tab; label: string; count: number }[] = [
   { key: "newdawn", label: "New Dawn", count: newDawnStories.length },
   { key: "meeting", label: "Meetings", count: meetingStories.length },
   { key: "whitepaper", label: "White Papers", count: whitepaperStories.length },
+  { key: "research", label: "Research", count: researchStories.length },
 ];
 
 const storiesByTab: Record<Tab, Story[]> = {
@@ -150,6 +184,7 @@ const storiesByTab: Record<Tab, Story[]> = {
   newdawn: newDawnStories,
   meeting: meetingStories,
   whitepaper: whitepaperStories,
+  research: researchStories,
 };
 
 function TabBar({ active, onChange }: { active: Tab; onChange: (t: Tab) => void }) {
