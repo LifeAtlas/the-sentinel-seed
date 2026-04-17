@@ -121,6 +121,30 @@ export const researchArticles: ResearchArticle[] = [
       "The shadow is not the thing. The map is not the territory. The twin is not the body.",
     doi: "10.5281/zenodo.17464804",
   },
+  {
+    slug: "research-infrastructure-before-intelligence",
+    title: "Infrastructure Before Intelligence",
+    subtitle: "Why a Biotech Startup Chose Cloud Foundations Over AI Models",
+    year: "Apr 2026",
+    excerpt: "You cannot build intelligence on broken plumbing. Three months of infrastructure before a single model.",
+    doi: "10.5281/zenodo.19636820",
+  },
+  {
+    slug: "research-point-clouds-decision-engines",
+    title: "When Point Clouds Meet Decision Engines",
+    subtitle: "Closing the Gap Between 3D Scanning and Actionable Intelligence",
+    year: "Apr 2026",
+    excerpt: "Scanning captures geometry. Nobody turns geometry into decisions. That's the gap.",
+    doi: "10.5281/zenodo.19636822",
+  },
+  {
+    slug: "research-ai-agent-security",
+    title: "Edge-Native Security for AI Agents",
+    subtitle: "Why Your Digital Twin Needs a Bodyguard",
+    year: "Apr 2026",
+    excerpt: "Your digital twin is a VIP. The AI agents are staff. The security layer is the bodyguard.",
+    doi: "10.5281/zenodo.19636826",
+  },
 ];
 
 /* ═══════════════════════════════════════════════════════════════
