@@ -23,5 +23,7 @@ export const SLUG_TO_DRAFT_DIR: Record<string, string> = {
   "research-beyond-shadows": null,
 } as unknown as Record<string, string>;
 
+// Use repo-local content directory (works in CI and locally)
+import path from "path";
 export const PUBLICATIONS_DRAFTS_ROOT =
-  "C:/Users/ceo/publications/drafts";
+  path.join(process.cwd(), "content", "research");

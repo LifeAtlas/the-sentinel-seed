@@ -169,7 +169,7 @@ function stripFrontmatter(raw: string): string {
 function loadArticleContent(slug: string): string {
   const dir = SLUG_TO_DRAFT_DIR[slug];
   if (!dir) return "";
-  const filePath = path.join(PUBLICATIONS_DRAFTS_ROOT, dir, "article.md");
+  const filePath = path.join(PUBLICATIONS_DRAFTS_ROOT, `${dir}.md`);
   try {
     const raw = fs.readFileSync(filePath, "utf-8");
     return stripFrontmatter(raw);

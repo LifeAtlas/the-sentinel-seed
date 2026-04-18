@@ -498,8 +498,20 @@ export default function ResearchArticleClient({
               className="text-[10px] tracking-[0.15em]"
               style={{ fontFamily: sans, color: textSecondary, opacity: 0.6 }}
             >
-              Nicolas Waern &mdash; WINNIIO AB
+              <a href="https://lifeatlas.online" target="_blank" rel="noopener noreferrer" style={{ color: textSecondary, textDecoration: "none", borderBottom: "1px solid rgba(201,168,76,0.3)" }}>Nicolas Waern</a> &mdash; <a href="https://lifeatlas.online" target="_blank" rel="noopener noreferrer" style={{ color: textSecondary, textDecoration: "none", borderBottom: "1px solid rgba(201,168,76,0.3)" }}>WINNIIO AB</a>
             </span>
+
+            <span style={{ color: border }}>&bull;</span>
+
+            <a
+              href="https://www.linkedin.com/in/nicolaswaern/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[10px] tracking-[0.1em]"
+              style={{ fontFamily: sans, color: goldDim, textDecoration: "none", opacity: 0.7 }}
+            >
+              LinkedIn
+            </a>
 
             <span style={{ color: border }}>&bull;</span>
 
