@@ -246,9 +246,20 @@ export default function Home() {
           style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: "var(--color-gold)" }}>
           The Sentinel Stories
         </h1>
-        <p className="text-sm font-light italic max-w-sm mx-auto mb-5"
+        <p className="text-sm font-light italic max-w-sm mx-auto mb-1"
           style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: "var(--color-text-secondary)" }}>
           Fictions from the future we are building.
+        </p>
+        <p className="text-[9px] mb-5"
+          style={{ fontFamily: "'Inter', sans-serif" }}>
+          <a
+            href="https://lifeatlas.online"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "rgba(201,168,76,0.5)", textDecoration: "none", letterSpacing: "0.2em", textTransform: "uppercase" }}
+          >
+            lifeatlas.online
+          </a>
         </p>
 
         {/* Search */}
@@ -294,10 +305,23 @@ export default function Home() {
       )}
 
       {/* ═══ Footer ═══ */}
-      <footer className="text-center pt-10 pb-3">
-        <p className="text-[10px] mb-3"
+      <footer className="text-center pt-10 pb-6">
+        <p className="text-[10px] mb-2"
           style={{ fontFamily: "'Inter', sans-serif", color: "var(--color-text-secondary)", opacity: 0.35 }}>
           {allStories.length} stories {"\u2014"} Gothenburg, Sweden {"\u2014"} 2026
+        </p>
+        <p className="text-[10px] mb-3"
+          style={{ fontFamily: "'Inter', sans-serif" }}>
+          <a
+            href="https://lifeatlas.online"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "rgba(201,168,76,0.6)", textDecoration: "none", letterSpacing: "0.15em" }}
+          >
+            lifeatlas.online
+          </a>
+          {" \u2014 "}
+          <span style={{ color: "var(--color-text-secondary)", opacity: 0.4 }}>Nicolas Waern &bull; WINNIIO AB</span>
         </p>
         {/* Hidden investor portal — shift+click bottom-right corner */}
         <a href="https://lifeatlas.github.io/investor-portal/"

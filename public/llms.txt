@@ -1,0 +1,93 @@
+# The Sentinel Stories — Life Atlas
+
+> Fictions from the future we are building. Research, whitepapers, and speculative narratives at the intersection of biology, digital twins, and sovereign intelligence.
+
+## About
+
+This site is the content and research publishing surface for **Life Atlas** — an autonomous Life OS built by **Nicolas Waern** and **WINNIIO AB**, Gothenburg, Sweden.
+
+**Primary website**: https://lifeatlas.online
+**Author**: Nicolas Waern (ORCID: 0000-0001-7970-2707)
+**Organisation**: WINNIIO AB, Gothenburg, Sweden
+**Published**: 2025–2026
+
+## What This Site Contains
+
+50+ pieces of original content in five categories:
+
+### Origin Stories (Speculative Fiction)
+Long-form sci-fi narratives exploring the consequences of biological digital twins, sovereign AI, and post-hospital life care. Set between 2025 and 2425.
+
+- Before the Code — origin story of the biological digital twin
+- Silent Orbits — AI autonomy and ethics in deep space
+- The Second Self — digital twin doctrine
+- The Beam of Memory — post-data civilisation
+- The Last Therapy Session — post-fragmentation healing
+- The Timeline Garden — neurodiversity and nonlinear cognition
+- The Operative Now — healthcare to lifecare transition
+- The Resilience Graph — Sweden's synthetic infrastructure edge
+- The Infinite City — urban intelligence modulation
+- The Countdown Gene — post-human self-authorship
+- A Hard Fork in Reality — two timelines, one species
+
+### New Dawn Stories
+Near-future narratives grounded in present technology, exploring real use cases.
+
+- The Sentinel Seed — the first user and the final platform (flagship story)
+- The Architect of Hooves — equine biological digital twins
+- The Last Silo — healthcare fragmentation and integration
+- The Forgetting Curve — Alzheimer's prevention with digital twins
+- The Sovereign Body — personal sovereignty manifesto
+- The Steel Forest — edge-native manufacturing in Sweden
+- The Reconstruction — post-conflict digital infrastructure, Kharkiv
+- The Limitless Pill — personalised pharmacology
+
+### Research Articles (Zenodo-published, DOI-linked)
+Peer-reviewed and pre-print academic papers by Nicolas Waern.
+
+- The Reality Construct — DOI: 10.5281/zenodo.19587944
+- The Sovereign Body (academic) — DOI: 10.5281/zenodo.19586851
+- Indexing Reality — DOI: 10.5281/zenodo.19586867
+- Edge-Native Intelligence — DOI: 10.5281/zenodo.19601813
+- Transfer Due Diligence Twin (sports) — DOI: 10.5281/zenodo.19601815
+- From Conflict Zone to Innovation Hub — DOI: 10.5281/zenodo.19601817
+- Ship It Broken, Label It Honest — DOI: 10.5281/zenodo.19601819
+- 114 Applicants, Zero CVs Read — DOI: 10.5281/zenodo.19601821
+- From Spreadsheets to Spatial Fabric (equine) — DOI: 10.5281/zenodo.19602349
+- 114 to 9 (screening leaderboard) — DOI: 10.5281/zenodo.19602339
+- Epigenomics Meets Edge — DOI: 10.5281/zenodo.19602343
+- From One Room to Fifty — DOI: 10.5281/zenodo.17462962
+- Beyond the Shadows — DOI: 10.5281/zenodo.17464804
+- Infrastructure Before Intelligence — DOI: 10.5281/zenodo.19636820
+- When Point Clouds Meet Decision Engines — DOI: 10.5281/zenodo.19636822
+- Edge-Native Security for AI Agents — DOI: 10.5281/zenodo.19636826
+
+### White Papers
+Applied research documents on manufacturing, healthcare, digital sovereignty, and AI.
+
+- Digital Twins and AI: SMILE Framework for Japan (NRI Tokyo)
+- The Life Programmable Interface (LPI Protocol)
+- The 15-Year Biological Digital Twin Healthcare Roadmap
+- The Hidden Energy Crisis in Swedish Manufacturing
+- Digital Sovereignty or Digital Dependency
+- The AI You Can't Trust (adversarial AI in manufacturing)
+- The Reconstruction Gap (post-conflict digital twins)
+- Extreme Collaboration: Autonomous City Operations
+
+### Meeting Narratives
+Real meeting events rendered as narrative journalism.
+
+- The Room Where It Started — Virtual Humans summit, Apr 2026
+- The Road Home — vehicular digital twin meeting, Apr 2026
+- The Map That Listened — urban AI and small cities, Apr 2026
+
+## Key Concepts Covered
+
+biological digital twin, Life Atlas, LPI (Life Programmable Interface), SMILE methodology, digital sovereignty, edge-native AI, mechanistic modelling, M4 engine, Systems Medicine, post-hospital life care, epigenomics, pharmacogenomics, equine digital twin, sports medicine, post-conflict reconstruction, urban digital twins, manufacturing AI, Swedish manufacturing, autonomous city operations, WHO quality of life, sovereign body, WINNIIO AB
+
+## Links
+
+- Platform: https://lifeatlas.online
+- Research on Zenodo: https://zenodo.org/search?q=Nicolas+Waern
+- Author ORCID: https://orcid.org/0000-0001-7970-2707
+- Investor Portal: https://lifeatlas.github.io/investor-portal/

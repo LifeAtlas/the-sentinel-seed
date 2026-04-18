@@ -1,0 +1,10 @@
+{
+  "name": "The Sentinel Stories — Life Atlas",
+  "short_name": "Sentinel Stories",
+  "description": "Fictions from the future we are building. Research, whitepapers and speculative narratives on biological digital twins and sovereign life intelligence.",
+  "start_url": "/the-sentinel-seed/",
+  "display": "standalone",
+  "background_color": "#08080A",
+  "theme_color": "#C9A84C",
+  "icons": []
+}

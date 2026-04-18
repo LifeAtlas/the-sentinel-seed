@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import fs from "fs";
+import path from "path";
 import ResearchArticleClient from "./ResearchArticleClient";
+import { SLUG_TO_DRAFT_DIR, PUBLICATIONS_DRAFTS_ROOT } from "../../../lib/articleDraftPaths";
 
 /* ═══════════════════════════════════════════════════════════════
    Research article data — single source of truth for static export
@@ -12,9 +15,10 @@ export interface ResearchArticle {
   year: string;
   excerpt: string;
   doi: string;
+  content: string; // full markdown body, read at build time
 }
 
-export const researchArticles: ResearchArticle[] = [
+export const researchArticles: Omit<ResearchArticle, "content">[] = [
   {
     slug: "research-reality-construct",
     title: "The Reality Construct",
@@ -134,7 +138,7 @@ export const researchArticles: ResearchArticle[] = [
     title: "When Point Clouds Meet Decision Engines",
     subtitle: "Closing the Gap Between 3D Scanning and Actionable Intelligence",
     year: "Apr 2026",
-    excerpt: "Scanning captures geometry. Nobody turns geometry into decisions. That's the gap.",
+    excerpt: "Scanning captures geometry. Nobody turns geometry into decisions. That\u2019s the gap.",
     doi: "10.5281/zenodo.19636822",
   },
   {
@@ -148,6 +152,33 @@ export const researchArticles: ResearchArticle[] = [
 ];
 
 /* ═══════════════════════════════════════════════════════════════
+   Build-time content loader
+   Reads the markdown file for each article and strips YAML frontmatter.
+   Returns empty string for articles with no source file.
+   ═══════════════════════════════════════════════════════════════ */
+
+function stripFrontmatter(raw: string): string {
+  // Strip YAML frontmatter if present (--- ... ---)
+  const fmMatch = raw.match(/^---\n[\s\S]*?\n---\n?/);
+  if (fmMatch) {
+    return raw.slice(fmMatch[0].length).trim();
+  }
+  return raw.trim();
+}
+
+function loadArticleContent(slug: string): string {
+  const dir = SLUG_TO_DRAFT_DIR[slug];
+  if (!dir) return "";
+  const filePath = path.join(PUBLICATIONS_DRAFTS_ROOT, dir, "article.md");
+  try {
+    const raw = fs.readFileSync(filePath, "utf-8");
+    return stripFrontmatter(raw);
+  } catch {
+    return "";
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
    Static params — required for output: 'export'
    ═══════════════════════════════════════════════════════════════ */
 
@@ -156,7 +187,7 @@ export function generateStaticParams() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   Metadata
+   Metadata — rich SEO + Schema.org JSON-LD
    ═══════════════════════════════════════════════════════════════ */
 
 export async function generateMetadata({
@@ -168,21 +199,95 @@ export async function generateMetadata({
   const article = researchArticles.find((a) => a.slug === slug);
   if (!article) return { title: "Research \u2014 Life Atlas" };
 
+  const canonicalUrl = `https://sentinel.lifeatlas.ai/research/${article.slug}`;
+  const zenodoUrl = `https://doi.org/${article.doi}`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    headline: article.title,
+    alternativeHeadline: article.subtitle,
+    abstract: article.excerpt,
+    author: {
+      "@type": "Person",
+      name: "Nicolas Waern",
+      url: "https://orcid.org/0000-0001-7970-2707",
+      affiliation: {
+        "@type": "Organization",
+        name: "WINNIIO AB",
+        url: "https://winniio.io",
+      },
+    },
+    datePublished: "2026-04-16",
+    publisher: {
+      "@type": "Organization",
+      name: "WINNIIO AB",
+      url: "https://winniio.io",
+    },
+    url: canonicalUrl,
+    sameAs: zenodoUrl,
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "DOI",
+      value: article.doi,
+    },
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    isPartOf: {
+      "@type": "Periodical",
+      name: "Life Atlas Research Series",
+      publisher: {
+        "@type": "Organization",
+        name: "WINNIIO AB",
+      },
+    },
+    keywords: [
+      "digital twins",
+      "boundary objects",
+      "edge computing",
+      "data sovereignty",
+      "biological digital twin",
+      "SMILE methodology",
+      "Life Atlas",
+    ].join(", "),
+  };
+
   return {
     title: `${article.title} \u2014 Life Atlas Research`,
-    description: article.excerpt,
+    description: `${article.subtitle}. ${article.excerpt}`,
+    robots: "index, follow",
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: article.title,
       description: `${article.subtitle} \u2014 ${article.excerpt}`,
       type: "article",
       siteName: "Life Atlas",
-      url: `https://doi.org/${article.doi}`,
+      url: canonicalUrl,
+      authors: ["Nicolas Waern"],
+      publishedTime: "2026-04-16",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: `${article.subtitle}. ${article.excerpt}`,
+    },
+    other: {
+      "citation_title": article.title,
+      "citation_author": "Nicolas Waern",
+      "citation_date": "2026/04/16",
+      "citation_doi": article.doi,
+      "citation_publisher": "WINNIIO AB",
+      "dc.title": article.title,
+      "dc.creator": "Nicolas Waern",
+      "dc.identifier": `doi:${article.doi}`,
+      "script:ld+json": JSON.stringify(jsonLd),
     },
   };
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   Page (server shell — passes data to client component)
+   Page (server shell — loads content at build time, passes to client)
    ═══════════════════════════════════════════════════════════════ */
 
 export default async function ResearchArticlePage({
@@ -191,6 +296,45 @@ export default async function ResearchArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const article = researchArticles.find((a) => a.slug === slug) ?? null;
-  return <ResearchArticleClient article={article} />;
+  const base = researchArticles.find((a) => a.slug === slug) ?? null;
+
+  if (!base) {
+    return <ResearchArticleClient article={null} />;
+  }
+
+  const content = loadArticleContent(slug);
+  const article: ResearchArticle = { ...base, content };
+
+  // Inject JSON-LD script tag for AI crawlers
+  const zenodoUrl = `https://doi.org/${article.doi}`;
+  const canonicalUrl = `https://sentinel.lifeatlas.ai/research/${article.slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    headline: article.title,
+    alternativeHeadline: article.subtitle,
+    abstract: article.excerpt,
+    author: {
+      "@type": "Person",
+      name: "Nicolas Waern",
+      url: "https://orcid.org/0000-0001-7970-2707",
+      affiliation: { "@type": "Organization", name: "WINNIIO AB" },
+    },
+    datePublished: "2026-04-16",
+    publisher: { "@type": "Organization", name: "WINNIIO AB" },
+    url: canonicalUrl,
+    sameAs: zenodoUrl,
+    identifier: { "@type": "PropertyValue", propertyID: "DOI", value: article.doi },
+    license: "https://creativecommons.org/licenses/by/4.0/",
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ResearchArticleClient article={article} />
+    </>
+  );
 }

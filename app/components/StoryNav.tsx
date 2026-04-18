@@ -100,7 +100,7 @@ export default function StoryNav() {
       </div>
 
       {/* Home */}
-      <div className="w-1/3 text-center">
+      <div className="w-1/3 text-center flex flex-col items-center gap-0.5">
         <Link
           href="/"
           className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase transition-colors duration-200 hover:text-[var(--color-gold)]"
@@ -108,6 +108,15 @@ export default function StoryNav() {
         >
           All Stories
         </Link>
+        <a
+          href="https://lifeatlas.online"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[7px] md:text-[8px] tracking-[0.2em] uppercase transition-colors duration-200 hover:text-[var(--color-gold)]"
+          style={{ fontFamily: "'Inter', sans-serif", color: "rgba(160,138,62,0.35)" }}
+        >
+          lifeatlas.online
+        </a>
       </div>
 
       {/* Next */}
