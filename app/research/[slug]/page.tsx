@@ -333,6 +333,14 @@ export const researchArticles: Omit<ResearchArticle, "content">[] = [
     excerpt: "SMILE is not a framework. It is a methodology for building reality-aligned systems. Version 4.4 adds the Reality Fabric layer.",
     doi: "10.5281/zenodo.19646374",
   },
+  {
+    slug: "research-digital-twin-social-simulation",
+    title: "Can Digital Twins Form Their Own Teams?",
+    subtitle: "Part I: The Setup \u2014 A Six-Part Experiment",
+    year: "Apr 2026",
+    excerpt: "44 interns. 44 soul files. One compatibility matrix. Three natural squads emerged before anyone met. The twins talked first.",
+    doi: "10.5281/zenodo.19657591",
+  },
 ];
 
 /* ═══════════════════════════════════════════════════════════════

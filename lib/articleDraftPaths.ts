@@ -41,6 +41,7 @@ export const SLUG_TO_DRAFT_DIR: Record<string, string> = {
   "research-ai-killed-department": "038-ai-killed-department",
   "research-eu-ai-act": "039-eu-ai-act-billion-dollar-problem",
   "research-smile-methodology": "040-smile-methodology",
+  "research-digital-twin-social-simulation": "041-digital-twin-social-simulation",
   // Oct 2025 articles: published/ dirs are empty — no content file available
   "research-from-one-room": null,
   "research-beyond-shadows": null,
