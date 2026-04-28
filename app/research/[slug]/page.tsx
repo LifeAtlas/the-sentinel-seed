@@ -341,6 +341,30 @@ export const researchArticles: Omit<ResearchArticle, "content">[] = [
     excerpt: "44 interns. 44 soul files. One compatibility matrix. Three natural squads emerged before anyone met. The twins talked first.",
     doi: "10.5281/zenodo.19657591",
   },
+  {
+    slug: "research-tokyo-2040-reactive-networks",
+    title: "Tokyo 2040: From Reactive Networks to Living Digital Twins",
+    subtitle: "How Open RAN and Holographic Societies Will Reshape Connectivity",
+    year: "Apr 2026",
+    excerpt: "Shinjuku Station. 3.64 million passengers daily. The network handles it. Mostly. But 'mostly' is where the interesting engineering lives.",
+    doi: "",
+  },
+  {
+    slug: "research-tokyo-2040-cognitive-cities",
+    title: "From Reactive Networks to Cognitive Cities",
+    subtitle: "A SMILE-Based Digital Twin Roadmap for 6G and Holographic Societies (2025\u20132040)",
+    year: "Apr 2026",
+    excerpt: "6G does not merely accelerate 5G. It constitutes the nervous system of a fundamentally different kind of city. 81 references.",
+    doi: "",
+  },
+  {
+    slug: "research-tokyo-2040-last-drive-test",
+    title: "The Last Drive Test",
+    subtitle: "A Sentinel Story \u2014 Tokyo, March 2040",
+    year: "Apr 2026",
+    excerpt: "Keiko Tanaka keeps the old measurement rig on the shelf behind her desk. It isn\u2019t nostalgia. She is the reminder.",
+    doi: "",
+  },
 ];
 
 /* ═══════════════════════════════════════════════════════════════
