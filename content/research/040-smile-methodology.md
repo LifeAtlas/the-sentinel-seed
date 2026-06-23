@@ -5,23 +5,24 @@ email: ceo@winniio.io
 keywords: SMILE methodology, digital twin, Physical AI, spatial twinning, SPIN, Web4, Minimal Interoperability Mechanisms, Five Model, holographic society, design science research, Actor-Network Theory, boundary objects, absorptive capacity, benefits management, explainable AI, impact-first, lifecycle methodology, cross-domain validation, maturity model, LQM, edge-native, knowledge graph, ontology, INSPIRE directive, sensory fidelity, Zoom-Anchor-AEST
 status: ready
 date: 2026-04-16
-version: 4.4
+version: 5.0
 changelog: |
   v1.0 (Apr 16): Initial draft — 6 phases, 3 perspectives, 5 theoretical pillars
   v2.0 (Apr 17): Added AEST, NUDEDA, SPIN, MIMs, NASA JPL, Web4, holographic society, 20 benefits
   v3.0 (Apr 18): Deep revision — all 10 peer review issues fixed, Ward & Daniel, DTC CPT, Explainable AI, Reality as Nexus, 4 perspectives (added AI), INSPIRE, sensory fidelity, zoom-anchor-AEST
   v4.0 (Apr 19): New introduction — Iansiti ecosystem theory, cave/boundary object thesis, real-fictional dynamic, strength of weak ties across time, corrected abstractions claim
-  v4.1 (Apr 19): WebX + Hi-Fi Holographic Society, biological DT as primary ANT example, planet as physics anchor, 3D-printed medicine endgame, NUDEDA-Autonomous vision, C&C epigraph, dynasty closing
+  v4.1 (Apr 19): WebX + Hi-Fi Holographic Society, biological DT as primary ANT example, planet as physics anchor, 3D-printed medicine endgame, NUDEDA-Autonomous vision, dynasty closing
   v4.2 (Apr 19): GLASS/PRISM/Crucible ecosystem documented, GLASS→NUDEDA mapping, evaluation tools as AEST operationalisations
   v4.3 (Apr 19): Five citations added from intellectual lineage — Christensen, Brynjolfsson, Mintzberg, Ciborra, Drucker
   v4.4 (Apr 19): Five Model extension — data/knowledge gap, in-house/outside distinction, diagnostic→operational shift, ABM/multi-agent convergence, ANVIL research paper scorer introduced
+  v5.0 (May 12): 83 references (72 external + 11 self-citations), ORCID corrected, epigraph upgraded to Simon, 6 publication-quality figures added (phases, pyramid, perspectives, AEST, SPIN, maturity), score 9.1 PUBLISH
 ---
 
 # SMILE: The Universal Methodology That Turns Any Project Into a Continuously Learning Digital Twin
 
 **Nicolas Waern**
 WINNIIO AB, Gothenburg, Sweden
-ORCID: 0000-0001-7970-2707
+ORCID: 0009-0001-4011-8201
 
 **Corresponding author:** ceo@winniio.io
 
@@ -29,12 +30,12 @@ ORCID: 0000-0001-7970-2707
 
 **Submitted:** 2026-04-16
 
-**Cite as:** Waern, N. (2026). *SMILE: The Universal Methodology That Turns Any Project Into a Continuously Learning Digital Twin*. WINNIIO AB. Zenodo. https://doi.org/10.5281/zenodo.PENDING
+**Cite as:** Waern, N. (2026). *SMILE: The Universal Methodology That Turns Any Project Into a Continuously Learning Digital Twin*. WINNIIO AB. Zenodo. [DOI to be assigned upon deposit]
 
 **Publication status:** This paper is published as a working paper and corpus anchor on Zenodo under CC-BY-4.0. It is explicitly positioned as a design science artefact presentation (Hevner et al., 2004) rather than an empirical validation study. Journal submission with independent multi-site validation data is planned as a subsequent contribution.
 
-> *"He who controls the past, commands the future. He who commands the future, conquers the past."*
-> — Command & Conquer (Westwood Studios, 1995)
+> *"The sciences of the artificial are concerned not with how things are, but with how they might be."*
+> — Herbert A. Simon, *The Sciences of the Artificial* (1996)
 >
 > We are getting out of the data dark ages into an impact renaissance — where the future is better, bolder, and more sustainable than the past. SMILE is the foundation layer. The building of a dynasty.
 
@@ -76,15 +77,15 @@ This is not limited to space and time. We can emulate reality, ask where we are 
 
 The strength of weak ties (Granovetter, 1973) are not limited by either space nor time, and can span both real and fictional contexts. My future self can help me right now, with the assistance of past memories, across any industry and any geography. Users of SMILE can invite other people, systems, and AI to run simulations and move across intended and unintended scenarios at computational speed, always aligned with modern compute paradigms — including high-performance computing and quantum simulation.
 
-This requires what Iansiti and Lakhani (2020) call 'AI factory floors' — rigorous architectural foundations that increase scale, scope, and learning across space and time. The keystone advantage (Iansiti, 2004) of a platform is not the platform itself but its ability to create value for its ecosystem participants. SMILE provides the methodological architecture for these factory floors: the six phases define what the factory produces; the four perspectives ensure it serves all stakeholders including AI agents themselves; and the AEST temporal model ensures it operates across past, present, and future simultaneously.
+This requires what Iansiti and Lakhani (2020) call 'AI factory floors' — rigorous architectural foundations that increase scale, scope, and learning across space and time. The keystone advantage (Iansiti, 2004; Gawer & Cusumano, 2014) of a platform is not the platform itself but its ability to create value for its ecosystem participants. SMILE provides the methodological architecture for these factory floors: the six phases define what the factory produces; the four perspectives ensure it serves all stakeholders including AI agents themselves; and the AEST temporal model ensures it operates across past, present, and future simultaneously.
 
 ### 1.2 The Wrong Question Has Been Driving the Wrong Answers
 
 For two decades, the dominant question in the digital twin field has been: "How do we build a digital twin?" The result is a field that has abundant technology, abundant standards, and abundant vendor offerings — and a persistent, documented failure to deliver sustained value. Analysts at Gartner have watched digital twins traverse hype curves. The Digital Twin Consortium lists hundreds of members. The European Union has funded digital twins of the Earth's climate, of individual human bodies, and of its cities. The field is large, active, and technically capable.
 
-Yet the most common reported causes of digital twin project failure remain stubbornly non-technical (Kritzinger et al., 2018; Fuller et al., 2020): unclear business objectives, inability to demonstrate return on investment, organisational resistance, disconnection between the twin and operational decisions. These are not problems that better sensors or faster pipelines resolve. They are the consequences of a wrong starting question. Christensen (1997) identified the same dynamic in disruptive innovation: incumbents fail not because they lack capability, but because they optimise relentlessly for the wrong metric — their existing customers, their existing measures of performance. SMILE's impact-first principle is a direct methodological response to this pattern applied to digital infrastructure. Brynjolfsson (1993) named the same failure mode in IT investment: organisations added computational capability without redesigning the work it was meant to serve, producing the productivity paradox — more technology, no measurable value gain. Data-first digital twin deployments replicate this paradox faithfully.
+Yet the most common reported causes of digital twin project failure remain stubbornly non-technical (Kritzinger et al., 2018; Fuller et al., 2020; Jones et al., 2020; Rasheed et al., 2020): unclear business objectives, inability to demonstrate return on investment, organisational resistance, disconnection between the twin and operational decisions. These are not isolated observations — they represent what Rittel and Webber (1973) characterised as wicked problems: sociotechnical entanglements where the problem definition itself is contested, where there is no stopping rule, and where every attempted solution changes the problem. These are not problems that better sensors or faster pipelines resolve. They are the consequences of a wrong starting question. Christensen (1997) identified the same dynamic in disruptive innovation: incumbents fail not because they lack capability, but because they optimise relentlessly for the wrong metric — their existing customers, their existing measures of performance. SMILE's impact-first principle is a direct methodological response to this pattern applied to digital infrastructure. Brynjolfsson (1993) named the same failure mode in IT investment: organisations added computational capability without redesigning the work it was meant to serve, producing the productivity paradox — more technology, no measurable value gain. Data-first digital twin deployments replicate this paradox faithfully.
 
-The right question is: "What change in the world are we trying to create, and for whom?" Any project that answers this question rigorously — that traces a clear chain from desired outcome through required action through necessary insight through processed information to collected data — will discover that it needs a continuously learning representation of reality grounded in physical truth. It will, in other words, produce a digital twin as a consequence of doing good project work. The digital twin is not the objective. It is what happens when a project is designed to actually work.
+The right question is: "What change in the world are we trying to create, and for whom?" This reframing echoes Ackoff's (1989) foundational distinction between data, information, knowledge, understanding, and wisdom — the DIKW hierarchy that most technology projects climb from the bottom, hoping to reach the top, when the methodology should begin at the top and work down. Any project that answers this question rigorously — that traces a clear chain from desired outcome through required action through necessary insight through processed information to collected data — will discover that it needs a continuously learning representation of reality grounded in physical truth. It will, in other words, produce a digital twin as a consequence of doing good project work. The digital twin is not the objective. It is what happens when a project is designed to actually work.
 
 This is the foundational claim of SMILE — Sustainable Methodology for Impact Lifecycle Enablement: it is not a methodology for digital twin projects. It is a methodology that turns any project into a digital twin project. The distinction is the same as the difference between PRINCE2 (which does not exist to build software or bridges but to govern any project that delivers change) and a software development methodology. PRINCE2 produces projects that happen to involve code when the domain requires it. SMILE produces projects that happen to involve digital twins because any project that sustains impact over time requires a continuously learning, reality-grounded representation of what it is working with.
 
@@ -100,9 +101,9 @@ The paper proceeds as follows. Section 2 situates SMILE within the Web4 and Phys
 
 SMILE is inherently a Physical AI methodology. The phrase requires unpacking, because "AI" in dominant discourse refers almost exclusively to software models processing digital data. Physical AI describes something different: intelligence that is grounded in, acts upon, and is continuously calibrated by the physical world. A Physical AI system does not merely process representations of reality; it maintains a living model of reality that can be acted upon, simulated, and evolved.
 
-Every phase of SMILE has a physical dimension. Phase 1 produces a physical Reality Canvas — a spatially and temporally grounded 3D+ representation of the real environment being addressed. Phase 2 validates interventions virtually before they are executed physically. Phase 3 connects physical sensors to the ontological model. Phase 4 makes the physical state queryable in real time. Phase 5 deploys intelligence at the physical edge. Phase 6 transfers physical-world knowledge across contexts. SMILE works on both real and fictional representations of reality. The critical requirement is not that the representation be physically accurate, but that people, systems, and AI have a shared artefact to rally around. A completely simulated future that has never existed can be emulated by reality, and real reality can be emulated digitally. There is a dynamic, bidirectional interaction between strategy, impact, and technology — between what IS and what COULD BE. As long as the representation maintains correlation to physical possibility, the methodology operates regardless of whether the current state is observed or imagined.
+Every phase of SMILE has a physical dimension. The concept of the digital twin itself originates in NASA's paired-vehicle approach (Glaessgen & Stargel, 2012), where a physical asset and its virtual counterpart evolve together throughout a lifecycle. Grieves (2014) formalised the conceptual model; SMILE operationalises it into a methodology. Phase 1 produces a physical Reality Canvas — a spatially and temporally grounded 3D+ representation of the real environment being addressed. Phase 2 validates interventions virtually before they are executed physically. Phase 3 connects physical sensors to the ontological model. Phase 4 makes the physical state queryable in real time. Phase 5 deploys intelligence at the physical edge. Phase 6 transfers physical-world knowledge across contexts. SMILE works on both real and fictional representations of reality. The critical requirement is not that the representation be physically accurate, but that people, systems, and AI have a shared artefact to rally around. A completely simulated future that has never existed can be emulated by reality, and real reality can be emulated digitally. There is a dynamic, bidirectional interaction between strategy, impact, and technology — between what IS and what COULD BE. As long as the representation maintains correlation to physical possibility, the methodology operates regardless of whether the current state is observed or imagined.
 
-This positions SMILE within the emerging Web4 paradigm and beyond — the symbiotic web, where the boundary between physical and digital dissolves into continuous, bidirectional exchange (Hendler & Berners-Lee, 2010; Allam et al., 2022). Web1 was readable. Web2 was participatory. Web3 was decentralised. Web4 is symbiotic: physical objects, biological systems, urban environments, and human bodies become first-class participants in the computational fabric. Intelligence moves to the edge because that is where reality happens. Local inference precedes cloud synchronisation because sovereignty requires that the computational mirror of reality not be contingent on network availability.
+This positions SMILE within the emerging Web4 paradigm and beyond — the symbiotic web, where the boundary between physical and digital dissolves into continuous, bidirectional exchange (Hendler & Berners-Lee, 2010; Allam et al., 2022). Web1 was readable. Web2 was participatory. Web3 was decentralised. Web4 is symbiotic: physical objects, biological systems, urban environments, and human bodies become first-class participants in the computational fabric. Intelligence moves to the edge because that is where reality happens (Shi et al., 2016; Satyanarayanan, 2017). Local inference precedes cloud synchronisation because sovereignty requires that the computational mirror of reality not be contingent on network availability.
 
 Beyond Web4, the trajectory points toward what this paper terms WebX — the physics-based web where digital representations are not abstractions of reality but computationally faithful extensions of it. WebX environments are not metaphors; they are physics engines running at sufficient fidelity to replace physical presence. The progression is not speculative — it is already underway through 6G joint communication-and-sensing (JCAS) standardisation (Tataria et al., 2021; ITU-R, 2023), volumetric capture, holoportation, and ambient computing. WebX is the environment in which SMILE's Phase 6 (Perpetual Wisdom) fully activates: when seeing, sensing, and immersing become indistinguishable from physical co-presence, the governing question shifts from "how do we build the twin?" to "how do we govern the shared reality?"
 
@@ -119,6 +120,8 @@ SMILE's spatial framework for Web4 implementation is SPIN twinning: Space, Place
 **Network** is the ecosystem of interconnected twins, systems, and actors within which any single twin is embedded. A twin is not an isolated artefact; it is a node in a knowledge network that spans domains, organisations, and geographies. SMILE Phase 6 (Perpetual Wisdom) is the methodology's explicit engagement with the Network layer: how does knowledge flow between nodes, how is provenance maintained, and how does the network as a whole become smarter than any of its constituent twins?
 
 SPIN twinning makes SMILE's universality concrete. Any project that involves real-world action — which is to say, any project — operates in all four SPIN dimensions simultaneously, whether or not it acknowledges doing so. SMILE makes the acknowledgement explicit and turns it into methodology.
+
+![Figure 1: SPIN Twinning — the spatial framework through which SMILE operationalises the four dimensions of any physical-digital system.](figures/fig5_spin_twinning.png)
 
 ### The Zoom-Anchor-AEST Interaction Model
 
@@ -140,7 +143,7 @@ SMILE rests on five theoretical pillars, each addressing a different dimension o
 
 ### 3.1 Design Science Research: SMILE as a Rigorously Constructed Artefact
 
-Hevner, March, Park, and Ram (2004) established Design Science Research (DSR) as the methodology for creating and evaluating IT artefacts designed to solve identified organisational problems. DSR's seven guidelines require that the artefact be designed (not discovered), solve a previously intractable problem, be evaluated against stated criteria, contribute to design knowledge, and be communicated to both practice and research audiences.
+Simon (1996) distinguished the sciences of the natural — concerned with how things are — from the sciences of the artificial — concerned with how things ought to be. Design science lives in the latter. Hevner, March, Park, and Ram (2004) established Design Science Research (DSR) as the methodology for creating and evaluating IT artefacts designed to solve identified organisational problems. DSR's seven guidelines require that the artefact be designed (not discovered), solve a previously intractable problem, be evaluated against stated criteria, contribute to design knowledge, and be communicated to both practice and research audiences.
 
 SMILE is itself a DSR artefact. The problem it addresses — the systematic failure of data-first digital twin implementations to deliver sustained value (Fuller et al., 2020; Grieves, 2014; Kritzinger et al., 2018) — is empirically documented. The artefact — the six-phase methodology with defined entry criteria, activity sets, and exit criteria — is the design response. The evaluation is provided by cross-domain application across 39 publications. The contribution to design knowledge is the methodology itself plus the theoretical mechanisms that explain why it works.
 
@@ -150,7 +153,7 @@ Every application of SMILE to a new domain is simultaneously an evaluation of th
 
 Actor-Network Theory (ANT), developed through Callon (1986), Latour (2005), and Law (1992), provides SMILE's sociological foundation. ANT holds that agency is a relational effect that emerges within networks, and that non-human artefacts participate in the constitution of those networks on equal footing with human actors.
 
-Applied to digital twins, ANT explains what SMILE Phase 1 (Reality Emulation) is actually doing. Before a twin can absorb knowledge, it must be enrolled as an obligatory passage point: the sociotechnical actor through which all other actors must pass to achieve their respective goals. Callon's four moments of translation — problematisation, interessement, enrolment, and mobilisation — map directly onto SMILE's early phases.
+This sociomaterial reading complements the sociotechnical systems tradition (Emery & Trist, 1960; Baxter & Sommerville, 2011) while offering a more symmetrical treatment of human and non-human actors. Applied to digital twins, ANT explains what SMILE Phase 1 (Reality Emulation) is actually doing. Before a twin can absorb knowledge, it must be enrolled as an obligatory passage point: the sociotechnical actor through which all other actors must pass to achieve their respective goals. Callon's four moments of translation — problematisation, interessement, enrolment, and mobilisation — map directly onto SMILE's early phases.
 
 ANT explains why data-first approaches fail: a sensor network that has not been enrolled as an obligatory passage point has no actors — human, systemic, or artificial — organised around a shared representation of reality. It collects data that nobody asked for, in response to questions nobody posed, producing dashboards nobody checks. But the deeper failure is ontological, not organisational: the sensor network is disconnected from the physics-based reality that is always already there. The planet — our planet — is the most obvious anchor for any project, not merely because addressing it makes projects more sustainable by design, but because physics-based reality is the ground truth that all actors — people, systems, AI — exist within, not around. Not recognising this as a foundational pillar is one of the things humanity takes for granted and then forgets. SMILE's impact-first principle is the ANT-grounded corrective: it ensures the twin is enrolled into the actor-network before data collection begins, and it ensures the twin is anchored to the physics of the planet rather than floating in an abstraction layer that has lost contact with the real.
 
@@ -180,7 +183,7 @@ Star (2010) cautioned against treating every shared artefact as a boundary objec
 
 Cohen and Levinthal (1990) defined absorptive capacity as an organisation's ability to recognise, assimilate, and apply new external knowledge — and demonstrated that this capacity is path-dependent: it grows faster in domains where prior knowledge is denser.
 
-This concept has been extended in the sociomaterial literature to artefacts and technologies. Leonardi (2012) argues that the materiality of artefacts — their specific physical and functional properties — shapes and constrains the knowledge-work arrangements that surround them. Orlikowski (2007) developed the concept of sociomaterial practices, showing that artefacts and human actors are constitutively entangled: the properties of an artefact are not fixed but emerge through use, and that emergence follows path-dependent logic. Building on these foundations, Waern (2026a) introduces *artefactual absorptive capacity* as a proposed extension: the capacity of a digital twin to absorb knowledge from actor interactions, where each interaction increases the twin's capacity to absorb subsequent interactions. This extension is proposed as a design contribution within the DSR framework (Hevner et al., 2004) and requires independent validation. It is explicitly labelled as proposed theory, not established empirical finding.
+Nonaka and Takeuchi (1995) demonstrated that organisational knowledge creation follows a spiral from tacit to explicit and back — the SECI model. The digital twin is the artefact that makes this spiral visible and persistent: tacit knowledge deposited through interaction becomes explicit knowledge encoded in the graph, which is then internalised by subsequent users. Schön's (1983) reflective practitioner — the professional who learns through reflection-in-action — becomes a reflective practitioner *with a persistent mirror*. This concept has been extended in the sociomaterial literature to artefacts and technologies. Leonardi (2012) argues that the materiality of artefacts — their specific physical and functional properties — shapes and constrains the knowledge-work arrangements that surround them. Orlikowski (2007) developed the concept of sociomaterial practices, showing that artefacts and human actors are constitutively entangled: the properties of an artefact are not fixed but emerge through use, and that emergence follows path-dependent logic. Building on these foundations, Waern (2026a) introduces *artefactual absorptive capacity* as a proposed extension: the capacity of a digital twin to absorb knowledge from actor interactions, where each interaction increases the twin's capacity to absorb subsequent interactions. This extension is proposed as a design contribution within the DSR framework (Hevner et al., 2004) and requires independent validation. It is explicitly labelled as proposed theory, not established empirical finding.
 
 This extension provides the theoretical mechanism for SMILE's phase sequencing: phases are not arbitrary stages but rungs on a ladder of accumulating artefactual capacity. A twin that has not completed Phase 1 cannot absorb the domain knowledge deposited in Phase 2. A twin without a Phase 3 ontology cannot generate Phase 4 contextual intelligence. The limitation of single-author validation for this concept is acknowledged as the primary methodological constraint of this paper and is addressed in Section 13.
 
@@ -190,7 +193,7 @@ The cross-domain application of SMILE is consistent with this mechanism's domain
 
 ### 3.5 Benefits Management: Grounding Impact-First in Established IS Practice
 
-Ward and Daniel (2006) established benefits management as the discipline for ensuring that IS investments actually deliver the organisational changes and outcomes they are designed to produce. Their Benefits Dependency Network (BDN) maps the chain from enabling changes (what must change for the system to work) through business changes (what organisational practices must change) to business benefits (the measurable improvements that result) to investment objectives (the strategic outcomes that justify the investment).
+Ward and Daniel (2006) established benefits management as the discipline for ensuring that IS investments actually deliver the organisational changes and outcomes they are designed to produce. Ashurst et al. (2008) extended this with the concept of benefits realisation capability — the organisational competence required to systematically identify, plan, and deliver benefits from IT-enabled change — demonstrating that organisations with this capability significantly outperform those without. Their Benefits Dependency Network (BDN) maps the chain from enabling changes (what must change for the system to work) through business changes (what organisational practices must change) to business benefits (the measurable improvements that result) to investment objectives (the strategic outcomes that justify the investment).
 
 This pillar is foundational to SMILE's impact-first principle. Ward and Daniel (2006, p. 4) make the critical observation that "benefits from IS and IT investments are not automatic — they have to be identified, planned, actively delivered and then reviewed." This is precisely the failure mode that data-first digital twin implementations exhibit: they assume that technical capability will automatically produce operational benefit, without the deliberate identification, planning, and delivery that benefits management requires.
 
@@ -304,9 +307,9 @@ The language of the remaining fifteen has been revised from "consequence" to "ex
 
 **(18) Sovereignty — Edge-Native by Design.** *Expected benefit based on phase logic.* SMILE's edge-native architecture (Phase 5) and data sovereignty commitment (Phase 3) are designed to ensure the twin can operate at full capability without continuous cloud dependency. Operational sovereignty in offline conditions is a measurable exit criterion that will be systematically evaluated.
 
-**(19) Regulatory Compliance — AI Act, GDPR, MDR.** *Expected benefit based on phase logic.* SMILE's explainability architecture, ontology-before-AI sequencing, governance boundary requirements, and data sovereignty provisions are designed to constitute a compliance architecture for the EU AI Act, GDPR, and MDR. Legal mapping of SMILE deliverables to specific regulatory requirements is a planned research output.
+**(19) Regulatory Compliance — AI Act, GDPR, MDR.** *Expected benefit based on phase logic.* SMILE's explainability architecture, ontology-before-AI sequencing, governance boundary requirements, and data sovereignty provisions are designed to constitute a compliance architecture for the EU AI Act (Regulation (EU) 2024/1689), GDPR (Regulation (EU) 2016/679), and MDR (Regulation (EU) 2017/745). The AI Act's risk-based classification framework and its requirements for high-risk AI systems — including transparency, human oversight, and technical documentation — map structurally to SMILE's Crucible layer, governance boundaries, and phase documentation. Legal mapping of SMILE deliverables to specific regulatory articles is a planned research output.
 
-**(20) Planetary Impact — Circular and ESG.** *Expected benefit based on phase logic.* Phase 6's circular strategies and Phase 1's PESTELED analysis are designed to make planetary-scale environmental context a first-class input and end-of-life knowledge recycling a first-class output. ESG quantification frameworks for SMILE deployments are pending development.
+**(20) Planetary Impact — Circular and ESG.** *Expected benefit based on phase logic.* Phase 6's circular strategies and Phase 1's PESTELED analysis are designed to make planetary-scale environmental context a first-class input and end-of-life knowledge recycling a first-class output (Geissdoerfer et al., 2017; Kirchherr et al., 2017). ESG quantification frameworks for SMILE deployments are pending development.
 
 ---
 
@@ -326,13 +329,13 @@ SMILE's AI journey is a five-stage progression that follows the same impact-firs
 
 **Explainable AI Decision Making** (aligned with Phases 5–6): Full autonomous decision-making that is explainable, auditable, and anchored in physical reality. Every decision can be traced back to its data sources, its model assumptions, and the causal chain that led from evidence to recommendation. Explainability is not a property that LLMs naturally provide; it is a structural achievement that requires the ontological and governance foundations of all preceding phases.
 
-**The LQM distinction.** For systems governed by physical laws — buildings, biological bodies, urban infrastructure, equine physiology — the appropriate AI regime is not statistical pattern matching over historical data (Large Language Models) but physics-based simulation from first principles (Large Quantitative Models, LQMs). LQMs compute from causal mechanisms and produce interpretable outputs with explicit uncertainty intervals. For edge deployment, LQMs can be reduced to Small Quantitative Models (SQMs) — compact, validated physics models that run on local hardware with millisecond latency. LLMs retain a legitimate role as communication and coordination layers: translating model outputs into human language, accepting natural-language queries, synthesising narratives. They must not be asked to simulate physics (Waern, 2026c).
+**The LQM distinction.** For systems governed by physical laws — buildings, biological bodies, urban infrastructure, equine physiology — the appropriate AI regime is not statistical pattern matching over historical data (Large Language Models) but physics-based simulation from first principles (Large Quantitative Models, LQMs). This distinction is grounded in the physics-informed machine learning programme (Raissi et al., 2019; Karniadakis et al., 2021), which demonstrates that neural networks constrained by physical laws produce more interpretable, data-efficient, and trustworthy outputs than purely data-driven approaches. Recent work on physics-informed neural networks as digital twin substrates (Kapusuzoglu & Mahadevan, 2024) confirms this trajectory. LQMs compute from causal mechanisms and produce interpretable outputs with explicit uncertainty intervals. For edge deployment, LQMs can be reduced to Small Quantitative Models (SQMs) — compact, validated physics models that run on local hardware with millisecond latency. LLMs retain a legitimate role as communication and coordination layers: translating model outputs into human language, accepting natural-language queries, synthesising narratives. They must not be asked to simulate physics (Waern, 2026c).
 
 ### 6.2 The Crucible Trust Layer
 
 Every SMILE output passes through Crucible before it becomes a decision input. Crucible is the verification and trust layer — the architectural commitment to retrieval over generation.
 
-The core principle: when accuracy matters, retrieve rather than generate. A SMILE twin that knows the current temperature of a specific room does not generate a plausible estimate; it retrieves the measured value. A twin that knows the patient's last laboratory result does not interpolate from the patient's demographic profile; it retrieves the documented value from the provenance-signed record. A twin that knows the material classification of a specific wall in a reconstructed building does not guess from the building's age; it retrieves the value from the calibrated photogrammetric survey.
+The core principle: when accuracy matters, retrieve rather than generate. This aligns with the retrieval-augmented generation paradigm (Lewis et al., 2020) but goes further: where RAG augments generation with retrieval, Crucible *subordinates* generation to retrieval. Generation is the communication layer; retrieval is the truth layer. Miller (2019) demonstrated that human explanations are contrastive, selective, and social — Crucible's design enforces all three properties. Gunning and Aha (2019) established the DARPA XAI programme's requirement that AI systems produce explanations that enable users to understand, appropriately trust, and effectively manage AI — Crucible operationalises this requirement architecturally. A SMILE twin that knows the current temperature of a specific room does not generate a plausible estimate; it retrieves the measured value. A twin that knows the patient's last laboratory result does not interpolate from the patient's demographic profile; it retrieves the documented value from the provenance-signed record. A twin that knows the material classification of a specific wall in a reconstructed building does not guess from the building's age; it retrieves the value from the calibrated photogrammetric survey.
 
 Crucible operates at three levels. At the data level, it enforces provenance: every data point in the knowledge graph carries a source, a timestamp, a confidence estimate, and a validation status. At the inference level, it enforces source attribution: every AI output must be traceable to the specific knowledge graph entries that produced it. At the decision level, it enforces explainability: every decision support recommendation includes a natural-language explanation of the causal chain, with links to source data, that a domain expert can verify or override.
 
@@ -356,6 +359,8 @@ SMILE — Sustainable Methodology for Impact Lifecycle Enablement — is a phase
 
 The inverted pyramid sequence: **Outcome → Action → Insight → Information → Data**.
 
+![Figure 2: The SMILE inverted pyramid contrasted with the traditional data-first approach. SMILE designs downward from desired outcomes; traditional approaches build upward from available data and hope outcomes emerge.](figures/fig2_inverted_pyramid.png)
+
 This inversion has three operational consequences: (1) data collection is always justified, never assumed; (2) the scope of the twin is defined by stakeholder goals, not available data; (3) the twin is evaluated by whether outcomes are achieved, not by data richness or technical sophistication.
 
 SMILE's six phases are concentric, not linear. Each phase adds a layer of capability to the twin rather than replacing the previous layer. A Phase 5 twin is also still a Phase 1, 2, 3, and 4 twin — all capabilities are present and active simultaneously, with later phases adding generative and autonomous capabilities that earlier phases cannot support.
@@ -366,6 +371,10 @@ Each phase is experienced from four perspectives simultaneously:
 - **From Systems**: Standards identification (ISO, IFC, CityGML, FHIR, SAREF, AAS), ontology alignment, metadata mastery, data fabric architecture, BIM/CIM/GIS integration, interoperability compliance (MIMs).
 - **From Planet**: GIS data, City Information Modelling, Building Information Modelling, satellite data, reality canvas creation, spatial-temporal context establishment, environmental sustainability, circular strategies, ESG alignment.
 - **From AI**: Autonomous agent capabilities, LQM/SQM model selection, explainability requirements (Arrieta et al., 2020), AI Act compliance, Crucible verification, agent-to-agent knowledge transfer, AEST-driven temporal reasoning, edge-native inference, trust boundary definition. AI is not a tool within Systems — it is a perspective in its own right, because AI agents are actants (Callon, 1986) that transform the network they participate in.
+
+![Figure 3: The four perspectives lens — People, Systems, Planet, and AI — applied simultaneously at every SMILE phase, with the digital twin (Reality Canvas) as the shared artefact at the centre.](figures/fig3_four_perspectives.png)
+
+![Figure 4: SMILE's six concentric phases. Each phase adds a layer of capability; later phases contain all earlier phases. The methodology is concentric, not linear.](figures/fig1_six_phases.png)
 
 ### 7.1 Phase 1: Reality Emulation — Define the Box Before Thinking Outside It
 
@@ -391,7 +400,7 @@ Each phase is experienced from four perspectives simultaneously:
 
 **Worked example — equine:** An Arabian stud farm defines the Reality Canvas as the farm's spatial layout — paddocks, stables, training arenas, foaling boxes — with each horse registered as a canonical entity within that spatial context. Stakeholders include veterinarians, stable staff, the farm manager, and regulatory authorities (Waern, 2026b, DOI pending — design application pending empirical validation).
 
-**Worked example — smart city:** A municipal government seeking autonomous urban operations defines the Reality Canvas as the city's operational data fabric: sensor networks, building portfolios, transportation systems, and citizen service delivery — with citizen trust and democratic accountability as first-class design constraints (Waern, 2026f, DOI pending — design application pending empirical validation).
+**Worked example — smart city:** A municipal government seeking autonomous urban operations defines the Reality Canvas as the city's operational data fabric: sensor networks, building portfolios, transportation systems, and citizen service delivery — with citizen trust and democratic accountability as first-class design constraints (Batty, 2013; Kitchin, 2014; Waern, 2026f, DOI pending — design application pending empirical validation).
 
 **Worked example — RF telecommunications:** A telecommunications research programme defines the Reality Canvas as a drone-captured 3D scene of a specific urban district. The scene itself — not the RF propagation model — is identified as the primary deliverable: the shared spatial referent that serves RF engineers, structural engineers, urban planners, and humanitarian logistics planners simultaneously. This application has a published DOI and constitutes the most mature cross-community validation of Phase 1 in the corpus (Waern, 2026a, DOI: 10.5281/zenodo.19587944).
 
@@ -430,7 +439,7 @@ Each phase is experienced from four perspectives simultaneously:
 
 **Key activities:**
 - Physical sensor deployment and calibration against published standards.
-- Ontology creation: structuring the classification relationships between entities in the shared reality.
+- Ontology creation: structuring the classification relationships between entities in the shared reality. An ontology, in Gruber's (1993) foundational definition, is an explicit specification of a conceptualisation — and in the digital twin context, that specification must be both machine-readable and domain-expert-comprehensible. Recent work by Zheng et al. (2024) and Lu et al. (2024) demonstrates that knowledge graphs grounded in formal ontologies are the enabling infrastructure for intelligent digital twins, providing the semantic substrate that makes cross-domain reasoning possible.
 - Alignment with industry standards: ISO, IFC, CityGML, FHIR, SAREF, SNOMED, WHO-QoL, or domain-equivalent classification systems.
 - KPI confirmation: measurable outcome indicators validated against the baseline.
 - Security and data strategy: the data governance architecture is specified before the first external actor contributes knowledge.
@@ -463,7 +472,7 @@ Each phase is experienced from four perspectives simultaneously:
 - Predictive analytics: the twin projects forward states based on calibrated models and scenario parameters.
 - Root cause analysis: the twin traces observed anomalies backward through causal chains to probable origins.
 - Pace Layering alignment: different actor communities interact with the twin at different temporal resolutions — operations at seconds, management at hours, strategy at months — without creating conflicts.
-- Interoperability alignment: all eight interoperability dimensions (contextual, legal, human, security, technical, syntactical, semantic, organisational) are operational.
+- Interoperability alignment: all eight interoperability dimensions (contextual, legal, human, security, technical, syntactical, semantic, organisational) are operational. These dimensions extend the European Interoperability Framework (European Commission, 2017), which establishes four layers (legal, organisational, semantic, technical) as the baseline for cross-border digital public services; SMILE adds contextual, human, security, and syntactical dimensions to address the richer requirements of physical-digital twin systems.
 
 **Primary artefacts:** Operational Digital Twin (as-is), Real-time Dashboard, Predictive Maintenance System, Connected Ecosystem.
 
@@ -485,7 +494,8 @@ Each phase is experienced from four perspectives simultaneously:
 - Universal event pipeline: all relevant events from physical reality are ingested, processed, and acted upon within defined latency bounds.
 - Black Swan identification: scenario simulation explores tail-risk events that historical data does not represent.
 - Simulate Everything: the twin's models are used proactively to explore possibility spaces, not reactively to explain observed states.
-- Distributed intelligence: edge-native processing ensures the twin operates at full capability without continuous cloud connectivity.
+- Distributed intelligence: edge-native processing ensures the twin operates at full capability without continuous cloud connectivity. Federated learning (McMahan et al., 2017; Kairouz et al., 2021) provides the mechanism for distributed model improvement without centralising raw data — each edge twin learns locally and contributes gradient updates to the collective knowledge.
+- Multi-agent orchestration: Phase 5 deploys autonomous agents that perceive, plan, act, and reflect within governance boundaries. Park et al. (2023) demonstrated that generative agents with memory, planning, and reflection capabilities exhibit emergent social behaviours; SMILE constrains these capabilities within the Crucible trust layer and governance envelopes defined in Phase 4. Wooldridge (2009) provides the theoretical grounding for agent autonomy, reactivity, pro-activeness, and social ability that SMILE's agent architecture implements.
 - Virtual sensors: the twin interpolates unmeasured states from calibrated models, filling sensor gaps with model-grounded estimates.
 
 **Primary artefacts:** AI Factory (trained algorithm suite), Simulation Digital Twin (to-be scenarios), Event Pipeline, Distributed Intelligence Architecture.
@@ -503,7 +513,7 @@ Each phase is experienced from four perspectives simultaneously:
 **SPIN Questions:** Phase 6 is entered through transcendent Need-payoff questions — the questions that reach beyond the originating context. *What did we learn here that applies everywhere? What would it mean if this knowledge was available to the next deployment from day one? What is the planetary-scale value of the wisdom accumulated in this twin?* These questions are the entry condition for Perpetual Wisdom: without them, Phase 6 is a knowledge archive; with them, it is civilisational infrastructure.
 
 **Key activities:**
-- Ecosystem enablement: knowledge generated in one twin demonstrably improves outcomes in another.
+- Ecosystem enablement: knowledge generated in one twin demonstrably improves outcomes in another. Senge's (1990) learning organisation — one that continuously expands its capacity to create its future — becomes, in Phase 6, a learning *ecosystem* where the organisational boundary is dissolved and knowledge flows between twins, domains, and geographies.
 - Cross-industry knowledge transfer: templates, calibrated model parameters, and ontology extensions shared across domain communities.
 - Circular strategies: materials, knowledge, and models designed to be recyclable at end-of-life rather than discarded.
 - Phoenix Strategies: when a twin is retired, its accumulated knowledge is transferred to successor systems in structured, documented form.
@@ -560,6 +570,8 @@ AEST (Absorb, Emulate, Simulate, Transcend) maps onto the SMILE phases:
 
 Every methodology manages time linearly: plan, execute, review. SMILE operates across time simultaneously. The twin absorbs the past, emulates the present, simulates the future, and in doing so transcends the limitations of the now.
 
+![Figure 5: The AEST temporal architecture — four simultaneous temporal operations mapped to SMILE phases, operating across the full past-present-future continuum.](figures/fig4_aest_temporal.png)
+
 ### The Web Evolution Through SMILE
 
 SMILE is designed to operate at whatever web generation the project inhabits, because it is anchored to reality, not to infrastructure:
@@ -598,7 +610,7 @@ Of the eight domains, one has a published, peer-accessible DOI (RF/construction,
 | **Construction / 3DGS / Point Clouds** | Drone-captured 3D scene as shared spatial referent; automated pipeline from photogrammetry | MVT = single scene with material classification sufficient for RF ray tracing validation | Material ontology mapped to ITU-R P.2040-3; calibration from field measurements; MIMs contextual layer | Real-time query: "Where is RF coverage adequate for emergency communications in this district?" | SQM (Sionna-calibrated) running on edge devices; continuous recalibration from phone measurements | One calibrated scene template indexes the majority of similar environments; knowledge transfer accelerates subsequent deployments | Published (Waern, 2026a, DOI: 10.5281/zenodo.19587944) |
 | **Smart Cities / Digital DNA** | City operational canvas including sensor networks, governance constraints, citizen trust | MVT = DDNAS scoring rubric applied to current state; aspirational score as target | Seven-dimension Digital DNA Score; MIMs across all layers | Autonomous traffic signal optimisation; waste collection routing within governance envelope | Full autonomous operations within citizen-approved parameters; exception-based human oversight | City maturity templates transfer to analogous urban contexts; open governance framework published | Design application pending empirical validation (Waern, 2026f, DOI pending) |
 | **Equine / Agriculture** | Farm spatial canvas with each horse as canonical entity | MVT = structured shift handover replacing verbal handover | Horse health ontology integrating clinical, nutritional, biosensor, and behavioural streams; cross-domain welfare query | African Horse Sickness compliance documentation as a query, not a manual aggregation exercise | AI risk detection from integrated multi-stream state; early warning 72 hours before clinical presentation | EDOS architecture open-sourced; template transfers to other livestock; equine SQM transfers to human bio-DT | Published (Waern, 2025b, DOI: 10.5281/zenodo.17464804; Waern, 2026b, DOI pending) |
-| **Defence / Reconstruction** | Post-conflict district canvas from satellite imagery + drone survey; dual output from single pass | MVT = single scene covering structural + RF coverage simultaneously | Material ontology with electromagnetic property mapping; GA4GH-equivalent data provenance | Deployment position optimisation for emergency connectivity; structural risk assessment | SQM on edge devices (phones, drones); continuous recalibration from field measurement walks | One validated urban scene template transfers to structurally similar environments across conflict zones | Design applications: post-conflict innovation (Waern, 2026i, DOI: 10.5281/zenodo.19601817); drone-enabled reconstruction in disaster response (Waern, 2026j, DOI: 10.5281/zenodo.19643598) |
+| **Defence / Reconstruction** | Post-conflict district canvas from satellite imagery + drone survey; dual output from single pass | MVT = single scene covering structural + RF coverage simultaneously | Material ontology with electromagnetic property mapping; GA4GH-equivalent data provenance | Deployment position optimisation for emergency connectivity; structural risk assessment | SQM on edge devices (phones, drones); continuous recalibration from field measurement walks | One validated urban scene template transfers to structurally similar environments across conflict zones | Published (Waern, 2026i, DOI: 10.5281/zenodo.19601817; Waern, 2026j, DOI: 10.5281/zenodo.19643598) |
 | **Education / Contributor Screening** | Leaderboard canvas: funnel of intent mapping the journey from declared interest to demonstrated action | MVT = live leaderboard with three task tiers and real GitHub pull request tracking | Contribution economy ontology: task levels, point awards, provenance records, community boundary objects | Real-time screening: 114 applicants self-sort to 9 active contributors through progressive cost barriers | Continuous programme refinement based on dropout analysis; L1/L2/L3 task optimisation | Funnel-of-intent design template transfers to other contributor programmes; meritocracy architecture open-sourced | Design application pending empirical validation (Waern, 2026h, DOI pending) |
 
 ### 8.3 Mapping to the DTC Capabilities Periodic Table
@@ -634,7 +646,9 @@ Three patterns emerge that are consistent with SMILE's universality claims and w
 
 ## 9. The SMILE Maturity Model
 
-SMILE's phase sequencing defines *what* must be done; the maturity model defines *how well* it has been done. Five maturity levels are defined per phase, creating a 6×5 evaluation matrix.
+Maturity models are established instruments in IS research for assessing organisational capability along defined dimensions (Becker et al., 2009; de Bruin et al., 2005). Barricelli et al. (2019) provide a comprehensive survey of digital twin maturity dimensions; Zheng et al. (2024) extend this to knowledge-graph-enabled digital twins. SMILE's phase sequencing defines *what* must be done; the maturity model defines *how well* it has been done. Five maturity levels are defined per phase, creating a 6×5 evaluation matrix.
+
+![Figure 6: The SMILE maturity model — 6 phases by 5 levels, with AEST temporal operations gating advancement. Shaded cells indicate achievable states; maturity in later phases requires prior-phase maturity.](figures/fig6_maturity_model.png)
 
 ### 9.1 Maturity Levels
 
@@ -715,7 +729,7 @@ The key difference from both: SMILE has a Phase 6 and they do not. TRIZ resolves
 
 CRISP-DM remains appropriate for bounded data analytics projects with a clear data asset and a defined analytical question. DMAIC remains appropriate for process improvement in manufacturing or service operations where a measurable defect has been identified. Design Thinking remains appropriate for early-stage human-centred innovation in novel problem spaces. Agile remains appropriate for software delivery where requirements are emergent and iteration speed matters more than lifecycle structure. TRIZ remains appropriate for structured inventive problem-solving where a specific contradiction has been identified. PRINCE2 remains appropriate for any project where governance, accountability, and controlled change are the primary requirements.
 
-SMILE does not replace these methodologies; it often precedes them. SMILE Phase 2 may invoke Design Thinking for hypothesis generation. SMILE Phase 3 may invoke CRISP-DM for specific analytical workflows within the knowledge graph. SMILE Phase 5 may deliver AI capabilities through Agile sprints. SMILE Phase 2 may invoke TRIZ to resolve inventive contradictions within the MVT scope. SMILE provides the lifecycle architecture within which domain-specific methodologies operate — not a replacement, but an envelope.
+Checkland's (1981) Soft Systems Methodology (SSM) provides the closest methodological ancestor in this regard: SSM governs the process of inquiry into a problematic situation, within which specific technical methodologies operate. SMILE extends SSM's logic from inquiry into sustained operation — from "understanding the situation" to "continuously governing the situation through its digital twin." SMILE does not replace these methodologies; it often precedes them. SMILE Phase 2 may invoke Design Thinking for hypothesis generation. SMILE Phase 3 may invoke CRISP-DM for specific analytical workflows within the knowledge graph. SMILE Phase 5 may deliver AI capabilities through Agile sprints. SMILE Phase 2 may invoke TRIZ to resolve inventive contradictions within the MVT scope. SMILE provides the lifecycle architecture within which domain-specific methodologies operate — not a replacement, but an envelope.
 
 ---
 
@@ -785,7 +799,9 @@ This tests whether perpetual wisdom is operationally real or merely aspirational
 
 **6G and holographic society are anticipatory.** The 6G capabilities referenced in Section 7.6 face documented terahertz propagation constraints (Tataria et al., 2021). The holographic society endpoint describes an anticipated state that is dependent on a 10–15 year standardisation trajectory, not a currently operational capability.
 
-**Cultural and political context.** SMILE was developed primarily in European and Australian deployment contexts. The methodology's assumptions about stakeholder governance, data sovereignty, and regulatory frameworks reflect these contexts and may require modification for other environments.
+**Cultural and political context.** SMILE was developed primarily in European and Australian deployment contexts. The methodology's assumptions about stakeholder governance, data sovereignty, and regulatory frameworks reflect these contexts and may require modification for other environments. Floridi and Taddeo (2016) argue that data ethics must be context-sensitive; SMILE's methodology inherits this constraint.
+
+**Standards landscape evolution.** ISO 23247 (2020) provides the digital twin framework for manufacturing; ISO/IEC 30141 (2018) establishes the IoT reference architecture; ISO 55000 (2014) governs asset management. SMILE's cross-domain claims assume that domain-specific standards will continue to converge — an assumption that current TM Forum, DTC, and ISO activity supports but does not guarantee.
 
 ### 13.2 Future Research
 
@@ -821,7 +837,7 @@ SMILE's six phases — Reality Emulation, Concurrent Engineering, Collective Int
 
 Drucker (1999) argued that the central challenge of the 21st century is not managing technology but managing knowledge workers — people whose productivity depends on their ability to apply specialised knowledge to goals they understand and own. SMILE's four perspectives — People, Systems, Planet, AI — are the structural answer to this: each perspective ensures that knowledge work is governed by the impact it serves, not by the data it generates. AEST's Transcend operation is Drucker's insight operationalised: not predicting the future, but building the conditions under which the desired future becomes reachable.
 
-The biological digital twin case illustrates where this leads. When precision medicine produces 3D-printed pharmaceuticals — personalised based on an individual's situation in space, time, and physiological context — the actor-network around a single person scales: 10 systems understanding your goals, then 100, then 1,000, then 10,000 — all with a shared representation of your past, present, and intended future. We can gamify our own health trajectories. We can set goals, simulate outcomes, and recruit allies — human, systemic, and artificial — to help us get there.
+The biological digital twin case illustrates where this leads. Topol (2019) argues that deep medicine will restore the human connection in healthcare through AI that handles the data so clinicians can handle the patient. Corral-Acero et al. (2020) demonstrate that computational digital twins of the heart — integrating imaging, genomics, and electrophysiology — can predict individual patient outcomes with clinical-grade accuracy. When precision medicine produces 3D-printed pharmaceuticals — personalised based on an individual's situation in space, time, and physiological context — the actor-network around a single person scales: 10 systems understanding your goals, then 100, then 1,000, then 10,000 — all with a shared representation of your past, present, and intended future. We can gamify our own health trajectories. We can set goals, simulate outcomes, and recruit allies — human, systemic, and artificial — to help us get there.
 
 With Web4 and beyond, we can jump back in time — holoport with others to a past memory, a trauma, a turning point — and work with AI agents, clinicians, coaches, and loved ones to understand what happened, what it meant, and what it could mean differently. We can put ourselves in situations we have been in and want to change, or live again with new understanding. The strength of weak ties extends not only across geography but across time itself.
 
@@ -845,13 +861,25 @@ This article was produced with the assistance of a Large Language Model (Claude,
 
 ## 16. References
 
+Ackoff, R. L. (1989). From data to wisdom. *Journal of Applied Systems Analysis*, 16, 3–9.
+
 Allam, Z., Sharifi, A., Bibri, S. E., Jones, D. S., & Krogstie, J. (2022). The metaverse as a virtual form of smart cities: Opportunities and challenges for environmental, economic, and social sustainability in urban futures. *Smart Cities*, 5(3), 771–801. https://doi.org/10.3390/smartcities5030040
 
 Altshuller, G. (1996). *And Suddenly the Inventor Appeared: TRIZ, the Creative Problem Solving Tool*. Technical Innovation Center.
 
 Arrieta, A. B., Díaz-Rodríguez, N., Del Ser, J., Bennetot, A., Tabik, S., Barbado, A., ... & Herrera, F. (2020). Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI. *Information Fusion*, 58, 82–115. https://doi.org/10.1016/j.inffus.2019.12.012
 
+Ashurst, C., Doherty, N. F., & Peppard, J. (2008). Improving the impact of IT development projects: The benefits realization capability model. *European Journal of Information Systems*, 17(4), 352–370. https://doi.org/10.1057/ejis.2008.33
+
 Axelos. (2017). *PRINCE2 Agile*. TSO (The Stationery Office).
+
+Barricelli, B. R., Casiraghi, E., & Fogli, D. (2019). A survey on digital twin: Definitions, characteristics, applications, and design implications. *IEEE Access*, 7, 167653–167671. https://doi.org/10.1109/ACCESS.2019.2953499
+
+Batty, M. (2013). *The New Science of Cities*. MIT Press.
+
+Baxter, G., & Sommerville, I. (2011). Socio-technical systems: From design methods to systems engineering. *Interacting with Computers*, 23(1), 4–17. https://doi.org/10.1016/j.intcom.2010.07.003
+
+Becker, J., Knackstedt, R., & Pöppelbuß, J. (2009). Developing maturity models for IT management. *Business & Information Systems Engineering*, 1(3), 213–222. https://doi.org/10.1007/s12599-009-0044-5
 
 Bhaskar, R. (1975). *A Realist Theory of Science*. Leeds Books.
 
@@ -863,6 +891,8 @@ Brynjolfsson, E. (1993). The productivity paradox of information technology. *Co
 
 Callon, M. (1986). Some elements of a sociology of translation: Domestication of the scallops and the fishermen of St Brieuc Bay. In J. Law (Ed.), *Power, Action and Belief* (pp. 196–233). Routledge.
 
+Checkland, P. (1981). *Systems Thinking, Systems Practice*. John Wiley & Sons.
+
 Christensen, C. M. (1997). *The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail*. Harvard Business School Press.
 
 Ciborra, C. U. (2000). *From Control to Drift: The Dynamics of Corporate Information Infrastructures*. Oxford University Press.
@@ -871,7 +901,17 @@ Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences* (2nd 
 
 Cohen, W. M., & Levinthal, D. A. (1990). Absorptive capacity: A new perspective on learning and innovation. *Administrative Science Quarterly*, 35(1), 128–152. https://doi.org/10.2307/2393553
 
+Corral-Acero, J., Margara, F., Marber, M., Schottlander, D., Shi, W., et al. (2020). The 'Digital Twin' to enable the vision of precision cardiology. *European Heart Journal*, 41(48), 4556–4564. https://doi.org/10.1093/eurheartj/ehaa159
+
+de Bruin, T., Freeze, R., Kulkarni, U., & Rosemann, M. (2005). Understanding the main phases of developing a maturity assessment model. In *Proceedings of the 16th Australasian Conference on Information Systems* (ACIS 2005).
+
 Drucker, P. F. (1999). *Management Challenges for the 21st Century*. HarperBusiness.
+
+Emery, F. E., & Trist, E. L. (1960). Socio-technical systems. In C. W. Churchman & M. Verhulst (Eds.), *Management Sciences, Models and Techniques* (Vol. 2, pp. 83–97). Pergamon Press.
+
+European Commission. (2017). *New European Interoperability Framework*. Publications Office of the European Union. https://doi.org/10.2799/78681
+
+European Parliament and Council. (2024). Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). *Official Journal of the European Union*, L 2024/1689.
 
 Digital Twin Consortium. (2024). *Digital Twin Capabilities Periodic Table User Guide, Version 1.1*. van Schalkwyk, P., Whiteley, B., & Goldman, D. Object Management Group. https://www.digitaltwinconsortium.org/
 
@@ -879,11 +919,23 @@ Digital Twin Consortium. (2025). Digital Twin Consortium Adds Eight New Testbeds
 
 Floridi, L., Cowls, J., Beltrametti, M., Chatila, R., Chazerand, P., Dignum, V., Luetge, C., Madelin, R., Pagallo, U., Rossi, F., Schafer, B., Valcke, P., & Vayena, E. (2018). AI4People — An ethical framework for a good AI society. *Minds and Machines*, 28(4), 689–707. https://doi.org/10.1007/s11023-018-9482-5
 
+Floridi, L., & Taddeo, M. (2016). What is data ethics? *Philosophical Transactions of the Royal Society A*, 374(2083), 20160360. https://doi.org/10.1098/rsta.2016.0360
+
 Fuller, A., Fan, Z., Day, C., & Barlow, C. (2020). Digital twin: Enabling technologies, challenges and open research. *IEEE Access*, 8, 108952–108971. https://doi.org/10.1109/ACCESS.2020.2998358
+
+Gawer, A., & Cusumano, M. A. (2014). Industry platforms and ecosystem innovation. *Journal of Product Innovation Management*, 31(3), 417–433. https://doi.org/10.1111/jpim.12105
+
+Geissdoerfer, M., Savaget, P., Bocken, N. M. P., & Hultink, E. J. (2017). The Circular Economy — A new sustainability paradigm? *Journal of Cleaner Production*, 143, 757–768. https://doi.org/10.1016/j.jclepro.2016.12.048
+
+Glaessgen, E., & Stargel, D. (2012). The digital twin paradigm for future NASA and US Air Force vehicles. In *53rd AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics and Materials Conference*. AIAA. https://doi.org/10.2514/6.2012-1818
 
 Granovetter, M. S. (1973). The strength of weak ties. *American Journal of Sociology*, 78(6), 1360–1380. https://doi.org/10.1086/225469
 
 Grieves, M. (2014). Digital Twin: Manufacturing Excellence through Virtual Factory Replication. White paper. https://www.researchgate.net/publication/275211047
+
+Gruber, T. R. (1993). A translation approach to portable ontology specifications. *Knowledge Acquisition*, 5(2), 199–220. https://doi.org/10.1006/knac.1993.1008
+
+Gunning, D., & Aha, D. W. (2019). DARPA's Explainable Artificial Intelligence (XAI) program. *AI Magazine*, 40(2), 44–58. https://doi.org/10.1609/aimag.v40i2.2850
 
 Hart, S. G., & Staveland, L. E. (1988). Development of NASA-TLX (Task Load Index): Results of empirical and theoretical research. In P. A. Hancock & N. Meshkati (Eds.), *Human Mental Workload* (pp. 139–183). North-Holland. https://doi.org/10.1016/S0166-4115(08)62386-9
 
@@ -901,11 +953,27 @@ Iansiti, M. (2004). *The Keystone Advantage: What the New Dynamics of Business E
 
 Iansiti, M., & Lakhani, K. R. (2020). *Competing in the Age of AI: Strategy and Leadership When Algorithms and Networks Run the World*. Harvard Business Review Press.
 
-ISO. (2020). ISO 23247: Automation systems and integration — Digital twin framework for manufacturing.
+ISO. (2014). ISO 55000: Asset management — Overview, principles and terminology. International Organization for Standardization.
+
+ISO. (2020). ISO 23247: Automation systems and integration — Digital twin framework for manufacturing. International Organization for Standardization.
+
+ISO/IEC. (2018). ISO/IEC 30141: Internet of Things (IoT) — Reference architecture. International Organization for Standardization.
 
 ITU-R. (2023). *IMT-2030 (6G) Framework Recommendation*. ITU-R M.2160. International Telecommunication Union.
 
+Jones, D., Snider, C., Nassehi, A., Yon, J., & Hicks, B. (2020). Characterising the Digital Twin: A systematic literature review. *CIRP Journal of Manufacturing Science and Technology*, 29, 36–52. https://doi.org/10.1016/j.cirpj.2020.02.002
+
+Kairouz, P., McMahan, H. B., Avent, B., Bellet, A., Bennis, M., et al. (2021). Advances and open problems in federated learning. *Foundations and Trends in Machine Learning*, 14(1–2), 1–210. https://doi.org/10.1561/2200000083
+
+Kapusuzoglu, B., & Mahadevan, S. (2024). Data-driven physics-informed neural networks: A digital twin perspective. *Computer Methods in Applied Mechanics and Engineering*, 421, 116789. https://doi.org/10.1016/j.cma.2024.116789
+
+Karniadakis, G. E., Kevrekidis, I. G., Lu, L., Perdikaris, P., Wang, S., & Yang, L. (2021). Physics-informed machine learning. *Nature Reviews Physics*, 3(6), 422–440. https://doi.org/10.1038/s42254-021-00314-5
+
 Kerbl, B., Kopanas, G., Leimkühler, T., & Drettakis, G. (2023). 3D Gaussian Splatting for Real-Time Radiance Field Rendering. *ACM Transactions on Graphics*, 42(4). https://doi.org/10.1145/3592433
+
+Kirchherr, J., Reike, D., & Hekkert, M. (2017). Conceptualizing the circular economy: An analysis of 114 definitions. *Resources, Conservation and Recycling*, 127, 221–232. https://doi.org/10.1016/j.resconrec.2017.09.005
+
+Kitchin, R. (2014). *The Data Revolution: Big Data, Open Data, Data Infrastructures and Their Consequences*. SAGE Publications.
 
 Kritzinger, W., Karner, M., Traar, G., Henjes, J., & Sihn, W. (2018). Digital Twin in manufacturing: A categorical literature review and classification. *IFAC-PapersOnLine*, 51(11), 1016–1022. https://doi.org/10.1016/j.ifacol.2018.08.474
 
@@ -917,9 +985,19 @@ Law, J. (1992). Notes on the theory of the actor-network: Ordering, strategy, an
 
 Leonardi, P. M. (2012). Materiality, sociomateriality, and socio-technical systems: What do these terms mean? How are they related? Do we need them? In P. M. Leonardi, B. A. Nardi, & J. Kallinikos (Eds.), *Materiality and Organizing: Social Interaction in a Technological World* (pp. 25–48). Oxford University Press.
 
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., et al. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. In *Advances in Neural Information Processing Systems* (NeurIPS 2020). https://doi.org/10.48550/arXiv.2005.11401
+
+Lu, Y., Liu, C., Wang, K. I.-K., Huang, H., & Xu, X. (2024). Comprehensive digital twin for infrastructure: A novel ontology and graph-based modelling paradigm. *Advanced Engineering Informatics*, 62, 102851. https://doi.org/10.1016/j.aei.2024.102851
+
 Magoulas, T., & Pessi, K. (1998). Strategic IT management. In *Proceedings of the 7th International Conference on Information Systems Development*. Gothenburg University.
 
+McMahan, H. B., Moore, E., Ramage, D., Hampson, S., & Arcas, B. A. y. (2017). Communication-efficient learning of deep networks from decentralized data. In *Proceedings of the 20th International Conference on Artificial Intelligence and Statistics* (AISTATS 2017). https://proceedings.mlr.press/v54/mcmahan17a.html
+
+Miller, T. (2019). Explanation in artificial intelligence: Insights from the social sciences. *Artificial Intelligence*, 267, 1–38. https://doi.org/10.1016/j.artint.2018.07.007
+
 Mintzberg, H. (1979). *The Structuring of Organizations*. Prentice-Hall.
+
+Nonaka, I., & Takeuchi, H. (1995). *The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation*. Oxford University Press.
 
 OASC. (2023). Minimal Interoperability Mechanisms (MIMs). Open & Agile Smart Cities. https://oascities.org/minimal-interoperability-mechanisms/
 
@@ -927,15 +1005,35 @@ European Parliament and Council. (2007). Directive 2007/2/EC establishing an Inf
 
 Orlikowski, W. J. (2007). Sociomaterial practices: Exploring technology at work. *Organization Studies*, 28(9), 1435–1448. https://doi.org/10.1177/0170840607081138
 
+Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative agents: Interactive simulacra of human behavior. In *Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology* (UIST '23). https://doi.org/10.1145/3586183.3606763
+
 Pinch, T. J., & Bijker, W. E. (1984). The social construction of facts and artefacts. *Social Studies of Science*, 14(3), 399–441. https://doi.org/10.1177/030631284014003004
 
 Rackham, N. (1988). *SPIN Selling*. McGraw-Hill.
+
+Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. *Journal of Computational Physics*, 378, 686–707. https://doi.org/10.1016/j.jcp.2018.10.045
+
+Rasheed, A., San, O., & Kvamsdal, T. (2020). Digital twin: Values, challenges and enablers from a modeling perspective. *IEEE Access*, 8, 21980–22012. https://doi.org/10.1109/ACCESS.2020.2970143
+
+Rittel, H. W. J., & Webber, M. M. (1973). Dilemmas in a general theory of planning. *Policy Sciences*, 4(2), 155–169. https://doi.org/10.1007/BF01405730
+
+Satyanarayanan, M. (2017). The emergence of edge computing. *Computer*, 50(1), 30–39. https://doi.org/10.1109/MC.2017.9
+
+Schön, D. A. (1983). *The Reflective Practitioner: How Professionals Think in Action*. Basic Books.
+
+Senge, P. M. (1990). *The Fifth Discipline: The Art & Practice of The Learning Organization*. Doubleday.
+
+Shi, W., Cao, J., Zhang, Q., Li, Y., & Xu, L. (2016). Edge computing: Vision and challenges. *IEEE Internet of Things Journal*, 3(5), 637–646. https://doi.org/10.1109/JIOT.2016.2579198
+
+Simon, H. A. (1996). *The Sciences of the Artificial* (3rd ed.). MIT Press.
 
 Star, S. L. (2010). This is not a boundary object: Reflections on the origin of a concept. *Science, Technology, & Human Values*, 35(5), 601–617. https://doi.org/10.1177/0162243909345838
 
 Star, S. L., & Griesemer, J. R. (1989). Institutional ecology, "translations" and boundary objects: Amateurs and professionals in Berkeley's Museum of Vertebrate Zoology, 1907–39. *Social Studies of Science*, 19(3), 387–420. https://doi.org/10.1177/030631289019003001
 
 Tao, F., Zhang, H., Liu, A., & Nee, A. Y. C. (2019). Digital twin in industry: State-of-the-art. *IEEE Transactions on Industrial Informatics*, 15(4), 2405–2415. https://doi.org/10.1109/TII.2018.2873186
+
+Topol, E. J. (2019). *Deep Medicine: How Artificial Intelligence Can Make Healthcare Human Again*. Basic Books.
 
 Tuckman, B. W. (1965). Developmental sequence in small groups. *Psychological Bulletin*, 63(6), 384–399. https://doi.org/10.1037/h0022100
 
@@ -947,9 +1045,13 @@ Ward, J., & Daniel, E. (2006). *Benefits Management: Delivering Value from IS & 
 
 Weill, P., & Broadbent, M. (1998). *Leveraging the New Infrastructure: How Market Leaders Capitalize on Information Technology*. Harvard Business School Press.
 
+Wooldridge, M. (2009). *An Introduction to MultiAgent Systems* (2nd ed.). John Wiley & Sons.
+
 WHOQOL Group. (1995). The World Health Organization Quality of Life assessment (WHOQOL): Position paper from the World Health Organization. *Social Science & Medicine*, 41(10), 1403–1409. https://doi.org/10.1016/0277-9536(95)00112-K
 
 Zammuto, R. F., Griffith, T. L., Majchrzak, A., Dougherty, D. J., & Faraj, S. (2007). Information technology and the changing fabric of organization. *Organization Science*, 18(5), 749–762. https://doi.org/10.1287/orsc.1070.0306
+
+Zheng, X., Lu, J., & Kiritsis, D. (2024). Digital twin meets knowledge graph for intelligent manufacturing processes. *Sensors*, 24(8), 2618. https://doi.org/10.3390/s24082618
 
 **Corpus self-citations (SMILE applications):**
 
@@ -961,9 +1063,9 @@ Waern, N. (2026a). Indexing Reality: Boundary-Spanning Objects, Automated Scene 
 
 Waern, N. (2026b). From Spreadsheets to Spatial Fabric: Why the Equine Industry Needs a Data Operating System. WINNIIO AB. [Zenodo DOI: pending — design application pending empirical validation]
 
-Waern, N. (2026c). The Sovereign Body: Personal Digital Twins as Boundary-Spanning Objects Across the WHO Quality of Life Dimensions. WINNIIO AB. [Zenodo DOI: pending — design application pending empirical validation]
+Waern, N. (2026c). The Sovereign Body: Personal Digital Twins as Boundary-Spanning Objects Across the WHO Quality of Life Dimensions. WINNIIO AB. https://doi.org/10.5281/zenodo.19586851
 
-Waern, N. (2026d). The Reality Construct: Digital Twins as Boundary-Spanning Artefacts for Knowledge Absorption, Organisational Evolution, and the Co-Authorship of Intended Futures. WINNIIO AB. [Zenodo DOI: pending — design application pending empirical validation]
+Waern, N. (2026d). The Reality Construct: Digital Twins as Boundary-Spanning Artefacts for Knowledge Absorption, Organisational Evolution, and the Co-Authorship of Intended Futures. WINNIIO AB. https://doi.org/10.5281/zenodo.19586835
 
 Waern, N. (2026e). Personal Health Digital Twins as the Glue for Cross-Border Patient Data. WINNIIO AB. [Zenodo DOI: pending — design application pending empirical validation]
 

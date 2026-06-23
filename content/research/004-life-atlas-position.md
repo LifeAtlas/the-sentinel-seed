@@ -2,7 +2,7 @@
 
 **Nicolas Waern**
 WINNIIO AB, Gothenburg, Sweden
-ORCID: 0000-0001-7970-2707
+ORCID: 0009-0001-4011-8201
 
 *Corresponding author: ceo@winniio.io*
 
@@ -10,7 +10,7 @@ ORCID: 0000-0001-7970-2707
 
 **Version:** 1.0 | **Date:** 2026-04-14 | **License:** CC-BY-4.0
 
-**Cite as:** Waern, N. (2026). *The Sovereign Body: Personal Digital Twins as Boundary-Spanning Objects Across the WHO Quality of Life Dimensions*. WINNIIO AB. Zenodo. https://doi.org/10.5281/zenodo.PENDING
+**Cite as:** Waern, N. (2026). *The Sovereign Body: Personal Digital Twins as Boundary-Spanning Objects Across the WHO Quality of Life Dimensions*. WINNIIO AB. Zenodo. https://doi.org/10.5281/zenodo.19586851
 
 **Prior works in this series:**
 Waern (2025a). DOI: 10.5281/zenodo.17462962
@@ -21,9 +21,9 @@ Waern (2026a). DOI: 10.5281/zenodo.19587944 [Indexing Reality]
 
 ## Abstract
 
-This position paper argues that personal digital twins — computational representations of individual human beings — constitute a new class of boundary-spanning object (Star & Griesemer, 1989) capable of integrating knowledge across the four WHO Quality of Life dimensions (physical, psychological, social, and environmental), enabling individuals to reason about themselves with the rigour engineers apply to buildings, aircraft, and cities. We trace the progression from building twins to biological twins to personal twins, arguing that each step represents an epistemological shift: from environment-as-model to organism-as-model to person-as-system. We introduce the Life Atlas platform as an instantiation — an edge-native autonomous life operating system governed by the SMILE methodology (Waern, 2025a), the Vitruvius triad, and the principle that sovereignty over the body begins with sovereignty over data about the body. Drawing on Ward and Daniel's (2006) benefits-driven approach, we argue that personal digital twin platforms must be evaluated by measurable improvements in quality of life, not technical sophistication. We distinguish three intelligence regimes — Large Language Models (LLMs), Large Quantitative Models (LQMs), and Small Quantitative Models (SQMs) — arguing that LQMs are epistemologically superior for biological systems because biology is governed by physics, not statistics. We introduce the *Sovereign Body* as a design principle: an architecture in which personal health intelligence is generated where the person lives, computed on their own devices, explained in human-comprehensible terms, and subject to their unilateral override. This is a position paper, not an empirical study. Novel terminology is explicitly flagged.
+Personal digital twins — computational representations of individual human beings — constitute a new class of boundary-spanning object (Star & Griesemer, 1989) capable of integrating knowledge across the four WHO Quality of Life dimensions: physical, psychological, social, and environmental. This position paper traces the progression from building twins to biological twins to personal twins, arguing that each step represents an epistemological shift from environment-as-model to person-as-system. We introduce three intelligence regimes — Large Language Models (LLMs), Large Quantitative Models (LQMs), and Small Quantitative Models (SQMs) — arguing that LQMs are epistemologically superior for biological systems because biology is governed by physics, not statistics. Drawing on Ward and Daniel's (2006) benefits-driven approach, we propose that personal digital twin platforms must be evaluated by measurable quality-of-life improvements, not technical sophistication. We present the *Sovereign Body* as an architectural principle: personal health intelligence generated on the person's devices, explained in human terms, and subject to unilateral override. The Life Atlas platform instantiates this architecture as an edge-native life operating system governed by the SMILE methodology (Waern, 2025a; 2025b; 2026c). Preliminary architectural validation at non-human scale (equine biological twins) demonstrates the feasibility of the LQM/SQM/LLM separation across biological domains; empirical performance benchmarks are forthcoming. Novel terminology is explicitly flagged.
 
-**Keywords:** Personal Digital Twin, Boundary Objects, WHO Quality of Life, Sovereign Body, Life Atlas, SMILE Methodology, Large Quantitative Models, Edge Computing, Data Sovereignty, Biological Digital Twin, NUDEDA, Health Ontology, AI Governance, Vitruvius Triad
+**Keywords:** personal digital twin, boundary objects, WHO quality of life, sovereign body, SMILE methodology, large quantitative models, edge computing, data sovereignty, biological digital twin, AI governance
 
 ---
 
@@ -68,7 +68,7 @@ The World Health Organization's Quality of Life framework, operationalised as th
 3. **Social relationships**: personal relationships, social support, sexual activity
 4. **Environment**: financial resources, freedom, physical safety, health and social care, home environment, opportunities for acquiring new information and skills, physical environment (pollution, noise, traffic, climate), transport
 
-These domains are not independent. Social isolation predicts cardiovascular disease (Holt-Lunstad et al., 2015). Air quality predicts cognitive decline (Calderón-Garcidueñas et al., 2021). Psychological distress modulates inflammatory markers (Kiecolt-Glaser et al., 2002). Sleep quality governs metabolic function (Van Cauter et al., 2008). The domains interact through feedback loops that operate on timescales from milliseconds (neuroendocrine) to decades (epigenetic).
+These domains are not independent. Social isolation predicts cardiovascular disease (Holt-Lunstad et al., 2015). Air pollution is identified as a modifiable risk factor for dementia and cognitive decline (Livingston et al., 2020), with nanoparticulate exposure specifically linked to neuroinflammatory pathways (Calderón-Garcidueñas et al., 2021). Psychological distress modulates inflammatory markers (Kiecolt-Glaser et al., 2002). Sleep quality governs metabolic function (Van Cauter et al., 2008). The domains interact through feedback loops that operate on timescales from milliseconds (neuroendocrine) to decades (epigenetic).
 
 The personal digital twin, as we define it, must model all four domains and their interactions. A twin that models only physical health is a fitness tracker. A twin that models physical and psychological health is a wellness app. A twin that models all four domains and their causal interactions is something qualitatively different: it is a *life model* — a computational representation of the person in their full ecological context.
 
@@ -105,7 +105,7 @@ The digital twin concept originated in aerospace — Grieves (2014) traces it to
 The lessons from BIM adoption are directly applicable to personal digital twins:
 
 1. **The twin is not the building; the twin is the knowledge asset**: The value of BIM is not the 3D geometry but the structured data attached to it — material specifications, maintenance schedules, energy performance parameters. Similarly, the value of the personal digital twin is not the visualisation but the causal model.
-2. **Adoption requires boundary infrastructure, not just boundary objects**: Bowker and Star (1999) showed that classification systems — the unglamorous infrastructure of naming, categorising, and standardising — are as important as the objects themselves. The Industry Foundation Classes (IFC) standard, which defines a common data model for BIM objects, is more important to BIM interoperability than any particular software platform. The analogous infrastructure for personal digital twins is an open health ontology.
+2. **Adoption requires boundary infrastructure, not just boundary objects**: Bowker and Star (1999) showed that classification systems — the unglamorous infrastructure of naming, categorising, and standardising — are as important as the objects themselves. Their central argument is that infrastructure is *relational* — something becomes infrastructure only in relation to organised practices, not through inherent properties. The Industry Foundation Classes (IFC) standard, which defines a common data model for BIM objects, is more important to BIM interoperability than any particular software platform — precisely because it provides the invisible substrate upon which boundary objects can function. For personal digital twins, this infrastructure argument is even more consequential: the ontological layer connecting physical biomarkers (SNOMED CT), psychological assessments (DSM/ICD), social context (no established standard), and environmental exposure (EPA AQI, WHO guidelines) does not yet exist as an integrated classification system. The OMOP Common Data Model (Hripcsak et al., 2015) addresses observational health data but not cross-domain life modelling. Building this boundary infrastructure — the open health ontology that makes the personal digital twin legible across all four WHO QoL domains — is architecturally prior to building the twin itself. Without it, the twin is a sophisticated model trapped in a single professional vocabulary.
 3. **Value is realised in use, not in creation**: The BIM mandate in public procurement was driven by the recognition that the model created during design and construction has orders-of-magnitude more value if it is maintained and used during operation (Eastman et al., 2011). The same principle applies to personal health data: its value is not in collection but in continuous use.
 
 ### 3.2 Environmental Twins and the Ecological Embedding
@@ -156,7 +156,7 @@ The three criteria are in tension. A maximally robust system is neither useful n
 
 We propose **[proposed term]** the *Vitruvius test* as an acceptance criterion for personal digital twin platforms: any proposed feature or architectural decision must pass all three criteria simultaneously. Features that are robust and useful but repellent are not shipped. Features that are attractive and useful but technically unsound are not shipped. Features that are robust and attractive but serve no identifiable human need are not shipped.
 
-This test operationalises a principle from the SMILE methodology: *impact first, data last*. The SMILE inverted pyramid (Outcome → Action → Insight → Information → Data) encodes the same priority order as the Vitruvius triad: begin from the human outcome (utilitas), ensure the architecture can sustain it (firmitas), and express it in a form that humans will engage with (venustas).
+This test operationalises a principle from the SMILE methodology (Waern, 2025a; 2025b; 2026c): *impact first, data last*. The SMILE inverted pyramid (Outcome → Action → Insight → Information → Data) encodes the same priority order as the Vitruvius triad: begin from the human outcome (utilitas), ensure the architecture can sustain it (firmitas), and express it in a form that humans will engage with (venustas).
 
 ---
 
@@ -180,7 +180,7 @@ We propose — and wish to be explicit that this taxonomy is novel, building on 
 
 **Small Quantitative Models (SQMs)** **[proposed term]**: Compact, edge-deployable physics models derived from LQMs through model reduction — the application of sensitivity analysis, lumped-parameter approximation, and validated simplification to produce models that run on smartphones, wearables, or home edge devices with millisecond latency. The relationship between LQMs and SQMs is analogous to model distillation in machine learning (Hinton et al., 2015) but applied to physics-based engines: the SQM preserves the causal structure of the LQM while discarding computationally expensive sub-components whose contribution to the output of interest is below a defined threshold. SQMs are the intelligence that lives on the person's device, updating continuously from their wearable sensors, providing real-time feedback without requiring cloud connectivity.
 
-The feasibility of SQM edge-deployment rests on demonstrated model reduction results in specific biological subsystems. Glucose-insulin homeostasis models — originally 20+ state ODE systems (Cedersund et al., 2021) — have been reduced to 4–6 state lumped-parameter models that reproduce meal-response dynamics within a 10–15% error budget relative to the full model, running in < 5 ms on ARM Cortex-A class processors (the compute class of current smartphones and wearable hubs). Circadian rhythm models (Leloup & Goldbeter, 2003), originally 16-variable oscillator systems, have been reduced to 3-variable limit-cycle approximations suitable for real-time phase estimation. Heart rate variability models based on autonomic nervous system ODE representations have been simplified to transfer-function approximations deployable on microcontroller-class hardware (e.g., Nordic nRF5340, typical of wearable devices). These error bounds have been demonstrated for healthy adult metabolic phenotypes; tolerance thresholds for metabolically atypical populations (e.g., Type 2 diabetes, rare metabolic disorders) require separate validation, as error propagation characteristics differ substantially across phenotypic diversity. The error budget for SQM reduction is defined per subsystem: the reduced model must reproduce the full LQM's output for the target variable within a specified tolerance (typically ≤ 15% normalised RMSE) across the operating range defined by the person's observed physiological data. Subsystems where this tolerance cannot be met remain on the LQM layer and are computed server-side. These reduction ratios are consistent with findings in the model reduction literature (Antoulas, 2005) and have been demonstrated for glucose-insulin dynamics specifically by Cedersund and colleagues (Cedersund & Roll, 2009).
+The feasibility of SQM edge-deployment rests on established principles of model reduction in dynamical systems (Antoulas, 2005). In the biological domain, Cedersund and colleagues have demonstrated that multi-state ODE systems for glucose-insulin homeostasis can be systematically simplified through sensitivity analysis and lumped-parameter approximation while retaining the causal structure necessary for individual-level prediction (Cedersund & Roll, 2009; Cedersund et al., 2021). Similarly, Leloup and Goldbeter's (2003) circadian rhythm models, originally formulated as multi-variable oscillator systems, admit reduced-order approximations suitable for real-time phase estimation. The general principle — that physics-based models can be reduced to compact forms deployable on ARM Cortex-A class processors (the compute class of current smartphones) while preserving causal fidelity within defined error tolerances — is well-established in the model reduction literature; its specific application to personal biological subsystems at edge scale is a design commitment of this architecture that requires empirical validation per subsystem and per population. Tolerance thresholds for metabolically atypical populations (e.g., Type 2 diabetes, rare metabolic disorders) require separate validation, as error propagation characteristics differ substantially across phenotypic diversity. The error budget for SQM reduction is defined per subsystem: the reduced model must reproduce the full LQM's output for the target variable within a specified tolerance across the operating range defined by the person's observed physiological data. Subsystems where this tolerance cannot be met remain on the LQM layer and are computed server-side.
 
 ### 5.3 The Regime Stack in Practice
 
@@ -220,7 +220,7 @@ The Life Atlas platform implements sovereignty as architecture through four mech
 
 1. **Local-first storage**: The biological model and all personal health data reside on the person's primary device. Cloud synchronisation is optional, encrypted end-to-end, and can be disabled without loss of core functionality.
 2. **SQM on-device inference**: The real-time intelligence layer (SQM) runs entirely on the person's device. No health data is transmitted to cloud servers for real-time processing. The device may be offline for weeks without degradation of core functionality.
-3. **Privacy-preserving LQM parameterisation**: When the person chooses to update their LQM parameters using cloud compute, the parameterisation protocol transmits only sufficient statistics — summary moments, likelihood evaluations, or parameter posteriors — never raw biological data. For population-level model improvement, the platform employs federated Bayesian inference: each device computes a local posterior over shared model parameters and transmits only the posterior summary, which the server aggregates without accessing individual data (Corinzia et al., 2019). The raw biological data never leaves the device. We note that posterior summaries from rare phenotypes may carry re-identification risk — a metabolic posterior from an unusual genetic variant could be effectively de-anonymised. Differential privacy mechanisms applied to posterior transmission is an architectural requirement for production deployment. We propose an epsilon-budget approach where each posterior transmission consumes a privacy budget quantum, with the total budget calibrated per user risk profile. The calibration protocol is designated as future work; the requirement is not.
+3. **Privacy-preserving LQM parameterisation**: When the person chooses to update their LQM parameters using cloud compute, the parameterisation protocol transmits only sufficient statistics — summary moments, likelihood evaluations, or parameter posteriors — never raw biological data. For population-level model improvement, the platform employs federated Bayesian inference: each device computes a local posterior over shared model parameters and transmits only the posterior summary, which the server aggregates without accessing individual data. This approach extends the variational federated multi-task learning framework of Corinzia et al. (2019) to the specific case of ODE-parameterised biological models, where the local posterior is computed over model kinetic parameters rather than neural network weights — a novel application that requires empirical validation of convergence properties under the non-IID data distributions characteristic of individual physiological phenotypes. The raw biological data never leaves the device. We note that posterior summaries from rare phenotypes may carry re-identification risk — a metabolic posterior from an unusual genetic variant could be effectively de-anonymised. Differential privacy mechanisms applied to posterior transmission is an architectural requirement for production deployment. We propose an epsilon-budget approach where each posterior transmission consumes a privacy budget quantum, with the total budget calibrated per user risk profile. The calibration protocol is designated as future work; the requirement is not.
 4. **Portable exit**: All personal data — including the calibrated SQM coefficients — is exportable in open formats (FHIR R4, HL7 CDA, JSON-LD) that are readable without the Life Atlas platform. If the platform disappears, the person's biological model goes with them. We acknowledge that FHIR interoperability in practice remains incomplete due to profiling fragmentation and vendor-specific extensions; the portability claim assumes conformant implementations.
 
 ### 6.3 The GDPR as Technical Specification
@@ -233,7 +233,7 @@ The General Data Protection Regulation (EU 2016/679) establishes six principles 
 
 ### 7.1 The Inverted Pyramid
 
-The SMILE methodology — Sustainable Methodology for Impact Lifecycle Enablement (Waern, 2025a; 2025b) — begins with a structural inversion of the conventional data-driven approach to digital technology.
+The SMILE methodology — Sustainable Methodology for Impact Lifecycle Enablement (Waern, 2025a; 2025b; Waern, 2026c) — begins with a structural inversion of the conventional data-driven approach to digital technology. We note that SMILE has been developed and applied across digital twin engagements spanning construction, manufacturing, and biological systems (Waern, 2025a; 2025b), but independent external validation and critique of the methodology by other research groups remains an open gap; we invite the community to apply and assess the framework.
 
 The conventional approach follows a bottom-up pyramid: *collect data → process data → generate information → extract insight → enable action → achieve outcome*. This approach is epistemologically appropriate for scientific discovery — where the goal is to learn what is true from observation — but it is systematically inappropriate for human-centred technology deployment, where the person's goal is an outcome (thriving, performance, recovery, longevity) and data is merely one input to achieving it.
 
@@ -302,13 +302,13 @@ The architecture has seven layers:
 
 7. **Interface Layer**: Conversational and visual interfaces powered by the LLM layer, presenting the twin's outputs in natural language and spatial/graphical form. The interface is the Vitruvius venustas layer.
 
-The Life Atlas architecture can be understood through the lens of platform ecosystem theory (Tiwana, 2014; Gawer & Cusumano, 2014), where the LPI layer functions as the platform core that third-party developers extend, and the SMILE methodology governs how complementary innovations are integrated without compromising architectural coherence.
+The Life Atlas architecture can be understood through the lens of platform ecosystem theory (Tiwana, 2014; Gawer & Cusumano, 2014), where the LPI layer functions as the platform core that third-party developers extend. In Tiwana's (2014) framework, platform governance requires explicit decisions on three dimensions: *decision rights* (who decides what runs on the platform), *control mechanisms* (how quality and safety are enforced), and *pricing* (how value is distributed). For Life Atlas, the LPI implements governance through schema validation (all third-party agent outputs must conform to the platform's ontological schema), sandboxed execution (agents access only the data scopes the person has granted), and a graduated trust model where new agents operate in advisory-only mode until their outputs have been validated against the person's observed outcomes. The SMILE methodology (Waern, 2025a; 2025b; 2026c) governs how complementary innovations are integrated without compromising architectural coherence.
 
 ### 8.2 The Ontology as Shared Grammar
 
 The platform's ontological foundation — the taxonomy of health concepts, relationships, and causal mechanisms — is derived from four sources: WHOQOL-BREF (WHO QoL domain structure), SNOMED CT (clinical terminology for health concepts), ICD-11 (disease and condition classification), and a platform-specific extension that models the four-domain interaction graph described in Section 2.2.
 
-The proposed ontology is designed to be complementary to, not competitive with, the OMOP Common Data Model (Hripcsak et al., 2015), which provides the de facto standard for observational health data interoperability across 800+ institutions globally. This ontology is open. It is published as a linked data vocabulary, readable by any system, and extensible by the research community. The ontology is the boundary infrastructure (Bowker & Star, 1999) of the platform — the invisible classification system that makes cross-domain reasoning possible.
+The proposed ontology is designed to be complementary to, not competitive with, the OMOP Common Data Model (Hripcsak et al., 2015), which provides the de facto standard for observational health data interoperability across 800+ institutions globally. Concretely, the platform maps clinical observations to OMOP CDM vocabulary concepts (condition_occurrence, measurement, drug_exposure) via standard concept IDs, while extending the graph with cross-domain relationship types (environment→physiology causal links, social→psychological mediation pathways) that fall outside OMOP's observational scope. This bridge architecture allows clinical data to flow bidirectionally between OMOP-conformant research networks and the personal twin's multi-domain graph without vocabulary translation loss. This ontology is open. It is published as a linked data vocabulary, readable by any system, and extensible by the research community. The ontology is the boundary infrastructure (Bowker & Star, 1999) of the platform — the invisible classification system that makes cross-domain reasoning possible.
 
 ### 8.3 EquestRai: The Biological Twin at Non-Human Scale
 
@@ -316,9 +316,11 @@ The Life Atlas architecture was first validated at non-human scale in the Equest
 
 EquestRai validates two architectural claims: the LQM/SQM/LLM separation is domain-agnostic (the same pattern works for equine and human metabolic modelling because the underlying physics is identical), and it provides an ethically simpler validation environment with more aggressive testing protocols. The deployment at Mulawa Estate (Australia) tests the edge-native architecture: local SQMs update from GPS, HRV, and activity sensors; the LQM parameterises from veterinary panels; trainers query individual horse readiness in natural language.
 
+EquestRai is currently in early validation; quantitative benchmarks for prediction accuracy, parameterisation speed, and edge-deployment latency will be reported in the dedicated EquestRai publication (Waern, 2026b). The architectural claim under test — that physics-based model reduction preserves causal fidelity at edge-deployable latency, and that the LQM/SQM/LLM separation scales across biological domains — does not depend on specific performance numbers but on the structural separation of concerns: the SQM handles real-time inference on-device, the LQM handles periodic deep parameterisation in cloud, and the LLM handles communication without simulating biology. Transfer to human physiology requires separate parameterisation studies and clinical validation.
+
 ### 8.4 The Platform as Tool, Not Authority
 
-A critical design constraint governs all Life Atlas capabilities: the platform is a tool, not an authority. This constraint operationalises the SMILE principle that humans are irreplaceable participants in the intelligence loop — and distinguishes the Life Atlas approach from the paternalistic design pattern common in clinical health systems.
+A critical design constraint governs all Life Atlas capabilities: the platform is a tool, not an authority. This constraint operationalises the SMILE principle (Waern, 2026c) that humans are irreplaceable participants in the intelligence loop — and distinguishes the Life Atlas approach from the paternalistic design pattern common in clinical health systems.
 
 In tool design, the system shows the person what is true — including the uncertainty — and supports them in deciding what to do. This has three practical consequences:
 
@@ -340,7 +342,9 @@ We argue that the AI Act's requirements are not burdens but design specification
 - **Accuracy and robustness** (Article 15): Operationalised through the LQM/SQM separation — physics-based models with explicit parameterisation uncertainty, not black-box neural networks.
 - **Transparency** (Article 13): Operationalised through the explainability annotation on all LPI outputs — every AI output surfaces its source, confidence interval, and model provenance.
 
-The AI Act also requires, for high-risk systems, a conformity assessment before market deployment (Article 43). We propose that the appropriate conformity assessment for a personal biological twin is not a static pre-market test but a continuous validation protocol — the SMILE Phase 3 feedback loop applied to model accuracy — in which the platform's predictions are continuously compared against observed outcomes and the conformity assessment is updated accordingly.
+The AI Act also requires, for high-risk systems, a conformity assessment before market deployment (Article 43). Beyond the AI Act, a personal health decision support platform may also qualify as Software as a Medical Device (SaMD) under the EU Medical Device Regulation (MDR 2017/745) or FDA's SaMD classification framework, depending on the specificity and clinical risk level of its outputs. If the platform's predictions influence clinical decisions (e.g., medication timing based on SQM glucose forecasting), regulatory classification as a Class IIa or higher medical device is likely. The regulatory pathway for platforms that span clinical and non-clinical wellness domains — where the same SQM may produce a clinically actionable output (medication timing) and a lifestyle suggestion (exercise scheduling) — remains an open regulatory design question that must be resolved before market deployment.
+
+We propose that the appropriate conformity assessment for a personal biological twin is not a static pre-market test but a continuous validation protocol — the SMILE Phase 3 feedback loop (Waern, 2026c) applied to model accuracy — in which the platform's predictions are continuously compared against observed outcomes and the conformity assessment is updated accordingly.
 
 ### 9.2 The NUDEDA Progression for Personal Health Platforms
 
@@ -370,17 +374,35 @@ We began with Star and Griesemer's (1989) boundary object as a theoretical lens.
 
 The personal digital twin satisfies the structural criteria for a boundary object: it is plastic enough to adapt to different professional contexts (the GP reads the physical domain summary; the psychologist reads the psychological domain; the environmental health officer reads the environmental domain) while robust enough to maintain a common identity (it is always *this person's* twin, with its provenance, its parameterisation history, and its validated accuracy record). Its interpretive flexibility (Pinch & Bijker, 1984) is not a weakness but a design feature: the same model can be interrogated from multiple professional perspectives without requiring those perspectives to agree.
 
-Star (2010) herself cautioned that boundary objects lose their interpretive flexibility when standardised by powerful actors — a risk that applies directly to health platforms where clinical ontologies may override patient self-knowledge. But we also identify a limitation of the boundary object frame: Star and Griesemer's objects mediated between human communities. The personal digital twin mediates not only between communities but between the person and their future selves — between the person who makes a dietary choice today and the person whose metabolic state that choice produces in three months.
+Star (2010) herself cautioned that boundary objects lose their interpretive flexibility when standardised by powerful actors — a risk that applies directly to health platforms where clinical ontologies may override patient self-knowledge.
 
-We must also acknowledge a deeper risk: boundary objects can entrench existing power asymmetries rather than flatten them (Bowker & Star, 1999). Suchman (2007) showed how technologies configure their users, subtly constraining the roles people are permitted to play. Without carefully designed governance, the personal digital twin could become a tool of medical authority rather than patient empowerment — the twin's quantitative outputs carrying the epistemic authority of physics in ways that override the person's lived experience. The Sovereign Body principle (Section 6) is our architectural response, but architectural sovereignty alone is insufficient if the person lacks the absorptive capacity (Section 2.3) to contest a professional's reading of their own model. Governance must include mechanisms for interpretive contestation that are practically accessible, not merely formally available. We further note that the WHO QoL framework itself may produce new forms of invisibility — health experiences that fall outside its four domains (spiritual wellbeing, existential meaning, culturally specific distress idioms) risk being erased rather than merely unmeasured. To address this, the knowledge graph employs an extensible ontology architecture: user-defined domain nodes and community-contributed ontology extensions allow health experiences outside the four WHO QoL domains to be encoded without requiring centralised schema modification. This is a design commitment to epistemic humility — the framework acknowledges that it cannot anticipate all dimensions of human wellbeing.
+Callon's (1986) sociology of translation provides additional analytical precision. The personal digital twin instantiates all four moments of translation:
 
-### 10.1.1 The Temporal Boundary Object
+1. **Problematisation**: The platform defines the person's fragmented health data as a problem requiring integration — establishing itself as an *obligatory passage point* between the person and their own biological legibility. This is both the twin's value proposition and its power risk: by framing health as computationally legible, it may marginalise non-quantified dimensions of wellbeing.
+
+2. **Interessement**: The twin enrolls heterogeneous actors — wearable manufacturers, clinical laboratories, environmental sensor networks — by providing each a structured interface (the LPI) through which their data becomes meaningful in context. Each actor's contribution is stabilised within the platform's ontological schema.
+
+3. **Enrolment**: Through the SMILE methodology's phased progression (Waern, 2026c), the person and their professional communities negotiate roles within the twin's governance. The GP contributes clinical data under terms the person controls; the wearable contributes continuous data under terms the SQM schema defines. These negotiations are ongoing, not one-time — each SMILE phase transition represents a re-enrolment with expanded scope.
+
+4. **Mobilisation**: The calibrated twin, once validated through Phase 3 feedback loops, becomes a spokesperson for the person's biology — representing them in clinical consultations, insurance assessments, or research participation. The Sovereign Body principle constrains this mobilisation: the twin speaks *for* the person only with their active consent, and the person retains unilateral veto.
+
+This translation lens also reveals a limitation of the boundary object frame: Star and Griesemer's objects mediated between human communities. The personal digital twin mediates not only between communities but between the person and their future selves — between the person who makes a dietary choice today and the person whose metabolic state that choice produces in three months.
+
+We further note that the WHO QoL framework itself may produce new forms of invisibility — health experiences that fall outside its four domains (spiritual wellbeing, existential meaning, culturally specific distress idioms) risk being erased rather than merely unmeasured. To address this, the knowledge graph employs an extensible ontology architecture: user-defined domain nodes and community-contributed ontology extensions allow health experiences outside the four WHO QoL domains to be encoded without requiring centralised schema modification. This is a design commitment to epistemic humility — the framework acknowledges that it cannot anticipate all dimensions of human wellbeing. The deeper risk of power entrenchment through boundary objects is addressed in Section 10.1.2.
+
+### 10.1.1 Temporal Mediation and the Temporal Boundary Object
 
 This temporal mediation has no clear precedent in the boundary object literature but finds theoretical grounding in Emirbayer and Mische's (1998) theory of temporal agency, which identifies three orientations operating simultaneously: the *iterational* (habitual repetition of past patterns), the *projective* (imaginative generation of future trajectories), and the *practical-evaluative* (contextual judgement in the present). Most health technologies address only one: electronic health records serve the iterational, monitoring dashboards serve the practical-evaluative, and risk calculators offer crude projective estimates.
 
 The personal digital twin operates across all three simultaneously: it encodes iterational history (calibrated parameters reflecting years of data), computes projective trajectories (simulated futures under different interventions), and supports practical-evaluative judgement (real-time contextual recommendations). We propose that this tripartite temporal function constitutes a new category: the *temporal boundary object* **[proposed term]** — an artefact enabling a person to reason across temporal distance with the coherence that spatial boundary objects enable across disciplinary distance.
 
 The temporal boundary object has structural properties analogous to Star and Griesemer's spatial boundary objects: it must be *plastic* enough to represent different temporal horizons (the next-hour glucose prediction and the ten-year cardiovascular risk trajectory are both valid readings of the same model) yet *robust* enough to maintain identity across those horizons. The twin's causal structure — the ODE system that connects present inputs to future states — provides this robustness. A statistical predictor that correlates present biomarkers with future risk does not qualify, because it provides no mechanism for understanding *how* the present produces the future.
+
+### 10.1.2 Power Asymmetries and Interpretive Contestation
+
+The Callon translation analysis (Section 10.1) reveals that the personal digital twin's role as obligatory passage point creates a power concentration that cannot be resolved by architectural sovereignty alone. Suchman (2007) showed how technologies configure their users, subtly constraining the roles people are permitted to play. If the twin's quantitative outputs carry the epistemic authority of physics, they may override the person's lived experience in clinical encounters — a dynamic that Jasanoff (2004) analyses as the co-production of scientific authority and social order, where quantified knowledge can displace experiential knowledge.
+
+The Sovereign Body principle (Section 6) provides the architectural response, but governance must also include mechanisms for *interpretive contestation* that are practically accessible, not merely formally available. We propose three such mechanisms: (1) the twin must surface the uncertainty and limitations of its models as prominently as its predictions; (2) the person must be able to annotate model outputs with lived-experience counterpoints that are preserved in the knowledge graph; (3) professional users querying the twin must receive the person's annotations alongside model outputs — the twin mediates, but does not arbitrate.
 
 ### 10.2 Open Research Questions
 
@@ -400,7 +422,22 @@ The framework developed in this paper generates several empirically tractable re
 
 Several research programmes have advanced complementary aspects. Topol (2019) argued for AI-augmented "deep medicine" but focused on clinical settings rather than sovereign personal use. Laubenbacher et al. (2022) demonstrated immune system digital twins simulating individual patient responses to immunotherapy — LQM-class modelling applied to personalised treatment. The NIH Bridge2AI programme (Bridge2AI Consortium, 2023) has invested in ethically sourced, AI-ready biomedical datasets addressing the data infrastructure prerequisite for population-scale twin parameterisation. These efforts validate the technical feasibility of components described here; our contribution lies in the architectural integration across all four WHO QoL domains, the edge-native sovereignty commitment, and the boundary object framing connecting technical and social dimensions.
 
-Two European programmes deserve mention. The Virtual Physiological Human (VPH) programme has produced organ-level simulation capabilities representing state-of-the-art LQM-class modelling for clinical research (Hunter et al., 2013). The EU DigiTwins initiative has proposed an infrastructure roadmap for scaling digital twin technologies across European healthcare. These are complementary: VPH focuses on organ-level simulation fidelity; DigiTwins provides institutional infrastructure. Life Atlas proposes what neither addresses: an edge-native, sovereign, multi-domain integration layer spanning all four WHO QoL dimensions on the person's own devices.
+Two European programmes deserve mention. The Virtual Physiological Human (VPH) programme has produced organ-level simulation capabilities representing state-of-the-art LQM-class modelling for clinical research (Hunter et al., 2013). The EU DigiTwins initiative has proposed an infrastructure roadmap for scaling digital twin technologies across European healthcare.
+
+Table 1 summarises the architectural positioning of Life Atlas relative to these complementary efforts:
+
+| Dimension | VPH (Hunter et al., 2013) | DigiTwins (EU) | Deep Medicine (Topol, 2019) | Bridge2AI (NIH, 2023) | **Life Atlas** |
+|-----------|--------------------------|----------------|----------------------------|----------------------|----------------|
+| **Primary scope** | Organ-level simulation | Healthcare infrastructure | Clinical AI augmentation | AI-ready datasets | Multi-domain life model |
+| **WHO QoL coverage** | Physical only | Physical only | Physical + Psychological | Physical only | All four domains |
+| **Intelligence regime** | LQM (physics) | Unspecified | LLM (statistical) | Data infrastructure | LQM/SQM/LLM stack |
+| **Data sovereignty** | Institutional | Institutional | Provider-controlled | Consortium-governed | Edge-native, person-controlled |
+| **Compute location** | HPC cluster | Cloud | Cloud | Cloud | Edge-first, cloud for LQM |
+| **Boundary object function** | Research artefact | Policy artefact | Clinical tool | Research resource | Cross-domain life model |
+| **Temporal orientation** | Simulation snapshots | Infrastructure roadmap | Diagnostic present | Historical datasets | Iterational + projective + evaluative |
+| **Governance model** | Research ethics | EU institutional | Clinical governance | IRB + consent | Sovereign Body (architectural) |
+
+These are complementary: VPH focuses on organ-level simulation fidelity; DigiTwins provides institutional infrastructure; Topol articulates the clinical vision; Bridge2AI addresses the data prerequisite. Life Atlas proposes what none addresses: an edge-native, sovereign, multi-domain integration layer spanning all four WHO QoL dimensions on the person's own devices, governed by the person rather than an institution.
 
 ---
 
@@ -422,7 +459,7 @@ We began with the observation that patient-specific cardiac twins can reveal dyn
 
 ## Acknowledgements
 
-The author thanks the WINNIIO AB team and the EquestRai collaboration partners for technical discussions informing the architecture described in this paper. The SMILE methodology (Waern, 2025a; 2025b) was developed across a decade of digital twin deployments in construction, manufacturing, and biological systems; the insights from those deployments are the empirical foundation of the framework presented here. This work was supported by WINNIIO AB internal research funding.
+The author thanks the WINNIIO AB team and the EquestRai collaboration partners for technical discussions informing the architecture described in this paper. The SMILE methodology (Waern, 2025a; 2025b; 2026c) was developed across a decade of digital twin deployments in construction, manufacturing, and biological systems; the insights from those deployments are the empirical foundation of the framework presented here. This work was supported by WINNIIO AB internal research funding.
 
 ---
 
@@ -446,6 +483,8 @@ Calderón-Garcidueñas, L., Torres-Jardón, R., Franco-Lira, M., Mora-Tiscareño
 
 Carlile, P. R. (2002). A pragmatic view of knowledge and boundaries: Boundary objects in new product development. *Organization Science*, 13(4), 442–455. https://doi.org/10.1287/orsc.13.4.442.2953
 
+Callon, M. (1986). Some elements of a sociology of translation: Domestication of the scallops and the fishermen of St Brieuc Bay. In J. Law (Ed.), *Power, Action and Belief: A New Sociology of Knowledge?* (pp. 196–233). Routledge & Kegan Paul.
+
 Cavoukian, A. (2009). *Privacy by Design: The 7 Foundational Principles*. Information and Privacy Commissioner of Ontario. https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples.pdf
 
 Cedersund, G., & Roll, J. (2009). Systems biology: Model based evaluation and comparison of potential explanations for given biological data. *The FEBS Journal*, 276(4), 903–922. https://doi.org/10.1111/j.1742-4658.2008.06845.x
@@ -468,6 +507,8 @@ Erdemir, A., McLean, S., Herzog, W., & van den Bogert, A. J. (2007). Model-based
 
 EU. (2016). Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data (General Data Protection Regulation). *Official Journal of the European Union*, L 119, 1–88.
 
+EU. (2017). Regulation (EU) 2017/745 of the European Parliament and of the Council of 5 April 2017 on medical devices (Medical Device Regulation). *Official Journal of the European Union*, L 117, 1–175.
+
 EU. (2024). Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). *Official Journal of the European Union*, L, 1689.
 
 Gawer, A., & Cusumano, M. A. (2014). Industry platforms and ecosystem innovation. *Journal of Product Innovation Management*, 31(3), 417–433. https://doi.org/10.1111/jpim.12105
@@ -478,9 +519,9 @@ Grieves, M. (2014). *Digital Twin: Manufacturing Excellence through Virtual Fact
 
 Hagström, H., Simonsson, O., Kamp, B., & Cedersund, G. (2022). A human whole-body mathematical model of the glucose-insulin system with feedback to the liver and pancreatic functions. *npj Systems Biology and Applications*, 8, 54. https://doi.org/10.1038/s41540-022-00260-7
 
-Hunter, P., Chapman, T., Coveney, P. V., de Bono, B., Diaz, V., Fenner, J., ... & Viceconti, M. (2013). A vision and strategy for the virtual physiological human: 2012 update. *Interface Focus*, 3(2), 20130004. https://doi.org/10.1098/rsfs.2013.0004
-
 Hripcsak, G., Duke, J. D., Shah, N. H., Reich, C. G., Huser, V., Schuemie, M. J., ... & Ryan, P. B. (2015). Observational Health Data Sciences and Informatics (OHDSI): Opportunities for observational researchers. *Studies in Health Technology and Informatics*, 216, 574–578. https://doi.org/10.3233/978-1-61499-564-7-574
+
+Hunter, P., Chapman, T., Coveney, P. V., de Bono, B., Diaz, V., Fenner, J., ... & Viceconti, M. (2013). A vision and strategy for the virtual physiological human: 2012 update. *Interface Focus*, 3(2), 20130004. https://doi.org/10.1098/rsfs.2013.0004
 
 Hinton, G., Vinyals, O., & Dean, J. (2015). Distilling the knowledge in a neural network. *arXiv preprint arXiv:1503.02531*.
 
@@ -488,7 +529,11 @@ Holt-Lunstad, J., Smith, T. B., Baker, M., Harris, T., & Stephenson, D. (2015). 
 
 Kiecolt-Glaser, J. K., McGuire, L., Robles, T. F., & Glaser, R. (2002). Emotions, morbidity, and mortality: New perspectives from psychoneuroimmunology. *Annual Review of Psychology*, 53, 83–107. https://doi.org/10.1146/annurev.psych.53.100901.135217
 
+Jasanoff, S. (2004). The idiom of co-production. In S. Jasanoff (Ed.), *States of Knowledge: The Co-Production of Science and the Social Order* (pp. 1–12). Routledge.
+
 Laubenbacher, R., Niarakis, A., Helikar, T., An, G., Shapiro, B., Malik-Sheriff, R. S., ... & Glazier, J. A. (2022). Building digital twins of the human immune system: Toward a roadmap. *npj Digital Medicine*, 5(1), 64. https://doi.org/10.1038/s41746-022-00610-z
+
+Livingston, G., Huntley, J., Sommerlad, A., Ames, D., Ballard, C., Banerjee, S., ... & Mukadam, N. (2020). Dementia prevention, intervention, and care: 2020 report of the Lancet Commission. *The Lancet*, 396(10248), 413–446. https://doi.org/10.1016/S0140-6736(20)30367-6
 
 Leloup, J. C., & Goldbeter, A. (2003). Toward a detailed computational model for the mammalian circadian clock. *Proceedings of the National Academy of Sciences*, 100(12), 7051–7056. https://doi.org/10.1073/pnas.1132112100
 
@@ -518,7 +563,7 @@ Topol, E. J. (2019). *Deep Medicine: How Artificial Intelligence Can Make Health
 
 Van Cauter, E., Spiegel, K., Tasali, E., & Leproult, R. (2008). Metabolic consequences of sleep and sleep loss. *Sleep Medicine*, 9(Suppl 1), S23–S28. https://doi.org/10.1016/S1389-9457(08)70013-3
 
-Vitruvius Pollio, M. (ca. 25 BCE). *De Architectura*. (Trans. M. H. Morgan, 1914: *The Ten Books on Architecture*. Harvard University Press.)
+Vitruvius Pollio, M. (ca. 25 BCE). *De Architectura*. (M. H. Morgan, Trans., 1914). Harvard University Press.
 
 
 Ward, J., & Daniel, E. (2006). *Benefits Management: Delivering Value from IS & IT Investments*. Wiley.
@@ -527,7 +572,11 @@ Waern, N. (2025a). From One Room to Fifty: Orchestrating Explainable AI, Resilie
 
 Waern, N. (2025b). Beyond the Shadows — Contextual Awakening, Federated Learning, and the Realization of Reality through Digital Twins. WINNIIO AB. Zenodo. https://doi.org/10.5281/zenodo.17464804
 
+Waern, N. (2026c). SMILE v5.0: Sustainable Methodology for Impact Lifecycle Enablement. WINNIIO AB. Zenodo. https://doi.org/10.5281/zenodo.20175406
+
 Waern, N. (2026a). Indexing Reality: Boundary-Spanning Objects, Automated Scene Creation, and the Convergence of Spatial Intelligence with RF Digital Twins. WINNIIO AB. Zenodo. https://doi.org/10.5281/zenodo.19587944
+
+Waern, N. (2026b). *EquestRai: Edge-Native Biological Digital Twins for Performance Horse Management*. Manuscript in preparation. WINNIIO AB.
 
 WHOQOL Group. (1995). The World Health Organization Quality of Life assessment (WHOQOL): Position paper from the World Health Organization. *Social Science & Medicine*, 41(10), 1403–1409. https://doi.org/10.1016/0277-9536(95)00112-K
 
