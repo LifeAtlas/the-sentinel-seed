@@ -18,9 +18,8 @@ ORCID: 0009-0001-4011-8201
 
 **License:** CC-BY-4.0
 
-**Version 4.0 — July 8, 2026** (v1 DOI 10.5281/zenodo.21249282; v3.1 DOI 10.5281/zenodo.21258104)
+**Version 4.0 — 8 July 2026.** This revision supersedes earlier versions in the same Zenodo record.
 
-*Method note: v4 is an AIDA-structured, difficulty-ramped rebuild that opens on the Greenland/Einstein reality-versus-readout intuition, writes out the SMILE methodology (Sustainable Methodology for Interoperable Lifecycle Enablement) with Rackham SPIN as its discovery logic, uses the Altiostar/Rakuten Open RAN case as its empirical spine, and applies two adversarial crucible passes. Adversarially scored v1 4.5 -> v2 7.8 -> v3 8.75 -> v4 8.85 against an explicit 16-dimension rubric; the residual gap to a 10 is reproducibility of the single proprietary primary dataset — named as future work.*
 
 ---
 
