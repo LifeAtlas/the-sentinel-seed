@@ -4,6 +4,7 @@
  * For Oct 2025 articles the published/ folder is empty — we fall back to no content.
  */
 export const SLUG_TO_DRAFT_DIR: Record<string, string> = {
+  "research-quantum-city": "052-quantum-city",
   "research-reality-construct": "000-reality-construct",
   "research-sovereign-body": "004-life-atlas-position",
   "research-indexing-reality": "003-indexing-reality",

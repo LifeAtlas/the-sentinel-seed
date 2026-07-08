@@ -20,6 +20,14 @@ export interface ResearchArticle {
 
 export const researchArticles: Omit<ResearchArticle, "content">[] = [
   {
+    slug: "research-quantum-city",
+    title: "The Quantum City",
+    subtitle: "Self-Healing Networks, Interoperable Digital Twins, and the Architecture Decisions That Reverb With Eternity",
+    year: "Jul 8, 2026",
+    excerpt: "Kyiv proved the axis is not cloud versus on-premise but reachability under partition. No data should depend on one reachable place.",
+    doi: "10.5281/zenodo.21258104",
+  },
+  {
     slug: "research-reality-construct",
     title: "The Reality Construct",
     subtitle: "Digital Twins as Boundary-Spanning Artefacts",
