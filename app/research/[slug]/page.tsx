@@ -335,11 +335,11 @@ export const researchArticles: Omit<ResearchArticle, "content">[] = [
   },
   {
     slug: "research-smile-methodology",
-    title: "SMILE v4.4",
-    subtitle: "The Reality Fabric \u2014 Universal Methodology",
-    year: "Apr 19, 2026",
-    excerpt: "SMILE is not a framework. It is a methodology for building reality-aligned systems. Version 4.4 adds the Reality Fabric layer.",
-    doi: "10.5281/zenodo.19646374",
+    title: "SMILE v5.1",
+    subtitle: "Sustainable Methodology for Interoperable Lifecycle Enablement",
+    year: "Jul 8, 2026",
+    excerpt: "SMILE is not a framework. It is a methodology for building reality-aligned systems that continuously learn. v5.1 corrects the NUDEDA maturity ladder to Weill and Broadbent's postures and restores SPIN to Rackham's questioning logic.",
+    doi: "10.5281/zenodo.21268264",
   },
   {
     slug: "research-digital-twin-social-simulation",
