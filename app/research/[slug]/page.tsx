@@ -22,7 +22,7 @@ export const researchArticles: Omit<ResearchArticle, "content">[] = [
   {
     slug: "research-rehearsal-space",
     title: "The Rehearsal Space",
-    subtitle: "Why Hybrid Satellite-Terrestrial Networks Need a Digital Twin",
+    subtitle: "Why Hybrid Satellite-Terrestrial Networks Need Orchestrated Digital Twins",
     year: "Jul 29, 2026",
     excerpt: "A digital twin moves handover and interference failures from the live network — where every customer is a test probe — into a simulation, where mistakes are free.",
     doi: "10.5281/zenodo.21694074",

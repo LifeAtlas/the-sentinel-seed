@@ -1,5 +1,5 @@
 ---
-title: "The Rehearsal Space — Why Hybrid Satellite-Terrestrial Networks Need a Digital Twin"
+title: "The Rehearsal Space — Why Hybrid Satellite-Terrestrial Networks Need Orchestrated Digital Twins"
 author: "Nicolas Waern"
 affiliation: "WINNIIO AB"
 orcid: "0009-0001-4011-8201"
@@ -15,7 +15,7 @@ type: sentinel-whitepaper
 
 # The Rehearsal Space
 
-*Why hybrid satellite-terrestrial networks need a digital twin*
+*Why hybrid satellite-terrestrial networks need orchestrated digital twins — one orchestration twin, many domain twins working together*
 
 *By Nicolas Waern, CEO — WINNIIO AB / Life Atlas*
 
@@ -25,7 +25,7 @@ type: sentinel-whitepaper
 
 ## The claim
 
-A digital twin does one thing for a satellite direct-to-device launch: it moves handover and interference failures from the live network — where every customer is a test probe — into a simulation, where mistakes are free. Without it, six functions — planning, operations, finance, regulatory, legal, security — each independently rediscover the same failure after it has already reached customers. That is not six problems. It is one: no rehearsal space for reality.
+A digital twin does one thing for a satellite direct-to-device launch: it moves handover and interference failures from the live network — where every customer is a test probe — into a simulation, where mistakes are free. And "a twin" is shorthand for an architecture, not a monolith: no single model spans orbital dynamics, radio propagation, city geometry, protocol behavior, and live network state. What works in practice is **one orchestration twin coordinating many domain twins** — each best-in-class at its own physics, composed into one rehearsal space, each replaceable without replacing the whole. Without that, six functions — planning, operations, finance, regulatory, legal, security — each independently rediscover the same failure after it has already reached customers. That is not six problems. It is one: no rehearsal space for reality.
 
 One caveat governs everything that follows, and it cuts against the vendor as much as for it: **a twin without a measured accuracy figure is a rendering, not an instrument.** The first deliverable of any credible program is small — one cluster, one prediction, one comparison against real network counters, one error bar. Every benefit below is conditional on that number existing.
 
