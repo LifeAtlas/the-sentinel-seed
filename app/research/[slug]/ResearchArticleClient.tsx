@@ -550,7 +550,7 @@ export default function ResearchArticleClient({
               }}
             >
               <span>DOI</span>
-              <span style={{ opacity: 0.6 }}>{article.doi}</span>
+              <span style={{ opacity: 0.6 }}>{article.doi || "pending"}</span>
             </a>
           </div>
 
@@ -704,7 +704,7 @@ export default function ResearchArticleClient({
                 rel="noopener noreferrer"
                 style={{ color: goldDim, textDecoration: "underline" }}
               >
-                https://doi.org/{article.doi}
+                {article.doi ? `https://doi.org/${article.doi}` : "DOI pending"}
               </a>
             </p>
             <p

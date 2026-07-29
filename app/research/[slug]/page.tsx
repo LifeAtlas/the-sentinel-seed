@@ -20,6 +20,22 @@ export interface ResearchArticle {
 
 export const researchArticles: Omit<ResearchArticle, "content">[] = [
   {
+    slug: "research-rehearsal-space",
+    title: "The Rehearsal Space",
+    subtitle: "Why Hybrid Satellite-Terrestrial Networks Need a Digital Twin",
+    year: "Jul 29, 2026",
+    excerpt: "A digital twin moves handover and interference failures from the live network — where every customer is a test probe — into a simulation, where mistakes are free.",
+    doi: "",
+  },
+  {
+    slug: "research-two-launches",
+    title: "Two Launches",
+    subtitle: "A Sentinel Story — the same night, run twice",
+    year: "Jul 29, 2026",
+    excerpt: "Same physics, same satellites, same engineers. One variable: whether reality was absorbed into a place where mistakes are free.",
+    doi: "",
+  },
+  {
     slug: "research-quantum-city",
     title: "The Quantum City",
     subtitle: "Self-Healing Networks, Interoperable Digital Twins, and the Architecture Decisions That Reverb With Eternity",

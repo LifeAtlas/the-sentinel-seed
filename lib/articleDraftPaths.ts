@@ -46,6 +46,8 @@ export const SLUG_TO_DRAFT_DIR: Record<string, string> = {
   "research-tokyo-2040-reactive-networks": "047-tokyo-2040-reactive-networks",
   "research-tokyo-2040-cognitive-cities": "048-tokyo-2040-cognitive-cities",
   "research-tokyo-2040-last-drive-test": "049-tokyo-2040-last-drive-test",
+  "research-rehearsal-space": "053-rehearsal-space-tn-ntn",
+  "research-two-launches": "054-two-launches",
   // Oct 2025 articles: published/ dirs are empty — no content file available
   "research-from-one-room": null,
   "research-beyond-shadows": null,
