@@ -671,7 +671,8 @@ export default function ResearchArticleClient({
           </section>
         )}
 
-        {/* ═══ Cite this article ═══ */}
+        {/* ═══ Cite this article — only once a DOI exists ═══ */}
+        {!!article.doi && (
         <section className="mb-16">
           <div
             className="h-px mb-10"
@@ -719,6 +720,7 @@ export default function ResearchArticleClient({
             </p>
           </div>
         </section>
+        )}
 
         {/* ═══ Zenodo CTA — still present after full text ═══ */}
         {hasContent && !!article.doi && (
