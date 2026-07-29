@@ -525,6 +525,7 @@ export default function ResearchArticleClient({
             <span style={{ color: border }}>&bull;</span>
 
             {/* DOI badge */}
+            {article.doi && (
             <a
               href={zenodoUrl}
               target="_blank"
@@ -550,8 +551,9 @@ export default function ResearchArticleClient({
               }}
             >
               <span>DOI</span>
-              <span style={{ opacity: 0.6 }}>{article.doi || "pending"}</span>
+              <span style={{ opacity: 0.6 }}>{article.doi}</span>
             </a>
+            )}
           </div>
 
           {/* License badge */}
@@ -698,14 +700,16 @@ export default function ResearchArticleClient({
             >
               Waern, N. ({article.year.replace("Apr ", "").replace("Oct ", "")}). <em>{article.title}: {article.subtitle}</em>.
               WINNIIO AB.{" "}
+              {article.doi ? (
               <a
                 href={zenodoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: goldDim, textDecoration: "underline" }}
               >
-                {article.doi ? `https://doi.org/${article.doi}` : "DOI pending"}
+                https://doi.org/{article.doi}
               </a>
+              ) : null}
             </p>
             <p
               className="text-[10px] tracking-[0.15em]"
