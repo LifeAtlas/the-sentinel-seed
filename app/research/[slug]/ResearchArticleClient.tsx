@@ -721,7 +721,7 @@ export default function ResearchArticleClient({
         </section>
 
         {/* ═══ Zenodo CTA — still present after full text ═══ */}
-        {hasContent && (
+        {hasContent && !!article.doi && (
           <section className="mb-16">
             <a
               href={zenodoUrl}
