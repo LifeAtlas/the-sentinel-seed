@@ -51,7 +51,7 @@ The scenario is a composite: an operator launching direct-to-device service over
 
 **Legal.** With: every automated decision has provenance — which prediction, which model version, which data, which approval — so incident liability is a lookup. Without: it is a negotiation with the satellite partner, conducted without the ability to reconstruct what happened. Indemnity clauses assume someone can determine causation; without a twin, frequently nobody can.
 
-**Cybersecurity.** With: hostile scenarios are rehearsable — GNSS jamming that strips the timing reference the satellite link depends on (a real enough failure mode that 3GPP's Rel-19/20 GNSS-resilience study [11] and position-independent synchronization research [44] both exist because of it) is tested before an adversary tests it. Without: the failure mode is evaluated for the first time in production, and the post-incident report states the scenario was never modeled — the finding regulators and boards actually read.
+**Cybersecurity.** With: hostile scenarios are rehearsable — GNSS jamming that strips the timing reference the satellite link depends on (a real enough failure mode that 3GPP's Rel-19 summary flags a GNSS-resilience study rolling into Rel-20 [11], and position-independent synchronization research exists because of it [44]) is tested before an adversary tests it. Without: the failure mode is evaluated for the first time in production, and the post-incident report states the scenario was never modeled — the finding regulators and boards actually read.
 
 **The customer** is the stakeholder the whole table collapses into: in one world they notice nothing; in the other they notice everything, and in markets where porting takes minutes, they act on it.
 
@@ -64,7 +64,7 @@ The title says orchestrated digital twins, plural, and that word is doing real w
 - a **protocol-behavior twin** (3GPP mobility events, timers, conditional-handover logic per Rel-17/18 [13] — advancing in milliseconds);
 - a **live-state twin** (the operator's counters, configurations and neighbor relations from the OSS — arriving at 15-minute reporting granularity through the management interfaces the O-RAN architecture already defines (O1, R1, E2), with the natural home for this twin beside the SMO and its rApps — the layer operators like Rakuten Symphony have themselves argued for [35]).
 
-Those four clocks — minutes, snapshots, milliseconds, quarter-hours — are the actual engineering problem, and glossing them is how composed twins die. The orchestration twin's job is exactly that reconciliation: an event-driven scheduler that advances orbital geometry per pass segment, triggers propagation re-computation when a beam footprint moves, runs the protocol twin at native timer resolution inside each snapshot, and calibrates the whole against the live-state twin at each reporting period — handing the protocol twin per-location SINR derived from the orbital twin's time-tagged beam footprints and EIRP masks. This is a co-simulation problem with known engineering patterns, not an invention. O-RAN's research groups have mapped both the use cases and the enabling technologies for exactly this composition [33, 34], and the network-digital-twin literature has converged on the same multi-domain framing [31, 32]; what does not yet exist anywhere is the composed, calibrated, operational whole.
+Those four clocks — minutes, snapshots, milliseconds, quarter-hours — are the actual engineering problem, and glossing them is how composed twins die. The orchestration twin's job is exactly that reconciliation: an event-driven scheduler that advances orbital geometry per pass segment, triggers propagation re-computation when a beam footprint moves, runs the protocol twin at native timer resolution inside each snapshot, and calibrates the whole against the live-state twin at each reporting period — handing the protocol twin per-location SINR computed by the propagation twin from the orbital twin's time-tagged beam footprints and EIRP masks. This is a co-simulation problem with known engineering patterns, not an invention. O-RAN's research groups have mapped both the use cases and the enabling technologies for exactly this composition [33, 34], and the network-digital-twin literature has converged on the same multi-domain framing [31, 32]; what does not yet exist anywhere is the composed, calibrated, operational whole.
 
 One example of why composition matters: a monolithic coverage model evaluates the satellite beam and the terrestrial grid separately and shows both green. The failure lives in the interaction — co-channel interference at the precise second a moving beam edge crosses a handover boundary. Only a twin-of-twins that advances orbital geometry, propagation, and protocol state on the same clock catches it before a customer does.
 
@@ -82,11 +82,11 @@ The end-state that makes all of this worth building is not a better phone call. 
 
 What closes the rest of the gap is the network — and this is where the chain of prerequisites runs straight back through this paper:
 
-1. **Flawless mobility.** A hologram call dies at the handover 2D video shrugs off. Inside the terrestrial network, 3GPP's L1/L2-triggered mobility already pushes handover interruption toward near-zero for XR-class traffic [82, 83], and cell-free architectures aim to remove cell edges entirely [85]. But LTM is an intra-network, lower-layer mechanism — the handover it does **not** cover is the one this paper is about: the inter-system TN↔NTN transition, still an open work item in the standards [14, 23]. The one mobility event that cannot yet be engineered to invisibility is exactly the one that must be rehearsed in simulation.
+1. **Flawless mobility.** A hologram call dies at the handover 2D video shrugs off. Inside the terrestrial network, 3GPP's L1/L2-triggered mobility already pushes handover interruption toward near-zero for XR-class traffic [82, 83], and cell-free architectures aim to remove cell edges entirely [85]. But LTM is an intra-network, lower-layer mechanism — the handover it does **not** cover is the one this paper is about: the inter-system TN↔NTN transition, still an open work item in the standards [14]. The one mobility event that cannot yet be engineered to invisibility is exactly the one that must be rehearsed in simulation.
 2. **Self-healing operation.** Immersive sessions cannot wait for a human in a NOC. ETSI ZSM intent-driven autonomy [89, 90], TM Forum intent management [91], and the first Level-4-certified production networks [92] define the loop: intent in, closed-loop correction out. Every one of those loops needs a place to rehearse before it acts — the twin again.
 3. **Spatially aware infrastructure.** 6G integrated sensing and communication turns the network itself into a spatial sensor [79, 80] — the live geometry feed a nation-scale twin consumes, and the privacy question [81] a sovereignty-first architecture must answer.
 
-The societal stakes are already concrete: telesurgery over public 5G at 3,000+ km with sub-300 ms delay [97, 98] — worth noting that clinical presence tolerates five orders of magnitude more latency than the raw-hologram bound, which is precisely why the requirements space is a spectrum, not a wall — standardized haptic codecs for the tactile internet [96], holograms in classrooms and cultural memory [99], city-scale twins with real governance questions [100], and an accessibility baseline if holographic presence is to be a medium for everyone rather than a niche [101].
+The societal stakes are already concrete: telesurgery over public 5G at 3,000+ km with sub-300 ms delay [97, 98] — worth noting that clinical presence tolerates roughly two and a half orders of magnitude more latency than the raw-hologram bound, which is precisely why the requirements space is a spectrum, not a wall — standardized haptic codecs for the tactile internet [96], holograms in classrooms and cultural memory [99], city-scale twins with real governance questions [100], and an accessibility baseline if holographic presence is to be a medium for everyone rather than a niche [101].
 
 The through-line is one sentence: **holographic societies run on networks that cannot afford untested failure — and networks that cannot afford untested failure run on rehearsal spaces.** The hybrid TN/NTN twin argued for in this paper is not a telecom optimization tool that happens to be timely. It is the first load-bearing layer of the infrastructure presence-at-a-distance will stand on.
 
@@ -98,7 +98,9 @@ The entry ticket is not a platform pitch. It is one cluster, one prediction, one
 
 ---
 
-## References
+## References and further reading
+
+*Sources cited inline carry the argument; the remainder are the surrounding evidence base for the TN/NTN, network-twin, AI-RAN and holographic-communication landscape, listed for the reader who wants the full map.*
 
 **Foundations (pre-2023)**
 
@@ -230,4 +232,4 @@ The entry ticket is not a platform pitch. It is one cluster, one prediction, one
 
 ---
 
-*Composite scenario; technical and regulatory context verifiable against the 101 public sources above, as of July 2026.*
+*Composite scenario; technical and regulatory context verifiable against the public sources above, as of July 2026.*
